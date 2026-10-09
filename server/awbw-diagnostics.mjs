@@ -21,14 +21,23 @@ export function summarizePage(html, url) {
     const fields = [...match[2].matchAll(/<input\b([^>]*)>/gi)].map(m => attributes(m[1]));
     if (!fields.some(f => f.type?.toLowerCase() === 'password')) continue;
     forms.push({action: sameOriginPath(form.action, url), method: (form.method || 'get').toLowerCase(),
-      fields: fields.filter(f => f.name).map(f => ({name: f.name, type: (f.type || 'text').toLowerCase()}))});
+      fields: fields.filter(f => f.name || f.id || f['v-model']).map(f => ({name: f.name || f.id || f['v-model'], type: (f.type || 'text').toLowerCase()}))});
   }
   const scripts = [...html.matchAll(/<script\b([^>]*)>/gi)].map(m => attributes(m[1]).src)
     .filter(Boolean).map(src => sameOriginPath(src, url)).filter(Boolean).slice(0, 40);
   const ws = html.match(/\bwsUrl\s*=\s*["'](wss:\/\/[^"']+)["']/)?.[1];
   let socketHost = null;
   try { if (ws) socketHost = new URL(ws).hostname; } catch {}
-  return {loginForms: forms, scripts, socketHost, hasGameClient: scripts.some(p => /\/game(?:\.min)?\.js$/.test(p)),
+  const networkCalls = [...html.matchAll(/\b(?:axios\.(post|get)|fetch)\s*\(\s*["']([^"']+)["']/g)]
+    .map(m => ({method: m[1] || 'fetch', path: sameOriginPath(m[2], url)})).filter(r => r.path).slice(0, 30);
+  const loginMatch = html.match(/\blogin\s*(?:\([^)]*\)|:\s*function\s*\([^)]*\))\s*\{/);
+  let loginClientStructure = null;
+  if (loginMatch) {
+    const start = loginMatch.index, tail = html.slice(start, start + 2500).split('</script>')[0];
+    // Code structure only: remove every literal string and comment before returning it.
+    loginClientStructure = tail.replace(/\/\*[\s\S]*?\*\/|\/\/[^\n]*/g, '').replace(/(["'`])(?:\\.|(?!\1)[^\\])*?\1/g, '"[literal]"');
+  }
+  return {loginForms: forms, networkCalls, loginClientStructure, scripts, socketHost, hasGameClient: scripts.some(p => /\/game(?:\.min)?\.js$/.test(p)),
     hasLoginInput: /type\s*=\s*["']password["']/i.test(html)};
 }
 async function probe(path, fetcher) {
