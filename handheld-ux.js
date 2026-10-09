@@ -1,7 +1,7 @@
 import {movementRange, movementPath, attackRange, combatForecast, terrainDefense, stats} from './tactics.js';
 
 // Presentation only. Live eligibility and order submission stay in the AWBW bridge.
-export function createHandheldUX({asset, inspect, repaint, message}) {
+export function createHandheldUX({asset, inspect, repaint, message,requestInspection,liveInspection}) {
   const $ = s => document.querySelector(s);
   let view, rangeMode = null, motion = true, movingId = null;
   try { motion = JSON.parse(localStorage.getItem('field-command-settings-v1'))?.motion !== false; } catch {}
@@ -9,7 +9,7 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
   const node = (tag, text, cls) => {const n = document.createElement(tag); if (text !== undefined) n.textContent = text; if (cls) n.className = cls; return n;};
   const sprite = unit => {
     const image = node('img'); image.alt = '';
-    const file = asset(`${unit.army}${unit.type}.gif`);
+    const type=unit.type||unit.name?.replaceAll(' ','').toLowerCase(),file=asset(`${unit.army}${type}.gif`)||(unit.army&&type?`/api/awbw/art?army=${unit.army}&unit=${encodeURIComponent(type)}`:null);
     if (file) image.src = file;
     return image;
   };
@@ -28,6 +28,15 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
   function renderForecast() {
     const panel = $('#forecast'); panel.replaceChildren();
     const {state, snapshot, selected, attackTarget, destination, phase} = view;
+    if(snapshot){
+      const forecast=view.liveForecast,attacker=snapshot.game?.units.find(u=>u.id===forecast?.attackerId),defender=snapshot.game?.units.find(u=>u.id===forecast?.defenderId);
+      panel.hidden=phase!=='forecast'||!forecast||!attacker||!defender;if(panel.hidden)return;
+      panel.append(node('div','BATTLE FORECAST','forecast-heading'));const fighters=node('div',undefined,'forecast-fighters');
+      for(const [unit,label,range]of [[attacker,'COUNTER',forecast.counter],[defender,'DAMAGE',forecast.damage]]){
+        const card=node('div',undefined,'combatant');card.append(node('span',label,'eyebrow'),sprite(unit),node('strong',unit.name.toUpperCase()),health(unit),node('small',`${unit.hp} HP`),node('b',`${range.min}–${range.max}%`,'damage-value'));fighters.append(card);if(unit===attacker)fighters.append(node('span','VS','versus'));
+      }
+      panel.append(fighters,node('p','AWBW calculator · Includes luck and CO effects · Preview'));return;
+    }
     const attacker = state.units.find(u => u.id === selected), defender = state.units.find(u => u.id === attackTarget);
     panel.hidden = !!snapshot || phase !== 'forecast' || !attacker || !defender;
     if (panel.hidden) return;
@@ -54,9 +63,15 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
   }
   function renderRange() {
     const unit = selectedUnit(), buttons = [$('#range-move'), $('#range-attack')];
-    for (const [i, b] of buttons.entries()) {b.disabled = !unit || !!view.snapshot || !!movingId; b.setAttribute('aria-pressed', String(rangeMode === (i === 0 ? 'move' : 'attack')));}
+    const native=unit&&liveInspection?.(unit),hosted=!!view.snapshot&&new URLSearchParams(location.search).has('game');
+    for (const [i, b] of buttons.entries()) {b.disabled = !unit || !!view.snapshot&&!hosted || !!movingId; b.setAttribute('aria-pressed', String(rangeMode === (i === 0 ? 'move' : 'attack')));}
     $('#unit-info').disabled = !unit;
-    if (!rangeMode || view.snapshot || !unit || view.phase !== 'select') return;
+    if (!rangeMode || !unit || view.phase !== 'select') return;
+    if(view.snapshot){
+      if(!native)return;
+      for(const n of rangeMode==='move'?native.reachable:native.attackRange)$(`#map [data-x="${n%view.snapshot.map.width}"][data-y="${Math.floor(n/view.snapshot.map.width)}"]`)?.classList.add(rangeMode==='move'?'inspect-move':'inspect-attack');
+      $('#range-label').textContent=rangeMode==='move'?'MOVEMENT · AWBW RULES':'POTENTIAL THREAT · VISIBLE BOARD';return;
+    }
     const range = rangeMode === 'move' ? movementRange(view.state, unit) : attackRange(view.state, unit);
     for (const key of range.keys()) {const [x, y] = key.split(','); $(`#map [data-x="${x}"][data-y="${y}"]`)?.classList.add(rangeMode === 'move' ? 'inspect-move' : 'inspect-attack');}
     $('#range-label').textContent = rangeMode === 'move' ? 'MOVEMENT RANGE' : 'THREAT AFTER MOVING';
@@ -65,12 +80,12 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
     const {state, snapshot} = view, units = snapshot ? snapshot.game?.units || [] : state.units;
     const own = snapshot ? units.filter(u => u.owner === snapshot.game?.viewerPlayerId) : units.filter(u => u.army === state.army);
     const ready = own.filter(u => !u.spent).length;
-    const properties = snapshot ? null : state.terrain.filter(t => t.owner === state.army).length;
-    $('#menu-summary').textContent = `${ready} READY / ${own.length} UNITS${properties === null ? '' : ` · ${properties} PROPERTIES · ${properties * 1000} G INCOME`}`;
+    const properties = snapshot ? snapshot.game?.buildings?.length??null : state.terrain.filter(t => t.owner === state.army).length,income=snapshot?snapshot.game?.income:properties*1000;
+    $('#menu-summary').textContent = `${ready} READY / ${own.length} UNITS${properties === null ? '' : ` · ${properties} PROPERTIES${income!=null?` · ${income.toLocaleString()} G INCOME`:''}`}`;
     const roster = $('#unit-roster'); roster.replaceChildren();
     for (const unit of own) {
       const b = node('button', undefined, 'roster-unit');
-      if (!snapshot) b.append(sprite(unit));
+      if (!snapshot||unit.army) b.append(sprite(unit));
       const text = node('div'); text.append(node('strong', unit.type?.toUpperCase() || unit.name), node('small', `${unit.hp ?? '—'}/10 HP · ${unit.spent ? 'ACTED' : 'READY'} · ${unit.x + 1}:${unit.y + 1}`));
       b.append(text, node('span', unit.spent ? '✓' : '→')); b.onclick = () => {if (movingId) return; $('#game-menu').close(); rangeMode = null; inspect(unit.x, unit.y);}; roster.append(b);
     }
@@ -83,9 +98,9 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
     const body = $('#unit-details-body'); body.replaceChildren();
     const title = unit.type?.toUpperCase() || unit.name;
     $('#unit-details-title').textContent = title;
-    if (!view.snapshot) body.append(sprite(unit));
+    if (!view.snapshot||unit.army) body.append(sprite(unit));
     if (unit.hp != null) body.append(health(unit), node('strong', `${unit.hp}/10 HP`, 'unit-health'));
-    const details = view.snapshot ? [['Fuel', unit.fuel ?? '—'], ['Ammo', unit.ammo ?? '—'], ['Orders', unit.spent ? 'Acted' : 'Not marked moved']] : [['Movement', `${stats[unit.type].move} points`], ['Attack', 'Adjacent · direct'], ['Cost', `${stats[unit.type].cost.toLocaleString()} G`], ['Orders', unit.spent ? 'Complete' : 'Ready']];
+    const details = view.snapshot ? [...(unit.move!=null?[['Movement',`${unit.move} points`]]:[]),...(unit.maxRange!=null?[['Attack',unit.minRange<=1?'Adjacent':`${unit.minRange}–${unit.maxRange} tiles`]]:[]),...(unit.cost!=null?[['Base cost',`${unit.cost.toLocaleString()} G`]]:[]),['Fuel', unit.fuel ?? '—'], ['Ammo', unit.ammo ?? '—'], ['Orders', unit.spent ? 'Acted' : 'Not marked moved']] : [['Movement', `${stats[unit.type].move} points`], ['Attack', 'Adjacent · direct'], ['Cost', `${stats[unit.type].cost.toLocaleString()} G`], ['Orders', unit.spent ? 'Complete' : 'Ready']];
     const list = node('dl', undefined, 'unit-data'); for (const [label, value] of details) list.append(node('dt', label), node('dd', value)); body.append(list);
     if (!view.snapshot) {const tile = view.state.terrain[unit.y * view.state.width + unit.x]; body.append(node('p', `${tile.type.toUpperCase()} · Cover ${'★'.repeat(terrainDefense[tile.type] || 0) || '—'}`), node('small', 'Practice rules. Live movement and purchases use AWBW’s own rules.'));}
     $('#unit-details').showModal();
@@ -94,7 +109,7 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
     view = nextView; $('#range-label').textContent = ''; renderPath(); renderRange(); renderForecast(); renderMenu();
     $('#map').classList.toggle('is-moving', !!movingId);
     $('#map').setAttribute('aria-busy', String(!!movingId));
-    if (movingId) {for (const cell of document.querySelectorAll('#map .map-cell')) {const u = view.state.units.find(u => u.x === +cell.dataset.x && u.y === +cell.dataset.y); if (u?.id === movingId) for (const image of cell.querySelectorAll('.unit,.health')) image.style.visibility = 'hidden';}}
+    if (movingId) {for (const cell of document.querySelectorAll('#map .map-cell')) {const u = (view.snapshot?.game?.units||view.state.units).find(u => u.x === +cell.dataset.x && u.y === +cell.dataset.y); if (u?.id === movingId) for (const image of cell.querySelectorAll('.unit,.health')) image.style.visibility = 'hidden';}}
     if (!view.snapshot) {const tile = view.state.terrain[view.cursor.y * view.state.width + view.cursor.x]; $('#terrain-cover').textContent = '★'.repeat(terrainDefense[tile.type] || 0) || '—'; $('#terrain-cover').title = `${terrainDefense[tile.type] || 0} defense stars`;}
     else if(!new URLSearchParams(location.search).has('game')) $('#terrain-cover').textContent = '';
     $('#lcd-funds').textContent=view.snapshot?(view.snapshot.game?.funds?.toLocaleString()||'—'):view.state.funds[view.state.army].toLocaleString();
@@ -117,7 +132,14 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
     else setTimeout(() => {banner.hidden = true;}, 800);
   }
   $('#unit-info').onclick = showInfo; $('#unit-details-close').onclick = () => $('#unit-details').close();
-  for (const [id, mode] of [['#range-move', 'move'], ['#range-attack', 'attack']]) $(id).onclick = () => {rangeMode = rangeMode === mode ? null : mode; repaint(); message(rangeMode === 'attack' ? 'Red tiles show this unit’s potential threat after moving. Practice rules.' : rangeMode === 'move' ? 'Blue tiles show movement through this terrain. Inspecting does not issue an order.' : 'Range overlay cleared.');};
+  for (const [id, mode] of [['#range-move', 'move'], ['#range-attack', 'attack']]) $(id).onclick = async () => {
+    const unit=selectedUnit();rangeMode = rangeMode === mode ? null : mode;repaint();
+    if(view.snapshot&&rangeMode&&unit){
+      const requested=unit.id;message('Checking AWBW’s unit ranges…');
+      try{await requestInspection?.(unit);if(selectedUnit()?.id!==requested)return;repaint();message(rangeMode==='move'?'Movement on the visible board. Fog can hide obstacles.':'Potential attack range on the visible board.');}catch(error){rangeMode=null;repaint();message(error.message);}return;
+    }
+    message(rangeMode === 'attack' ? 'Red tiles show this unit’s potential threat after moving. Practice rules.' : rangeMode === 'move' ? 'Blue tiles show movement through this terrain. Inspecting does not issue an order.' : 'Range overlay cleared.');
+  };
   for (const b of document.querySelectorAll('[data-menu-tab]')) b.onclick = () => {for (const tab of document.querySelectorAll('[data-menu-tab]')) tab.setAttribute('aria-selected', String(tab === b)); for (const panel of document.querySelectorAll('[data-menu-panel]')) panel.hidden = panel.dataset.menuPanel !== b.dataset.menuTab;};
   function motionLabel() {$('#motion').textContent = `Motion: ${motion ? 'on' : 'off'}`;document.body.classList.toggle('reduce-motion',!motion);}
   $('#motion').onclick = () => {motion = !motion; try {localStorage.setItem('field-command-settings-v1', JSON.stringify({motion}));} catch {} motionLabel();}; motionLabel();

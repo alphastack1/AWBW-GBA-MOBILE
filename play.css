@@ -198,3 +198,17 @@ dialog p{font-size:18px;line-height:1.2;color:#668264}
 
 .game-app .commands{bottom:166px}
 body.hosted-game .developer-tool{display:none}
+.game-app .map-tools button{width:44px;height:44px}
+.game-app .map-tools{top:116px}
+.game-app .commands button.primary{background:#fffbd7;padding-left:12px}
+.game-app .commands button.primary:before{display:none}
+.game-app .commands button.menu-current{background:#f5e59d;padding-left:28px}
+.game-app .commands button.menu-current:before{display:block;content:'';position:absolute;left:9px;top:50%;transform:translateY(-50%);border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:7px solid #7c663c}
+.game-app .commands:has(.build-choice){width:198px}
+.game-app .commands .build-choice{min-height:56px;padding-left:42px!important;line-height:1;position:relative}
+.game-app .build-choice img{width:28px;height:28px;position:absolute;left:10px;top:14px;image-rendering:pixelated}
+.game-app .build-choice span,.game-app .build-choice small{display:block;font-size:20px}
+.game-app .build-choice small{color:#7b8051;font-size:17px;margin-top:4px}
+.game-app .a-button:active,.game-app .back-button:active{transform:translateY(2px);box-shadow:0 2px #543641}
+.game-app .dpad button:active{background:#597951;color:#fff8bf}
+@media(max-height:500px) and (min-width:600px){.game-app .commands{bottom:0}}

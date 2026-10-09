@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {handleAccount,sealSession,openSession,gameList,isAccountPage} from '../server/awbw-account.mjs';
 import {gamePage} from './fixtures/awbw-game.mjs';
+import {memoryStore} from './fixtures/command-store.mjs';
 const secret=Buffer.alloc(32,7).toString('base64'),origin='https://awbw-gba.netlify.app';
 const signedPage=name=>`<html><a href="logout.php">Log out</a><a href="profile.php?username=${name}">${name}</a><a href="game.php?games_id=123">River &amp; Road</a><a href="game.php?games_id=123">View</a><a href="https://other.example/game.php?games_id=456">Foreign</a></html>`;
 function fakeAWBW(){const calls=[];return {calls,fetcher:async(url,options)=>{calls.push({url:String(url),options});if(url.pathname==='/logincheck.php'){const p=new URLSearchParams(options.body);if(p.get('password')!=='fixture-password')return new Response('0');const headers=new Headers();headers.append('Set-Cookie',`AWBWUser=${p.get('username')}; Path=/; HttpOnly; Secure`);return new Response('1',{headers});}const name=/AWBWUser=([^;]+)/.exec(options.headers.Cookie||'')?.[1];return new Response(name?signedPage(name):'<form class="login-form"><input type="password"></form>');}};}
@@ -57,4 +58,14 @@ test('hosted game reads require the session account and membership; never submit
  const denied=await handleAccount(request('456'),{secret,fetcher:u.fetcher});assert.equal(denied.status,403);
  assert.equal((await handleAccount(req('game'),{secret,fetcher:u.fetcher})).status,401);
  assert.equal(u.calls.filter(c=>c.options.method==='POST').length,1); // Login only.
+});
+test('hosted order HTTP flow binds CSRF/account/membership and recomputes the native wire before submission',async()=>{
+ let moved=false;const u=fakeAWBW(),original=u.fetcher;u.fetcher=(url,options)=>url.pathname==='/game.php'?Promise.resolve(new Response(gamePage('player-one',fields=>{fields.currentTurn=7;if(moved)Object.assign(fields.unitsInfo[11],{units_x:1,units_y:0,units_moved:1});})+'<script>const wsServerBranch = "node";</script>')):original(url,options);
+ const account=await login('player-one',u),store=memoryStore(),sent=[];
+ const options={secret,fetcher:u.fetcher,storeFactory:()=>store,socketProbe:async()=>({authenticated:true}),healthRecorder:async()=>{},submit:async connection=>{assert.equal(connection.gameId,'123');assert.equal(connection.viewerId,7);assert.match(connection.cookie,/AWBWUser=player-one/);const prepared=await connection.beforeSend();sent.push(prepared.command);moved=true;return {status:'observed',submitted:true};}};
+ const action=(name,body,csrf=account.body.csrf)=>new Request(origin+'/api/awbw/account?action='+name+'&gameId=123',{method:'POST',headers:{Cookie:account.cookie,Origin:origin,'Content-Type':'application/json','X-FC-CSRF':csrf},body:JSON.stringify(body)});
+ assert.equal((await handleAccount(action('plan',{kind:'end'},'wrong'),options)).status,403);
+ const planResponse=await handleAccount(action('plan',{kind:'unit',unitId:11,x:1,y:0,command:{action:'End'},path:[999]}),options);assert.equal(planResponse.status,200);const {plan}=await planResponse.json();assert.ok(!JSON.stringify(plan).includes('command'));assert.equal(plan.choices[0].key,'Move');
+ const input={token:plan.token,choice:'Move'},result=await handleAccount(action('commit',input),options);assert.equal(result.status,200);assert.equal((await result.json()).status,'observed');assert.deepEqual(sent,[{action:'Move',path:[5,1],playerID:7,unitID:11}]);
+ assert.equal((await (await handleAccount(action('commit',input),options)).json()).duplicate,true);assert.equal(sent.length,1);
 });

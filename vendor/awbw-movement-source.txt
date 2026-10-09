@@ -1,0 +1,465 @@
+function getMovementTiles(maxX, maxY, mType, mp, startTile, unitTeam, player) {
+  var draw = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : true;
+  var xv = [-1, 1, 0, 0];
+  var yv = [0, 0, -1, 1];
+  var nNodes = maxX * maxY;
+  var visited = [];
+  var dist = [];
+  var previous = [];
+  var mCost = [];
+
+  for (var i = 0; i < nNodes; i++) {
+    visited.push(false);
+    dist.push(Infinity);
+    previous.push(null);
+    mCost.push(null);
+  }
+
+  var startNode = startTile.y * maxX + startTile.x;
+  dist[startNode] = 0;
+  var queue = new TinyQueue([], function (a, b) {
+    // Sort by which tile is closet
+    var distDelta = a.dist - b.dist;
+
+    if (distDelta !== 0) {
+      return distDelta;
+    } // Equally close tiles should be prioritized by the least hidden files (i.e. ones you can be trapped one).
+
+
+    var fogDelta = a.numTrapableTiles - b.numTrapableTiles;
+
+    if (fogDelta !== 0) {
+      return fogDelta;
+    }
+
+    return 0;
+  }); //Verification object to not include a tile twice
+
+  var verif = {};
+  var initial = {
+    index: startNode,
+    dist: 0,
+    x: startTile.x,
+    y: startTile.y,
+    numTrapableTiles: 0
+  };
+  queue.push(initial);
+  var tilesToDraw = [initial];
+  verif[startNode] = 0;
+
+  while (queue.length != 0) {
+    var current = queue.pop();
+    var index = current.index;
+    var minValue = current.dist;
+    var x = current.x;
+    var y = current.y;
+    var numTrapableTiles = current.numTrapableTiles;
+    visited[index] = true;
+    delete verif[index];
+    if (dist[index] < minValue) continue;
+
+    for (var _i = 0; _i < 4; _i++) {
+      var ax = x + xv[_i];
+      var ay = y + yv[_i];
+      var terrainCost = findTerrainCost(mType, ax, ay, unitTeam, player);
+      var isTeleportTile = checkTeleportTile(ax, ay); //returns true if the tile is a teleport tile
+
+      var isHiddenTile = fogInfo && fogInfo[ax] && fogInfo[ax][ay] < 1; // Increment numTrapableTiles if the cost isn't free and it's hidden.
+
+      var aNumTrapableTiles = numTrapableTiles + (isHiddenTile && !isTeleportTile);
+      if (ax < 0 || ay < 0 || ax >= maxX || ay >= maxY || !terrainCost && !isTeleportTile) continue;
+      var nextNodeIndex = ay * maxX + ax;
+      mCost[nextNodeIndex] = terrainCost;
+      if (visited[nextNodeIndex] || previous[nextNodeIndex]) continue;
+
+      if (terrainCost === "A" && !verif[nextNodeIndex]) {
+        //Mark previous tile and skip to next iteration if attack is possible
+        previous[nextNodeIndex] = index;
+        verif[nextNodeIndex] = "A";
+        continue;
+      }
+
+      var newDist = minValue + terrainCost;
+
+      if (newDist < dist[nextNodeIndex] && newDist <= mp) {
+        previous[nextNodeIndex] = index;
+        dist[nextNodeIndex] = newDist;
+
+        if (!verif[nextNodeIndex]) {
+          queue.push({
+            index: nextNodeIndex,
+            dist: newDist,
+            x: ax,
+            y: ay,
+            numTrapableTiles: aNumTrapableTiles
+          });
+          verif[nextNodeIndex] = newDist;
+
+          if (!isTeleportTile) {
+            //do not show teleport tiles as landing spots
+            tilesToDraw.push({
+              index: nextNodeIndex,
+              x: ax,
+              y: ay,
+              borderWidth: "0 0 0 0 "
+            });
+          }
+        } else {
+          for (var node in queue) {
+            if (queue[node].index == nextNodeIndex) queue[node].dist = newDist;
+          }
+        }
+      }
+    }
+  } //mark teleport tiles with infinite distance to prevent being landing spots
+
+
+  dist.forEach(function (i, tile) {
+    var _terrainInfo$tileX, _terrainInfo$tileX$ti;
+
+    var tileX = tile % maxX;
+    var tileY = (tile - tileX) / maxX;
+
+    if (((_terrainInfo$tileX = terrainInfo[tileX]) === null || _terrainInfo$tileX === void 0 ? void 0 : (_terrainInfo$tileX$ti = _terrainInfo$tileX[tileY]) === null || _terrainInfo$tileX$ti === void 0 ? void 0 : _terrainInfo$tileX$ti.terrain_id) == 195) {
+      dist[tile] = Infinity;
+    }
+  });
+  var movementInfo = {
+    dist: dist,
+    previous: previous,
+    mCost: mCost,
+    mp: mp,
+    tilesToDraw: tilesToDraw
+  };
+  var unitsInRange = []; //Object to prevent duplicates
+
+  var unitsInRangeVerif = {};
+  var minRange;
+  var unitX;
+  var unitY;
+
+  if (currentClick && currentClick.info) {
+    minRange = currentClick.info.units_short_range;
+    unitX = currentClick.info.units_x;
+    unitY = currentClick.info.units_y;
+  }
+
+  tilesToDraw.forEach(function (tile) {
+    tile.borderWidth = findBorders(tile.index, dist);
+    if (tile.borderWidth === "0 0 0 0 ") return;
+    var newInRange = []; //Find units in range of attacker's extremities movement tiles
+
+    if (minRange <= 1) {
+      newInRange = findUnitsInRangeOf(tile.x, tile.y, currentClick.info);
+    }
+
+    if (newInRange.length !== 0) {
+      newInRange.forEach(loopUnitsInRange);
+    }
+  });
+
+  if (minRange > 1) {
+    unitsInRange = findUnitsInRangeOf(unitX, unitY, currentClick.info);
+  }
+
+  if (draw) {
+    drawTiles(tilesToDraw, "movement");
+
+    if (unitsInRange.length !== 0) {
+      createDamageSquares(currentClick.info, unitsInRange, movementInfo, true);
+    }
+  }
+
+  return movementInfo; //Check for duplicates
+
+  function loopUnitsInRange(unit) {
+    var unitId = unit.units_id;
+
+    if (!unitsInRangeVerif[unitId]) {
+      unitsInRange.push(unit);
+      unitsInRangeVerif[unitId] = true;
+    }
+  }
+} //look up terrain cost
+
+
+function findTerrainCost(mType, x, y, unitTeam, player) {
+  var _unitMap$x, _unitMap$x$y, _terrainInfo$x, _terrainInfo$x$y, _buildingsInfo$x, _buildingsInfo$x$y, _moveCosts$terrainId, _moveCosts$terrainId$;
+
+  var coName = player.co_name;
+  var power = player.players_co_power_on;
+  var tempWCode = gameWeather.code;
+
+  if (x > maxX - 1 || x < 0 || y < 0 || y > maxY - 1) {
+    return null;
+  } //Mark tile as A for tiles where there is an attackable unit
+
+
+  var squareTeam = (_unitMap$x = unitMap[x]) === null || _unitMap$x === void 0 ? void 0 : (_unitMap$x$y = _unitMap$x[y]) === null || _unitMap$x$y === void 0 ? void 0 : _unitMap$x$y.team;
+
+  if (squareTeam && squareTeam != unitTeam) {
+    return "A";
+  } //No penalty for Olaf in snow
+
+
+  if (coName === "Olaf" && tempWCode === "S") {
+    tempWCode = "C";
+  } //Penalty for Olaf in rain
+
+
+  if (coName === "Olaf" && tempWCode === "R") {
+    tempWCode = "S";
+  } //No Penalty for Drake in rain
+
+
+  if (coName === "Drake" && tempWCode === "R") {
+    tempWCode = "C";
+  }
+
+  var terrainId = ((_terrainInfo$x = terrainInfo[x]) === null || _terrainInfo$x === void 0 ? void 0 : (_terrainInfo$x$y = _terrainInfo$x[y]) === null || _terrainInfo$x$y === void 0 ? void 0 : _terrainInfo$x$y.terrain_id) || ((_buildingsInfo$x = buildingsInfo[x]) === null || _buildingsInfo$x === void 0 ? void 0 : (_buildingsInfo$x$y = _buildingsInfo$x[y]) === null || _buildingsInfo$x$y === void 0 ? void 0 : _buildingsInfo$x$y.terrain_id);
+  var mCost = (_moveCosts$terrainId = moveCosts[terrainId]) === null || _moveCosts$terrainId === void 0 ? void 0 : (_moveCosts$terrainId$ = _moveCosts$terrainId[tempWCode]) === null || _moveCosts$terrainId$ === void 0 ? void 0 : _moveCosts$terrainId$[mType]; //Black tile for no terrain id
+
+  if (mCost === undefined) {
+    return 0;
+  }
+
+  mCost = parseInt(mCost);
+
+  if (mCost && tempWCode !== "S") {
+    if (coName === "Sturm" || coName === "Lash" && power !== "N") {
+      mCost = 1;
+    }
+  }
+
+  return mCost;
+} //If the tile is in neither terrainInfo or buildingsInfo, it's missing completely therefore is an invalid tile
+
+
+function checkTeleportTile(x, y) {
+  var _terrainInfo$x2, _buildingsInfo$x2;
+
+  var tileExists = ((_terrainInfo$x2 = terrainInfo[x]) === null || _terrainInfo$x2 === void 0 ? void 0 : _terrainInfo$x2[y]) || ((_buildingsInfo$x2 = buildingsInfo[x]) === null || _buildingsInfo$x2 === void 0 ? void 0 : _buildingsInfo$x2[y]);
+
+  if (tileExists) {
+    var _terrainInfo$x3, _terrainInfo$x3$y;
+
+    if (((_terrainInfo$x3 = terrainInfo[x]) === null || _terrainInfo$x3 === void 0 ? void 0 : (_terrainInfo$x3$y = _terrainInfo$x3[y]) === null || _terrainInfo$x3$y === void 0 ? void 0 : _terrainInfo$x3$y.terrain_id) === 195) {
+      //teleport tile
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function drawPathTiles(movementInfo, x, y) {
+  var newPath = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : [];
+  //Reset path
+  var pathTiles = [].slice.call(document.querySelectorAll("span[class^='path-tile']"));
+  pathTiles.forEach(function (tile) {
+    tile.parentElement.removeChild(tile);
+  });
+  var targetNode = y * maxX + x;
+  var tileCount = newPath.length;
+  var prevNode = newPath[tileCount - 1];
+  var prevX = prevNode % maxX;
+  var prevY = (prevNode - prevX) / maxX; //Distance between the last 2 tiles
+
+  var distance = Math.abs(y - prevY) + Math.abs(x - prevX);
+  var nodeIndex = newPath.indexOf(targetNode);
+  var movementDist = movementInfo.dist;
+  var movementCosts = movementInfo.mCost;
+  var mp = movementInfo.mp;
+  var targetDist = movementDist[targetNode];
+  var isTeleportTile = checkTeleportTile(x, y);
+  var prevTeleportTile = checkTeleportTile(prevX, prevY);
+  var totalDistance = 0; //Calculate total distance of given path and add cost of target tile
+
+  newPath.forEach(function (tile, i) {
+    //Skip initial tile
+    if (i === 0) return;
+    totalDistance += movementCosts[tile];
+  });
+  totalDistance += movementCosts[targetNode];
+
+  if (distance === 1 && !newPath.includes(targetNode) && targetDist !== Infinity && totalDistance <= mp) {
+    //Cursor is adjacent to another path tile and total distance is less than mp
+    newPath.push(targetNode);
+  } else if (newPath.includes(targetNode) && !isTeleportTile) {
+    //Case for backtracking
+    if (nodeIndex === -1) nodeIndex = 0;
+    newPath.splice(nodeIndex + 1);
+  } else if (distance !== 1 && targetDist === Infinity || targetDist !== Infinity) {
+    //Cursor is not adjacent to another path tile
+    newPath = findShortestPath(movementInfo, targetNode);
+  }
+
+  newPath = parsePath(newPath); //parse path to remove consecutive teleport tiles
+
+  newPath.forEach(drawPath);
+  return newPath;
+
+  function drawPath(tile, i) {
+    if (i === 0) return;
+    var pathTile = document.createElement("span");
+    pathTile.className = "path-tile";
+    var prevTile = newPath[i - 1];
+    var nextTile = newPath[i + 1];
+    var arrow = findArrowDirection(prevTile, tile, nextTile);
+    var tileX = tile % maxX;
+    var tileY = (tile - tileX) / maxX;
+
+    if (checkTeleportTile(tileX, tileY)) {
+      return;
+    }
+
+    applyCSS(pathTile, {
+      background: "url('terrain/arrow_" + arrow.arrow + "_outlined.gif')",
+      left: tileX * 16 + "px",
+      top: tileY * 16 + "px",
+      transform: "rotate(" + arrow.rotation + "deg)"
+    });
+    gamemap.appendChild(pathTile);
+  }
+} //parse path to remove consecutive teleport tiles
+//this is necessary to keep the path size below the socket data limit
+
+
+function parsePath(newPath) {
+  parsedPath = [];
+  newPath.forEach(function (thisNode, i) {
+    if (!checkPathForTeleportTiles(newPath, i - 1) || !checkPathForTeleportTiles(newPath, i) || !checkPathForTeleportTiles(newPath, i + 1)) {
+      parsedPath.push(thisNode);
+    }
+  });
+  return parsedPath;
+} //check if nodes along a path contain a teleport tile (for parsePath)
+
+
+function checkPathForTeleportTiles(path, index) {
+  if (!path[index]) {
+    return;
+  }
+
+  var node = path[index];
+  var x = node % maxX;
+  var y = (node - x) / maxX;
+  return checkTeleportTile(x, y);
+}
+
+function findShortestPath(solved, end) {
+  var dist = solved.dist,
+      previous = solved.previous;
+  var path = []; //Case where target tile is an enemy unit
+
+  if (dist[end] === Infinity && previous[end]) end = previous[end];
+  if (dist[end] === Infinity) return path;
+
+  for (var i = end; i !== null; i = previous[i]) {
+    path.push(i);
+  }
+
+  return path.reverse();
+}
+
+function findBorders(node, dist) {
+  var borderWidth = "";
+  borderWidth += dist[node - maxX] != Infinity ? "0 " : "1px ";
+  borderWidth += dist[node + 1] != Infinity ? "0 " : "1px ";
+  borderWidth += dist[node + maxX] != Infinity ? "0 " : "1px ";
+  borderWidth += dist[node - 1] != Infinity ? "0 " : "1px ";
+  return borderWidth;
+}
+
+function findArrowDirection(prevNode, targetNode, nextNode) {
+  var rotations = {
+    left: {
+      up: 180,
+      down: 90
+    },
+    up: {
+      left: 180,
+      right: 270
+    },
+    right: {
+      up: 270,
+      down: 0
+    },
+    down: {
+      right: 0,
+      left: 90
+    }
+  };
+  var tipRotations = {
+    right: 180,
+    down: 270,
+    left: 0,
+    up: 90
+  }; //determine teleport tile positions
+
+  prevX = prevNode % maxX;
+  prevY = (prevNode - prevX) / maxX;
+  targetX = targetNode % maxX;
+  targetY = (targetNode - targetX) / maxX;
+  nextX = nextNode % maxX;
+  nextY = (nextNode - nextX) / maxX;
+  prevTeleportTile = checkTeleportTile(prevX, prevY);
+  targetTeleportTile = checkTeleportTile(targetX, targetY);
+  nextTeleportTile = checkTeleportTile(nextX, nextY);
+  var prevDiff = targetNode - prevNode; // 1
+
+  var absPrevDiff;
+  var nextDiff;
+  var absNextDiff;
+
+  if (nextNode !== undefined) {
+    nextDiff = targetNode - nextNode; // -19
+  } else {
+    //End of path
+    var tipDirection = findDirection(prevDiff);
+    return {
+      arrow: "tip",
+      rotation: tipRotations[tipDirection],
+      height: 1
+    };
+  }
+
+  absNextDiff = Math.abs(nextDiff);
+  absPrevDiff = Math.abs(prevDiff); //handle turns through teleport tiles
+
+  if (absNextDiff !== 1 && absNextDiff !== maxX) {
+    nextDiff = -1 * prevDiff; //go straight in the same direction as the previous tile
+  } else if (absPrevDiff !== 1 && absPrevDiff !== maxX) {
+    prevDiff = -1 * nextDiff; //go straight in the direction as the next tile
+  }
+
+  absNextDiff = Math.abs(nextDiff);
+  absPrevDiff = Math.abs(prevDiff); //Arrow turns
+
+  if (absNextDiff !== absPrevDiff && prevNode !== undefined) {
+    var prevDirection = findDirection(prevDiff);
+    var nextDirection = findDirection(nextDiff);
+    var arrowRotation = rotations[prevDirection][nextDirection];
+    return {
+      arrow: "curve",
+      rotation: arrowRotation
+    };
+  } //Straight arrow
+
+
+  var arrow = {
+    arrow: "line",
+    rotation: 90
+  };
+
+  if (absPrevDiff === 1) {
+    arrow.rotation = 0;
+  }
+
+  return arrow;
+} //Find direction for unit/arrow tip
+
+
+function findDirection(diff) {
+  if (diff > 1) return "up";else if (diff === -1) return "right";else if (diff === 1) return "left";else return "down";
+}

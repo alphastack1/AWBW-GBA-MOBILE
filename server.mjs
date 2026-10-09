@@ -15,7 +15,7 @@ http.createServer(async (req, res) => {
       const response=await handleArt(new Request(url,{method:req.method}));res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()));return;
     }
     if(url.pathname==='/api/awbw/account'){
-      let body='';for await(const chunk of req){body+=chunk;if(body.length>4000){res.writeHead(413).end();return;}}
+      let body='';for await(const chunk of req){body+=chunk;if(body.length>6000){res.writeHead(413).end();return;}}
       const request=new Request(url,{method:req.method,headers:req.headers,body:['GET','HEAD'].includes(req.method)?undefined:body});
       const response=await handleAccount(request,{secret:sessionKey});res.writeHead(response.status,Object.fromEntries(response.headers));res.end(await response.text());return;
     }

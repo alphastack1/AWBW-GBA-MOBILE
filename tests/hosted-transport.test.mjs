@@ -21,8 +21,8 @@ test('untrusted socket paths are rejected before any connection',async()=>{
 });
 test('command-store health exercises duplicate/stale atomic writes and cleans its own probe',async()=>{
  const entries=new Map();let deletes=0,conditions=[];
- const store={set:async(key,value,options)=>{conditions.push(options);if(options.onlyIfMatch||options.onlyIfNew&&entries.has(key))return{modified:false};entries.set(key,value);return{modified:true,etag:'fixture-etag'};},get:async(key,options)=>{assert.equal(options.consistency,'strong');return entries.get(key);},delete:async key=>{entries.delete(key);deletes++;}};
- assert.deepEqual(await probeCommandStore(()=>store),{ready:true,atomicWrites:true});assert.equal(entries.size,0);assert.equal(deletes,1);assert.deepEqual(conditions,[{onlyIfNew:true},{onlyIfNew:true},{onlyIfMatch:'invalid-etag'}]);
+ const store={set:async(key,value,options)=>{conditions.push(options);if(options.onlyIfMatch&&options.onlyIfMatch!=='fixture-etag'||options.onlyIfNew&&entries.has(key))return{modified:false};entries.set(key,value);return{modified:true,etag:'fixture-etag'};},get:async(key,options)=>{assert.equal(options.consistency,'strong');return entries.get(key);},delete:async key=>{entries.delete(key);deletes++;}};
+ assert.deepEqual(await probeCommandStore(()=>store),{ready:true,atomicWrites:true});assert.equal(entries.size,0);assert.equal(deletes,1);assert.deepEqual(conditions,[{onlyIfNew:true},{onlyIfNew:true},{onlyIfMatch:'invalid-etag'},{onlyIfMatch:'fixture-etag'}]);
 });
 test('a store that overwrites duplicates is not safe for game submission',async()=>{
  let value;const store={set:async(key,next)=>{value=next;return{modified:true,etag:'etag'};},get:async()=>value,delete:async()=>{}};

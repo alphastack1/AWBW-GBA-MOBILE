@@ -69,6 +69,8 @@ with sync_playwright() as p:
  page.locator('.map-cell').first.wait_for();assert page.locator('.map-cell').count()==252
  assert page.locator('#mode').inner_text()=='LOCAL PRACTICE'
  assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+ assert page.locator('#map-scroll').evaluate('(field)=>field.getBoundingClientRect().height')==844
+ assert page.evaluate("[...document.fonts].some(font=>font.family==='GamePixel'&&font.status==='loaded')")
  assert page.locator('#portrait').evaluate('(image)=>image.complete&&image.naturalWidth>0')
  (ROOT/'artifacts').mkdir(exist_ok=True)
  page.screenshot(path=str(ROOT/'artifacts/netlify-mobile.png'),full_page=True)
@@ -78,7 +80,7 @@ with sync_playwright() as p:
  page.locator('#menu-open').click();page.get_by_role('link',name='Connect an AWBW match ↗',exact=True).click()
  page.get_by_role('heading',name='Your AWBW. Handheld.',exact=True).wait_for()
  assert page.get_by_role('link',name='Download the mobile ZIP with installation guide',exact=True).count()==1
- for name in ['index.html','account.html','account.js','account.css','play.js','play.css','handheld-ux.js','awbw-bridge.user.js','field-command-mobile.zip']:
+ for name in ['index.html','account.html','account.js','account.css','play.js','play.css','hosted-game.js','vendor/awbw-map-renderer.js','vendor/awbw-tilesets.js','fonts/VT323-Regular.ttf','handheld-ux.js','awbw-bridge.user.js','field-command-mobile.zip']:
   status,headers,body=verified_get(site+'/'+name);assert status==200,(name,status)
   local=(ROOT/name).read_bytes()
   if name.endswith('.html'):
@@ -87,4 +89,4 @@ with sync_playwright() as p:
    assert hashlib.sha256(body).digest()==hashlib.sha256(local).digest(),f'Deployed {name} differs from this checkout.'
  assert not errors,errors
  context.close();browser.close()
-print('PASS: TLS-verified deployed Netlify responses rendered with their CSP in Chromium; anonymous account API readiness, mobile sign-in form/layout/artwork, practice movement/persistence, setup page and exact client/script/ZIP bytes. Positive real-account sign-in and direct Chromium HTTPS trust are not verified. No live AWBW orders submitted.')
+print('PASS: TLS-verified deployed Netlify responses rendered with their CSP in Chromium; anonymous account API readiness, mobile sign-in form/layout/artwork, practice movement/persistence, setup page and exact client/script/ZIP bytes. Positive real-account sign-in was verified by the owner separately; this check uses no account. Direct Chromium HTTPS trust is not verified. No live AWBW orders submitted.')

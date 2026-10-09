@@ -18,5 +18,25 @@
     "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/vt323/OFL.txt",
     "file": "fonts/OFL.txt",
     "sha256": "27d9af34210253e7ca1251fbace86c6f65b40031d6ce1a75493a1b2093631298"
+  },
+  {
+    "source": "https://awbw.amarriner.com/js/tinyqueue.js",
+    "file": "vendor/awbw-tinyqueue.cjs",
+    "sha256": "c75efd96217b6fb50349919bfae4b13515ceee191d9c903aa9986f7aed5c3a70"
+  },
+  {
+    "source": "https://awbw.amarriner.com/js/lib/draw_movement.js",
+    "file": "vendor/awbw-movement-source.txt",
+    "sha256": "6b9702ffdf5a4c41f049cf2bd27e5ded6a42cb5924133d5d3b86f17408b505e7"
+  },
+  {
+    "source": "https://awbw.amarriner.com/js/lib/game.js?1790127075",
+    "file": "vendor/awbw-game-source.txt",
+    "sha256": "1233d0b39f520e817dbd21fa22b1f990300d426f5f339ee5e0d390d3eacb5bf6"
+  },
+  {
+    "source": "https://awbw.amarriner.com/js/damage_inc.json",
+    "file": "vendor/awbw-damage.json",
+    "sha256": "d642cb0192ff90411fad6951b6e8b72c4edc26cb6992687108b89c7f7b443cf0"
   }
 ]

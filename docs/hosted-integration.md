@@ -1,41 +1,46 @@
 # Hosted AWBW integration
 
-The accepted product flow is the same for the owner and their friend: open `https://awbw-gba.netlify.app`, sign in to an existing AWBW account, choose a game and play through the handheld interface. Players should not install an extension/userscript or collect assets. Earlier browser-integration packages are an optional development fallback, not the target onboarding experience.
+The normal flow is open [Field Command](https://awbw-gba.netlify.app), sign into an existing AWBW account, choose a game and play in the handheld interface. Friends use their own accounts. Earlier browser packages are optional fallbacks; players collect no assets.
 
-## Verified
+## Verification evidence
 
-- The standalone GitHub repository deploys static files and Netlify Functions automatically.
-- A deployed function receives HTTP 200 from AWBW's public home, Your Games and the supplied game page.
-- Public login uses client-side bindings, so the HTML form's default method/action alone is not a login contract. Diagnostics collect input bindings and sanitized client structure without cookies or values.
-- The game client uses an AWBW WebSocket for orders; `fetch_actions.php` is a catch-up read endpoint. Sending an HTTP move request to a guessed endpoint would not implement the native protocol.
-- The diagnostic function checks a fixed anonymous WebSocket upgrade and closes the connection immediately. It never sends game frames. A successful anonymous connection is separate from authenticated order eligibility.
-- Local handheld UI and bridge fixtures exercise direct actions, single submission, stale state, server rejection and uncertain outcomes. They do not establish live-server success.
+- GitHub `main` deploys the static app and Netlify Functions automatically.
+- The owner confirmed positive real-account sign-in, their game list, and the hosted map, units, CO and funds.
+- A real hosted read confirmed AWBW's `JoinRoom.playerId` equals the authenticated viewer. This probe sends no game commands.
+- Netlify Blobs health exercises duplicate, stale and successful conditional writes with strong reads, then removes its probe.
+- A TLS-verified, public calculator POST using synthetic Infantry inputs returned native damage and counterattack ranges. It used no account cookies or game ID and issued no order.
+- Local server/browser fixtures cover native inspection, calculator payloads, Move/Wait, Capture, Build, Fire, End, turn revocation, rejected/uncertain outcomes and one submission under concurrent/duplicate requests.
 
-## Hosted account service
+**No accepted real order from the hosted controls has been verified.** The owner's current match was on the opponent's turn during development. Verification must use an ordinary order on the owner's next turn, then check the native event and fresh battlefield. Controlled fixtures do not establish live-server acceptance, a second friend's account or physical Safari/Android behavior.
 
-The site's entry page is now the sign-in form. `POST /api/awbw/account?action=login` follows the reviewed native `/logincheck.php` form-encoded username/password request and requires both its `1` response and a signed-in Your Games page. HTTP 200 by itself cannot establish a session. The owner has now verified real-account sign-in and their current game appearing in the app.
+## Account service
 
-`GET` actions `session` and `games` return the current player and their game list. `POST logout` requires the app's CSRF token and clears its session. It does not log out the player's separate AWBW browser tab. Passwords are not saved or logged. Upstream cookies are encrypted with AES-GCM in an eight-hour Secure/HttpOnly/SameSite application cookie; each player has a separate cookie jar. Netlify's `FIELD_COMMAND_SESSION_KEY` is a private Functions secret. The administrative Netlify token is never supplied to the app.
+`POST /api/awbw/account?action=login` uses the reviewed native `/logincheck.php` form-encoded request. Both its `1` response and a signed-in Your Games page are required. HTTP 200 alone is insufficient. Passwords are neither saved nor logged.
 
-The mobile form, rejected credentials, separate player sessions, tamper/expiry rejection, escaped game titles, filters and logout are covered by local checks. Game cards now open the hosted handheld battlefield. The backend verifies membership and the actual logged-in viewer, then returns only curated map/visible-unit data. JSON declarations are parsed without executing upstream HTML/scripts. Enemy units under fog, submerged enemies and transported units are excluded. The app renders terrain with AWBW's native map renderer and bundled sprite sheet, then visible animated sprites. Missing public unit art loads through a fixed, cookie-free same-origin image endpoint; friends collect no assets. Hosted orders remain disabled pending the authenticated transport and order service.
+Each player has a separate upstream cookie jar encrypted with AES-GCM in an eight-hour Secure/HttpOnly/SameSite app cookie. `FIELD_COMMAND_SESSION_KEY` is a private Functions secret. The administrative Netlify token never reaches the frontend. JSON POSTs require the exact app origin and the signed session's CSRF token.
 
-## Backend work required
+GET `session` and `games` return account/session information and owned game links. POST `logout` clears this app session; it does not log out a separate AWBW browser tab. Expired gameplay sessions return to hosted sign-in with the requested game retained; returning to it requires membership in the fresh game list.
 
-1. Real sign-in and the owner's game list are verified by the owner. Verify hosted battlefield rendering and the authenticated socket with that session.
-2. Verify the real Your Games/Your Turn lists and session expiry/logout with that account and a second player's account.
-3. Read authenticated game/account data through that session and preserve AWBW's player/fog visibility. Render only data that this authenticated viewer is entitled to see.
-4. Verify an authenticated socket handshake and typed outcomes. Netlify Functions cannot act as a persistent WebSocket server. Test short-lived outbound socket connections for a single order with HTTP catch-up reads; if AWBW's authentication/connection model requires a persistent gateway, add that hosted service. Do not assume either approach works before exercising the real protocol.
-5. Keep exact current-player, ownership, path, funds and state checks, a single pending command, no automatic gameplay retries, and explicit rejected versus uncertain results. Never expose an arbitrary upstream URL proxy.
-6. Verify ordinary authenticated play and Safari/Android behavior before calling this a live replacement. Combat, powers and transport need their real AWBW rule/data contracts; practice forecasts are not suitable for live orders.
+## Viewer-specific battlefield and previews
 
-## Deployed diagnostics
+GET `game` verifies membership and the actual authenticated viewer. It parses curated JSON declarations without executing upstream HTML or scripts. Fog-hidden enemies, submerged enemies and cargo are excluded. The native terrain renderer and bundled art render the entitled view. Missing unit art uses a fixed, cookie-free same-origin image endpoint.
 
-`GET /api/awbw/status` performs fixed, public, read-only requests. It returns status and sanitized public client metadata, never login passwords, cookie/header values or game orders. Non-GET requests receive 405. It is a development check, not an account API or a sign-in success indicator.
+GET `inspect` uses reviewed AWBW movement, terrain, fuel and range helpers. POST `forecast` calls the fixed native calculator endpoint with the reviewed payload and returns typed damage/counter ranges. Both are read-only. Practice rules never determine real orders. Public DTOs omit raw account records and hidden unit IDs.
 
-Agent observability uses a securely bound `NETLIFY_AUTH_TOKEN` restricted to `api.netlify.com`. A saved field or masked screenshot is not proof of runtime access; verify a read-only Netlify API request before using it to inspect deploys or modify site configuration.
+## Hosted orders
 
-## Transport verification and observability
+POST `plan` produces a signed, expiring offer for the selected unit, production property or turn. It binds account, session, game, native world version and offered choices. The client sends the token and selected choice, never an arbitrary wire command.
 
-A hosted game read opens a short-lived native socket using that player's upstream cookies. It requires AWBW's `JoinRoom.playerId` to match the viewer, then closes without sending a game frame. An anonymous 101 upgrade cannot satisfy this check.
+POST `commit` reserves that offer and claims a persistent per-account/game gate using conditional Netlify Blobs writes. Separate function instances and sign-ins share the gate. A short-lived outbound AWBW socket must confirm the exact viewer through JoinRoom. Immediately before sending, the service re-reads the authenticated game and recomputes the native offer. It sends one native frame, with no automatic retry.
 
-The status function checks strong, conditional Netlify Blobs writes needed to guard duplicate/concurrent commands. Its temporary probe key is deleted. It also exposes the latest hosted-read health record: timestamp, parse outcome, socket-authentication result and whether the viewer has the active turn. No accounts, game IDs, cookies, board data or passwords enter this health record. These checks prepare order transport; they do not establish accepted game orders.
+A matching typed event is followed by a fresh authenticated battlefield read. If the map has not caught up, the gate stays pending; a later refresh can reconcile the stored event and visible result without sending another order. Unknown outcomes stay locked: elapsed time or a guessed map change cannot authorize a retry. Private readback expectations remain in the server receipt and never enter the API or public health.
+
+Current commands are **Move/Wait, Capt, Build, Fire and End**. Native movement costs, path adjacency, ownership, current turn, spent state, capture eligibility, funds, CO prices, bans/labs, ammo and target eligibility are checked. Indirect Fire uses the native empty path. Teleport routes and unsupported actions are rejected. CO powers, transport, silos, pipe-seam attacks and tag turns still require the original controls.
+
+Netlify Functions do not host a persistent socket server. This implementation opens a single-order outbound socket and catches up through fresh HTTP game reads. Authentication is verified live; acceptance of new orders remains the outstanding check.
+
+## Diagnostics and deployment
+
+GET `/api/awbw/status` performs fixed public reads and returns sanitized client/transport/storage health. It accepts no arbitrary upstream URL, account password or command. `lastHostedRead` records parse/socket/turn status; `lastHostedOrder`, once present, records outcome, whether one frame was submitted and whether readback matched. These records omit accounts, game IDs, cookies, coordinates and board data.
+
+The securely bound `NETLIFY_AUTH_TOKEN` is restricted to `api.netlify.com` for deployment inspection. A masked saved field alone is not proof of access; runtime read-only API access has been verified. Deployment smoke tests use TLS-verified response replay because Chromium lacks this cloud proxy's CA. Optional unpacked-extension testing is blocked by managed browser policy and is not passed.
