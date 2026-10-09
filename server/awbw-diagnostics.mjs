@@ -21,8 +21,9 @@ export function summarizePage(html, url) {
     const fields = [...match[2].matchAll(/<input\b([^>]*)>/gi)].map(m => attributes(m[1]));
     if (!fields.some(f => f.type?.toLowerCase() === 'password')) continue;
     const fieldName = f => f.name || f.id || Object.entries(f).find(([key]) => key.startsWith('v-model'))?.[1];
-    forms.push({action: sameOriginPath(form.action, url), method: (form.method || 'get').toLowerCase(), submitHandler: form['@submit.prevent'] || form['v-on:submit.prevent'] || null,
-      fields: fields.filter(f => fieldName(f)).map(f => ({name: fieldName(f), type: (f.type || 'text').toLowerCase()}))});
+    forms.push({action: sameOriginPath(form.action, url), method: (form.method || 'get').toLowerCase(), submitHandler: form['@submit.prevent'] || form['v-on:submit.prevent'] || form.onsubmit || null,
+      fields: fields.filter(f => fieldName(f)).map(f => ({name: fieldName(f), type: (f.type || 'text').toLowerCase()})),
+      controls: fields.map(f => Object.fromEntries(Object.entries(f).filter(([key]) => /^(?:type|name|id|class|autocomplete|placeholder|v-model.*|:name|v-bind:name)$/.test(key))))});
   }
   const scripts = [...html.matchAll(/<script\b([^>]*)>/gi)].map(m => attributes(m[1]).src)
     .filter(Boolean).map(src => sameOriginPath(src, url)).filter(Boolean).slice(0, 40);
@@ -39,7 +40,8 @@ export function summarizePage(html, url) {
     loginClientStructure = tail.replace(/(["'`])(?:\\.|(?!\1)[^\\])*?\1/g, '"[literal]"').replace(/\/\*[\s\S]*?\*\/|\/\/[^\n]*/g, '');
   }
   const branch = html.match(/\bwsServerBranch\s*=\s*["']([\w-]+)["']/)?.[1];
-  return {loginForms: forms, networkCalls, loginClientStructure, scripts, socketHost, socketBranch: branch || null, hasGameClient: scripts.some(p => /\/game(?:\.min)?\.js$/.test(p)),
+  const loginPaths = [...new Set([...html.matchAll(/["'`]([^"'`\n]{0,100}login[^"'`\n]{0,100}\.php(?:\?[^"'`\n]*)?)["'`]/gi)].map(m => sameOriginPath(m[1], url)).filter(Boolean))];
+  return {loginForms: forms, loginPaths, networkCalls, loginClientStructure, scripts, socketHost, socketBranch: branch || null, hasGameClient: scripts.some(p => /\/game(?:\.min)?\.js$/.test(p)),
     hasLoginInput: /type\s*=\s*["']password["']/i.test(html)};
 }
 export function checkSocketHandshake(branch, requester = httpsRequest) {
