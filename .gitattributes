@@ -1,2 +1,4 @@
+# Auto detect text files and perform LF normalization
+* text=auto
 # Keep reviewed third-party bytes identical to their source checksums.
 vendor/** -text
