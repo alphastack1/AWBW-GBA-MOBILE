@@ -2,7 +2,15 @@
 
 A GBA-style browser interface for your existing Advance Wars By Web account and games. This is the standalone [AWBW-GBA-MOBILE](https://github.com/alphastack1/AWBW-GBA-MOBILE) repository. Future development happens here; the earlier storage copy is preserved.
 
-## Mobile setup
+## Intended mobile experience
+
+The current goal is **open the Netlify link → sign in to AWBW → play your existing games**, on iPhone and Android, with no extension, userscript, downloads or asset collection for either player. Hosted login and live gameplay are still being developed; the current Netlify battlefield is local practice. Do not mistake the AWBW link in the menu for an integrated sign-in flow.
+
+The handheld interface now includes movement-route previews and animation, movement/threat overlays, a damage/counterattack forecast before Fire, terrain cover, unit intel, a unit roster, battle record, context-sensitive B/A controls and motion preferences. Forecasts and combat use simplified practice rules. They are not AWBW's damage calculator.
+
+Netlify's read-only `/api/awbw/status` function reaches AWBW's public home, game list and game page. It collects sanitized login/client metadata and checks the anonymous socket handshake without credentials or game commands. Public page/handshake success does not verify authenticated login, account isolation or accepted gameplay orders. See [hosted integration status](docs/hosted-integration.md).
+
+## Existing browser integration (optional fallback)
 
 Use the same self-contained `awbw-bridge.user.js` on both platforms:
 
@@ -40,7 +48,9 @@ npm run package-mobile
 
 The server defaults to port 5173. Browser tests use the running server. If another project occupies that port, use `PORT=5174 npm run dev` and `FIELD_COMMAND_BASE_URL=http://localhost:5174 npm test` to test this checkout. Build generates the self-contained userscript, static site in `dist/`, and optional desktop extension in `extension-dist/`. The mobile archive contains the script and installation guide. User game exports stay outside the repository.
 
-`npm test` covers 24 Node tests and browser flows for practice, asset integrity/import, fog-filtered snapshots, official socket observation, origin/source checks, live order previews, direct Move/Capture/Build/End, rejection, cursor persistence and the same-tab mobile bundle. These checks do not simulate a real iPhone or authenticate against AWBW.
+`npm test` covers practice, paths, cover/damage forecast consistency, mobile interactions, asset integrity/import, fog-filtered snapshots, official socket observation, origin/source checks, live order previews, direct Move/Capture/Build/End, rejection, cursor persistence, the same-tab mobile bundle and hosted diagnostic safety. These checks do not simulate a real iPhone or authenticate against AWBW.
+
+`npm run test:deployment` fetches the deployed files with verified TLS and renders those exact responses and their CSP in Chromium. The cloud's proxy CA is missing from Chromium's trust store, so this replay checks deployed bytes and interface behavior; it does not verify Chromium's direct HTTPS connection. No certificate verification is disabled and no browser trust store is changed.
 
 Review an export without sending anything:
 
@@ -62,6 +72,6 @@ Extract `field-command-chrome.zip`, open `chrome://extensions`, enable Developer
 
 The connected site is [awbw-gba.netlify.app](https://awbw-gba.netlify.app). Deploy branch: `main`. Base directory: repository root (leave empty). Build command: `npm run build`. Publish directory: `dist`. Node 22 is pinned in `netlify.toml`.
 
-`npm run package` also generates `field-command-site.zip` for manual Netlify Drop. Static hosting provides practice, downloads and optional cross-tab viewing. It cannot read AWBW's cookies or control a cross-origin login iframe by itself. Live play requires the local browser integration described above. The user manages the Netlify connection; pushing this repository can trigger its automatic deployments.
+`npm run package` also generates `field-command-site.zip` for manual Netlify Drop. Static hosting provides practice, downloads and optional cross-tab viewing; Netlify Functions provide the server-side integration work. A static page cannot read AWBW's cookies or control a cross-origin login iframe by itself. The current live bridge uses browser integration; the intended hosted service will own each player's separate AWBW session. The user manages the Netlify connection; pushing this repository can trigger its automatic deployments.
 
 The earlier `operations.html` dashboard and asset workbench remain as development tools. The original images' authorship/reuse terms are not established by their availability on AWBW; source URLs and hashes remain in `assets/catalog.json`.

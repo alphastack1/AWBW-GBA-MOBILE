@@ -1,11 +1,25 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createPractice,reachable,order,buy,endTurn,unitAt} from '../tactics.js';
+import {createPractice,reachable,order,buy,endTurn,unitAt,movementPath,movementRange,combatForecast} from '../tactics.js';
 import {validateSnapshot} from '../snapshot.js';
 
 test('movement respects water, occupied squares, and movement budget',()=>{
  const s=createPractice(),u=s.units[0],r=reachable(s,u);
  assert.ok(r.has('3,5'));assert.ok(!r.has('8,5'));assert.ok(!r.has('4,6'));assert.ok(!r.has('17,13'));
+});
+test('animated paths follow traversable adjacent terrain within the movement budget',()=>{
+ const s=createPractice(),u=s.units[1],to={x:7,y:6},path=movementPath(s,u,to),range=movementRange(s,u);
+ assert.deepEqual(path[0],{x:u.x,y:u.y});assert.deepEqual(path.at(-1),to);
+ for(let i=1;i<path.length;i++){assert.equal(Math.abs(path[i].x-path[i-1].x)+Math.abs(path[i].y-path[i-1].y),1);assert.ok(range.has(`${path[i].x},${path[i].y}`));assert.ok(!unitAt(s,path[i].x,path[i].y));}
+ assert.deepEqual(movementPath(s,u,{x:8,y:5}),[]);
+});
+test('forecast matches committed HP, including defender cover and the surviving counterattack',()=>{
+ const s=createPractice(),u=s.units[0],enemy=s.units.find(u=>u.id==='ge2');enemy.x=4;enemy.y=4;
+ const destination={x:3,y:4},forecast=combatForecast(s,u,enemy,destination),open=structuredClone(s);open.terrain[4*s.width+4].type='road';
+ assert.ok(forecast.damage<combatForecast(open,u,enemy,destination).damage);
+ assert.equal(forecast.cover,3);assert.ok(forecast.counter>0);
+ order(s,u.id,destination,'attack',enemy.id);
+ assert.equal(u.hp,forecast.attackerHP);assert.equal(enemy.hp,forecast.defenderHP);
 });
 test('invalid order does not mutate practice state',()=>{
  const s=createPractice(),before=JSON.stringify(s);

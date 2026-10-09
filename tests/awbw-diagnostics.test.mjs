@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {checkAWBW, summarizePage} from '../server/awbw-diagnostics.mjs';
+import {checkAWBW, summarizePage, checkSocketHandshake} from '../server/awbw-diagnostics.mjs';
+import {EventEmitter} from 'node:events';
+import {createHash} from 'node:crypto';
 
 test('public diagnostics retain form structure but exclude secret values and foreign resources', () => {
   const result = summarizePage(`<form action="login.php" method="post"><input name="csrf" type="hidden" value="private-token"><input name="username"><input name="password" type="password" value="private-password"></form><script src="/js/lib/game.js?v=token"></script><script src="https://foreign.example/tracker.js"></script><script>var wsUrl = 'wss://awbw.amarriner.com';</script>`, 'https://awbw.amarriner.com/');
@@ -35,4 +37,17 @@ test('connection errors and HTTP failures remain failed checks without sensitive
   assert.ok(Object.values(result.pages).every(page => !page.reachable));
   assert.ok(!JSON.stringify(result).includes('private'));
   assert.equal(result.pages.games.status, 403);
+});
+test('anonymous socket probe validates the upgrade and sends no game frames or credentials', async () => {
+ let requestUrl,options,ended=false,closed=false;
+ const result=await checkSocketHandshake('prod',(url,opts)=>{
+  requestUrl=url;options=opts;const req=new EventEmitter();req.destroy=()=>{};
+  req.end=()=>{ended=true;queueMicrotask(()=>req.emit('upgrade',{statusCode:101,headers:{'sec-websocket-accept':createHash('sha1').update(opts.headers['Sec-WebSocket-Key']+'258EAFA5-E914-47DA-95CA-C5AB0DC85B11').digest('base64')}},{destroy:()=>{closed=true;}}));};return req;
+ });
+ assert.equal(String(requestUrl),'https://awbw.amarriner.com/prod/game/1741140');assert.equal(options.method,'GET');
+ assert.equal(options.headers.Origin,'https://awbw.amarriner.com');assert.ok(!options.headers.Cookie&&!options.headers.Authorization);
+ assert.equal(ended,true);assert.equal(closed,true);assert.equal(result.connected,true);assert.equal(result.authenticated,false);assert.equal(result.ordersSubmitted,0);
+});
+test('socket probe rejects an untrusted path without making a connection',async()=>{
+ const result=await checkSocketHandshake('../evil',()=>{throw new Error('Must not connect');});assert.equal(result.connected,false);
 });
