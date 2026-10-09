@@ -1,0 +1,8 @@
+dist/
+node_modules/
+artifacts/
+__pycache__/
+field-command-site.zip
+extension-dist/
+field-command-chrome.zip
+field-command-mobile.zip

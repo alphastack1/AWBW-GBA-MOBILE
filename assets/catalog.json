@@ -1,0 +1,4464 @@
+{
+  "format": "field-command-assets-v1",
+  "sourceOrigin": "https://awbw.amarriner.com",
+  "exportedAt": "2026-10-08T05:28:21.663Z",
+  "attribution": "Images retrieved from AWBW. Original authors and reuse terms have not been verified.",
+  "assets": [
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/107315.png",
+      "file": "assets/fb5ef8177001303e-107315.png",
+      "mime": "image/png",
+      "sha256": "fb5ef8177001303e4332fa07d5d28eb16baebf20f2288272ba2a51d40e030eea",
+      "capturedAt": "2026-10-08T05:26:36.505Z",
+      "size": 1225
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/112709.png",
+      "file": "assets/ec998094d413a119-112709.png",
+      "mime": "image/png",
+      "sha256": "ec998094d413a1196c069937d57780120c2c90eaaebc4349997a3ae9b66b12b3",
+      "capturedAt": "2026-10-08T05:26:36.496Z",
+      "size": 1297
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/114840.png",
+      "file": "assets/a1000d0c2ea59246-114840.png",
+      "mime": "image/png",
+      "sha256": "a1000d0c2ea59246da5cf7d6e4228986ac9ee4dac612c8d80da5388223f01533",
+      "capturedAt": "2026-10-08T05:26:36.441Z",
+      "size": 1550
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/131479.png",
+      "file": "assets/428efed8855aa542-131479.png",
+      "mime": "image/png",
+      "sha256": "428efed8855aa542d20c8dbcbe3634f1cfce6f61dc272e6fcdaba42d4eaecf3e",
+      "capturedAt": "2026-10-08T05:26:36.449Z",
+      "size": 1376
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/132144.png",
+      "file": "assets/5f9a6ea410dfafd9-132144.png",
+      "mime": "image/png",
+      "sha256": "5f9a6ea410dfafd96af08182031e397ed197666f1671a21a95f13887f20104a1",
+      "capturedAt": "2026-10-08T05:26:36.441Z",
+      "size": 1333
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/136204.png",
+      "file": "assets/d545d437e2c3fb59-136204.png",
+      "mime": "image/png",
+      "sha256": "d545d437e2c3fb59985df5655fd22266e752aaac6f0ab20ef5c4886a84276ceb",
+      "capturedAt": "2026-10-08T05:26:36.494Z",
+      "size": 1245
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/140000.png",
+      "file": "assets/7e4b0e54359a2271-140000.png",
+      "mime": "image/png",
+      "sha256": "7e4b0e54359a2271824561723f0ef2de6e2319cfc9f8df77bc466c54e811318b",
+      "capturedAt": "2026-10-08T05:27:39.420Z",
+      "size": 1177
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/151157.png",
+      "file": "assets/aac1d1be42bab8da-151157.png",
+      "mime": "image/png",
+      "sha256": "aac1d1be42bab8da346ad8e0316c4d00a41508b2272b5d112665bd73ed73789e",
+      "capturedAt": "2026-10-08T05:26:36.372Z",
+      "size": 3896
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/155457.png",
+      "file": "assets/b07cbc20cab0482e-155457.png",
+      "mime": "image/png",
+      "sha256": "b07cbc20cab0482e8e0badb2b08b5964148022204a789ffb1836da73322fe724",
+      "capturedAt": "2026-10-08T05:26:36.431Z",
+      "size": 1144
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/158514.png",
+      "file": "assets/3e9217efbd39757c-158514.png",
+      "mime": "image/png",
+      "sha256": "3e9217efbd39757c183470856783dec9a513436e4ee2ba68cedbf0ea456f7e23",
+      "capturedAt": "2026-10-08T05:26:36.408Z",
+      "size": 4538
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/158560.png",
+      "file": "assets/ac6462626128304a-158560.png",
+      "mime": "image/png",
+      "sha256": "ac6462626128304a40a9e01f30d7ccb2645d55fee8d3708a8033eea6de74310f",
+      "capturedAt": "2026-10-08T05:26:36.352Z",
+      "size": 803
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/162092.png",
+      "file": "assets/dcbc350352dd7e82-162092.png",
+      "mime": "image/png",
+      "sha256": "dcbc350352dd7e82f54cb0ff05982e1dcc973417f8f96d651730d01f1251dcaa",
+      "capturedAt": "2026-10-08T05:26:36.475Z",
+      "size": 1428
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/162376.png",
+      "file": "assets/f33068c878cd3b99-162376.png",
+      "mime": "image/png",
+      "sha256": "f33068c878cd3b997e512a122bb701b9cf9c64eac046104e040ce6bb12eaab03",
+      "capturedAt": "2026-10-08T05:26:36.443Z",
+      "size": 1208
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/162943.png",
+      "file": "assets/69d0a824934e3fbd-162943.png",
+      "mime": "image/png",
+      "sha256": "69d0a824934e3fbd5df2945dd7d7621668fe91e76ac18e6f7e85fa946e475a0c",
+      "capturedAt": "2026-10-08T05:26:36.456Z",
+      "size": 1127
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/164408.png",
+      "file": "assets/78d8c6ff3eacb0b8-164408.png",
+      "mime": "image/png",
+      "sha256": "78d8c6ff3eacb0b845c349478628710bf53c0ede98962adf5fff32a3db872783",
+      "capturedAt": "2026-10-08T05:26:36.470Z",
+      "size": 1129
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/164418.png",
+      "file": "assets/bdb86215198282b2-164418.png",
+      "mime": "image/png",
+      "sha256": "bdb86215198282b27c7ed8bebc2df4734113a5af3be742bb1f2aa383100d9ec2",
+      "capturedAt": "2026-10-08T05:26:36.465Z",
+      "size": 1043
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/164430.png",
+      "file": "assets/431609bb4cf8079c-164430.png",
+      "mime": "image/png",
+      "sha256": "431609bb4cf8079caed466734c4c3f5c5f91abc6b731a9f5f3eeccc8805bf188",
+      "capturedAt": "2026-10-08T05:26:36.509Z",
+      "size": 1028
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/165872.png",
+      "file": "assets/812b268a0c246264-165872.png",
+      "mime": "image/png",
+      "sha256": "812b268a0c246264ce62626ea44265e370e0cd2fd3463a8d818937e80d9a603a",
+      "capturedAt": "2026-10-08T05:26:36.489Z",
+      "size": 1092
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/166540.png",
+      "file": "assets/85bc3968915cee05-166540.png",
+      "mime": "image/png",
+      "sha256": "85bc3968915cee05c80d0e5e342ba9f64aa73f76a33e3d769281291746431fa7",
+      "capturedAt": "2026-10-08T05:26:36.505Z",
+      "size": 1619
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/169736.png",
+      "file": "assets/1bc67735ea689e92-169736.png",
+      "mime": "image/png",
+      "sha256": "1bc67735ea689e926059414d04f23c181f23876c74c6ec391457e07b5845b5ec",
+      "capturedAt": "2026-10-08T05:26:36.447Z",
+      "size": 920
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/170753.png",
+      "file": "assets/f7e03e747997f6b7-170753.png",
+      "mime": "image/png",
+      "sha256": "f7e03e747997f6b797b05cbb910e5e66d69b9e70975fe2a3939e4944c94d7823",
+      "capturedAt": "2026-10-08T05:26:36.486Z",
+      "size": 1503
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/172372.png",
+      "file": "assets/e1baa22882d78271-172372.png",
+      "mime": "image/png",
+      "sha256": "e1baa22882d78271326c8a88af7baaf681d72f7e1c3c48810cd73129b47b8dc3",
+      "capturedAt": "2026-10-08T05:26:36.475Z",
+      "size": 953
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/172888.png",
+      "file": "assets/fd3f4e12ffb92a23-172888.png",
+      "mime": "image/png",
+      "sha256": "fd3f4e12ffb92a23a20847cf07f29e40b842e183384e9cdc552b839af946b287",
+      "capturedAt": "2026-10-08T05:26:36.475Z",
+      "size": 1396
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/173347.png",
+      "file": "assets/10bd0aa26601f39a-173347.png",
+      "mime": "image/png",
+      "sha256": "10bd0aa26601f39a5b028a85defc0a10c571133e65de45aff217ae583a647cd3",
+      "capturedAt": "2026-10-08T05:26:36.470Z",
+      "size": 1161
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/173404.png",
+      "file": "assets/8d0c33c84b3e2789-173404.png",
+      "mime": "image/png",
+      "sha256": "8d0c33c84b3e278938ef785866a6dc654ff78160505024879ecef71d482bb0be",
+      "capturedAt": "2026-10-08T05:26:36.448Z",
+      "size": 1017
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/174400.png",
+      "file": "assets/7d8ae8a9c10c4938-174400.png",
+      "mime": "image/png",
+      "sha256": "7d8ae8a9c10c49386d58014aaaf2da5c2df293532abce8d846354d75c4771b3f",
+      "capturedAt": "2026-10-08T05:26:36.505Z",
+      "size": 1320
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/175297.png",
+      "file": "assets/00c8ba0965ef0517-175297.png",
+      "mime": "image/png",
+      "sha256": "00c8ba0965ef0517733e2313beb62a0f8910f8640b5ca58496e0651a1286bfad",
+      "capturedAt": "2026-10-08T05:26:36.434Z",
+      "size": 1296
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/175618.png",
+      "file": "assets/f84f29d2d0b8e82b-175618.png",
+      "mime": "image/png",
+      "sha256": "f84f29d2d0b8e82b0ee8ae0310b6abe0c8a9fb8c58fd08a8781f172212919d73",
+      "capturedAt": "2026-10-08T05:26:36.501Z",
+      "size": 1345
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/17694.png",
+      "file": "assets/f4966e9691918332-17694.png",
+      "mime": "image/png",
+      "sha256": "f4966e969191833202e3ce37d33b9cdd5cbe1b5c4fe6f9556c852889fe3eaf09",
+      "capturedAt": "2026-10-08T05:26:36.367Z",
+      "size": 2985
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/177203.png",
+      "file": "assets/ca06c063fd12b80f-177203.png",
+      "mime": "image/png",
+      "sha256": "ca06c063fd12b80f22bb9752c5933109f96e30df592b59d8ad2a87939df9819e",
+      "capturedAt": "2026-10-08T05:26:36.407Z",
+      "size": 1481
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/177392.png",
+      "file": "assets/095ce2bfe8f1b8ec-177392.png",
+      "mime": "image/png",
+      "sha256": "095ce2bfe8f1b8ecadd4b64bd11115144e7a4e0a011504eb8588fb093f4bde85",
+      "capturedAt": "2026-10-08T05:26:36.439Z",
+      "size": 1146
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/178446.png",
+      "file": "assets/02a616345b281a9d-178446.png",
+      "mime": "image/png",
+      "sha256": "02a616345b281a9df5329a747dbad097f3b5e604cd54e9cf3d724cbec12af7b2",
+      "capturedAt": "2026-10-08T05:26:36.482Z",
+      "size": 919
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/178710.png",
+      "file": "assets/54c35d2a7a7eef3b-178710.png",
+      "mime": "image/png",
+      "sha256": "54c35d2a7a7eef3b94b8687ca2d4e18819703e4cd5e5aef2a28f6c344540d3ac",
+      "capturedAt": "2026-10-08T05:26:36.453Z",
+      "size": 1003
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/179978.png",
+      "file": "assets/c5ada71a14be7082-179978.png",
+      "mime": "image/png",
+      "sha256": "c5ada71a14be7082000673ff23bebc1f4272e8ad4f45eb4859eae93e8edec359",
+      "capturedAt": "2026-10-08T05:26:36.465Z",
+      "size": 1231
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/180765.png",
+      "file": "assets/de9a929d82da0045-180765.png",
+      "mime": "image/png",
+      "sha256": "de9a929d82da00454034d3b39c3b5c73e6574a4b0c369f5ef2896512665de594",
+      "capturedAt": "2026-10-08T05:26:36.480Z",
+      "size": 887
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/181247.png",
+      "file": "assets/c23432e91ebb2923-181247.png",
+      "mime": "image/png",
+      "sha256": "c23432e91ebb2923483be5d618fbf9151ad98a8ad83c41645345cd9e36599b9f",
+      "capturedAt": "2026-10-08T05:26:36.404Z",
+      "size": 1211
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/182276.png",
+      "file": "assets/dfd9596bb07bf7e7-182276.png",
+      "mime": "image/png",
+      "sha256": "dfd9596bb07bf7e73296e82cc73c56373d8a92392bcf8bcb85f1b080b27d085b",
+      "capturedAt": "2026-10-08T05:26:36.413Z",
+      "size": 1584
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/182790.png",
+      "file": "assets/16f716cede784785-182790.png",
+      "mime": "image/png",
+      "sha256": "16f716cede784785737524520d42e91634798ef7aa5a1f980132942145d6e8d3",
+      "capturedAt": "2026-10-08T05:26:36.378Z",
+      "size": 540
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/183536.png",
+      "file": "assets/3241035e110bcb06-183536.png",
+      "mime": "image/png",
+      "sha256": "3241035e110bcb06abfdd752e75b5e2776e291feeaa6337a87e75059c187240a",
+      "capturedAt": "2026-10-08T05:26:36.500Z",
+      "size": 989
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/183768.png",
+      "file": "assets/19be3248762ae62e-183768.png",
+      "mime": "image/png",
+      "sha256": "19be3248762ae62e6874bcd1980b1b9ebd3941fe81df3c9cdb949f9ff06e24b7",
+      "capturedAt": "2026-10-08T05:26:36.427Z",
+      "size": 1297
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/184326.png",
+      "file": "assets/04c8a597a92db126-184326.png",
+      "mime": "image/png",
+      "sha256": "04c8a597a92db126fba2d7981f648f46f536f9183f60934e380a0023b86d7b02",
+      "capturedAt": "2026-10-08T05:26:36.490Z",
+      "size": 1453
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/185376.png",
+      "file": "assets/0b326b9b390dc1da-185376.png",
+      "mime": "image/png",
+      "sha256": "0b326b9b390dc1da7181e5ba4e4c2579c2d2f773f3b6bb34c48fb5c4b8707605",
+      "capturedAt": "2026-10-08T05:26:36.427Z",
+      "size": 1192
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/186395.png",
+      "file": "assets/b722129ead6fabf5-186395.png",
+      "mime": "image/png",
+      "sha256": "b722129ead6fabf51f5874efdbaccdca59247ebcfcaffe1a87f44d030e8de35f",
+      "capturedAt": "2026-10-08T05:26:36.414Z",
+      "size": 1837
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/187684.png",
+      "file": "assets/047d44d91403fbae-187684.png",
+      "mime": "image/png",
+      "sha256": "047d44d91403fbaee91888e77b8439328b25bd3ddb17c33dcbeb141274eb7624",
+      "capturedAt": "2026-10-08T05:26:36.423Z",
+      "size": 1510
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/188297.png",
+      "file": "assets/13835c7f4ad72f3a-188297.png",
+      "mime": "image/png",
+      "sha256": "13835c7f4ad72f3a6e2302fadfb1b2f14e904bb162c7907ab51fb5fe0a4199b2",
+      "capturedAt": "2026-10-08T05:26:36.500Z",
+      "size": 1386
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/188392.png",
+      "file": "assets/2e9f99f3cc7e589c-188392.png",
+      "mime": "image/png",
+      "sha256": "2e9f99f3cc7e589caa36a9bb63d6a3d830870c0034e06cfd6dd4c7d393158400",
+      "capturedAt": "2026-10-08T05:26:36.398Z",
+      "size": 1517
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/188874.png",
+      "file": "assets/659706767467f855-188874.png",
+      "mime": "image/png",
+      "sha256": "659706767467f85521a493566da575105a39c0634ef688df1cc29f5d2f7c1783",
+      "capturedAt": "2026-10-08T05:26:36.464Z",
+      "size": 1201
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/188894.png",
+      "file": "assets/d3a1a4c8cf0e86fe-188894.png",
+      "mime": "image/png",
+      "sha256": "d3a1a4c8cf0e86fe73e3c8fb1b1d4fac36f7e9657de0c86e703d2191ed56b380",
+      "capturedAt": "2026-10-08T05:26:36.397Z",
+      "size": 948
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/188904.png",
+      "file": "assets/18cd6c00033fed30-188904.png",
+      "mime": "image/png",
+      "sha256": "18cd6c00033fed3019c182ec131a48831dc9f9439afe89c2d2a340d1ced02a6e",
+      "capturedAt": "2026-10-08T05:26:36.432Z",
+      "size": 1382
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/189008.png",
+      "file": "assets/7c1a144397cd1537-189008.png",
+      "mime": "image/png",
+      "sha256": "7c1a144397cd1537ed020d243b03efe921ff1613dd5e020c6d4a9b96e54c60b1",
+      "capturedAt": "2026-10-08T05:26:36.490Z",
+      "size": 1106
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/189041.png",
+      "file": "assets/4352ae6ea0dcbade-189041.png",
+      "mime": "image/png",
+      "sha256": "4352ae6ea0dcbadeff6bba003a03d7c2a1303545b06e7c491a0cca164ceb4f5f",
+      "capturedAt": "2026-10-08T05:26:36.377Z",
+      "size": 774
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/189043.png",
+      "file": "assets/e96321ec234fd507-189043.png",
+      "mime": "image/png",
+      "sha256": "e96321ec234fd507d5b422d3d7ea09a6d0feee6055cbceece9b15e902ab148b0",
+      "capturedAt": "2026-10-08T05:26:36.483Z",
+      "size": 1667
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/189127.png",
+      "file": "assets/98213e739913c45a-189127.png",
+      "mime": "image/png",
+      "sha256": "98213e739913c45ab98320210422991bfcdbeef723300cba6f687840eace416d",
+      "capturedAt": "2026-10-08T05:26:37.104Z",
+      "size": 1018
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/28759.png",
+      "file": "assets/2010fab001f7eb33-28759.png",
+      "mime": "image/png",
+      "sha256": "2010fab001f7eb334b5000d472f6068fabfc3fc8fc9aff532dd42a1ff0c4c1b3",
+      "capturedAt": "2026-10-08T05:26:36.427Z",
+      "size": 1149
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/39995.png",
+      "file": "assets/3f476cd708928ddc-39995.png",
+      "mime": "image/png",
+      "sha256": "3f476cd708928ddc1b5d0a1ccd1e565877cc91bda77629ff0ae981a1d3ea6b79",
+      "capturedAt": "2026-10-08T05:26:36.403Z",
+      "size": 1075
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/48596.png",
+      "file": "assets/94afcb6b8675b75c-48596.png",
+      "mime": "image/png",
+      "sha256": "94afcb6b8675b75cfac4e45206ae8264729ea6b763d95644d10ca4dfedf9d044",
+      "capturedAt": "2026-10-08T05:26:36.494Z",
+      "size": 1178
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/51208.png",
+      "file": "assets/3afa88ded68cc36b-51208.png",
+      "mime": "image/png",
+      "sha256": "3afa88ded68cc36be943eb2c740a12a9ab2e6bac4805d1855c0652a98a6c1569",
+      "capturedAt": "2026-10-08T05:26:36.436Z",
+      "size": 1224
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/56202.png",
+      "file": "assets/15d3a34874f60149-56202.png",
+      "mime": "image/png",
+      "sha256": "15d3a34874f60149d98c5235d074cc38a6c3d6cc295216af2138830cface3e1f",
+      "capturedAt": "2026-10-08T05:26:36.422Z",
+      "size": 798
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/58202.png",
+      "file": "assets/d11d119c6ae944e8-58202.png",
+      "mime": "image/png",
+      "sha256": "d11d119c6ae944e8c2a2bbffaf7725f5bb752739492787304c5442bbb76e340d",
+      "capturedAt": "2026-10-08T05:26:36.403Z",
+      "size": 3752
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/65213.png",
+      "file": "assets/541e9348f4879808-65213.png",
+      "mime": "image/png",
+      "sha256": "541e9348f4879808fc9915693be02ae3e02101e83412d201b036104bbf72182d",
+      "capturedAt": "2026-10-08T05:26:36.419Z",
+      "size": 765
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/67945.png",
+      "file": "assets/8ad6c3c23d398961-67945.png",
+      "mime": "image/png",
+      "sha256": "8ad6c3c23d398961ca62234569bb9399514d6c8e28a9b16f65c34d99a2b70405",
+      "capturedAt": "2026-10-08T05:26:36.423Z",
+      "size": 1100
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/69659.png",
+      "file": "assets/ef2b1ee2d2749cfe-69659.png",
+      "mime": "image/png",
+      "sha256": "ef2b1ee2d2749cfed26aa30e4619bb94d59f652f10dedc844785bbda33c242b1",
+      "capturedAt": "2026-10-08T05:26:36.391Z",
+      "size": 1190
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/71413.png",
+      "file": "assets/1f9d817c91a5be04-71413.png",
+      "mime": "image/png",
+      "sha256": "1f9d817c91a5be04365b6dd5ed447ec6c53acffed600b368bd1cb85979070a8f",
+      "capturedAt": "2026-10-08T05:26:36.509Z",
+      "size": 1625
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/74577.png",
+      "file": "assets/eeb3fea2078487cb-74577.png",
+      "mime": "image/png",
+      "sha256": "eeb3fea2078487cb78800f2122af1a95b8d0eccbc41a60490ad00afee2e48136",
+      "capturedAt": "2026-10-08T05:26:36.392Z",
+      "size": 2740
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/74704.png",
+      "file": "assets/dd165d77f7684f1d-74704.png",
+      "mime": "image/png",
+      "sha256": "dd165d77f7684f1d908e76ea729469772665a7c60f995b2e805b024f5930a26d",
+      "capturedAt": "2026-10-08T05:26:36.436Z",
+      "size": 1362
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/74931.png",
+      "file": "assets/f7a597e4cceb23f2-74931.png",
+      "mime": "image/png",
+      "sha256": "f7a597e4cceb23f26b6a19e90452e9e1722a443745a82d47bbf78bd3a72f4c68",
+      "capturedAt": "2026-10-08T05:26:36.470Z",
+      "size": 1189
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/75028.png",
+      "file": "assets/4686cddcd66a0e4a-75028.png",
+      "mime": "image/png",
+      "sha256": "4686cddcd66a0e4a9325e0b45a1a00d81ba34d155daac38751815feebb2aa539",
+      "capturedAt": "2026-10-08T05:26:36.398Z",
+      "size": 2601
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/86766.png",
+      "file": "assets/beded6efdc9bec29-86766.png",
+      "mime": "image/png",
+      "sha256": "beded6efdc9bec29bab58c80b21b27703064e4445191928740e22ceae7d9e9b7",
+      "capturedAt": "2026-10-08T05:26:36.509Z",
+      "size": 3315
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/88581.png",
+      "file": "assets/a80ea91cace35685-88581.png",
+      "mime": "image/png",
+      "sha256": "a80ea91cace35685dd34aacdadd6a35e14161e5f336aa56140396f4b59bf5384",
+      "capturedAt": "2026-10-08T05:26:36.334Z",
+      "size": 4743
+    },
+    {
+      "source": "https://awbw.amarriner.com/smallmaps/96382.png",
+      "file": "assets/2f8d535b99b195ec-96382.png",
+      "mime": "image/png",
+      "sha256": "2f8d535b99b195ecb9944cb2a7afe30605cd41c684a8731fec01c59b968215ff",
+      "capturedAt": "2026-10-08T05:26:36.407Z",
+      "size": 1091
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/2026-meme-contest.png",
+      "file": "assets/51a655d26277941f-2026-meme-contest.png",
+      "mime": "image/png",
+      "sha256": "51a655d26277941f61350cbfcf249d5750683cb3c21a2b6390939b7680155afd",
+      "capturedAt": "2026-10-08T05:25:15.663Z",
+      "size": 41522
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ammo.gif",
+      "file": "assets/7c7a4a6dc3d070aa-ammo.gif",
+      "mime": "image/gif",
+      "sha256": "7c7a4a6dc3d070aaaf5e3a03da5b425e749232813eab7a0b5dcca8e4c1225251",
+      "capturedAt": "2026-10-08T05:25:14.376Z",
+      "size": 74
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ammo_button.gif",
+      "file": "assets/7a3f7a2801bd8b2f-ammo_button.gif",
+      "mime": "image/gif",
+      "sha256": "7a3f7a2801bd8b2f9e33e4384b030641ca37fdf23e9bab16f817354456544a22",
+      "capturedAt": "2026-10-08T05:25:14.462Z",
+      "size": 761
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/1.gif",
+      "file": "assets/e8e436ed3c6b4392-1.gif",
+      "mime": "image/gif",
+      "sha256": "e8e436ed3c6b439235cff084acc93e7ad4238c764456074eaf9f3c49f5bc127a",
+      "capturedAt": "2026-10-08T05:26:03.093Z",
+      "size": 52
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/2.gif",
+      "file": "assets/699deb162ac81276-2.gif",
+      "mime": "image/gif",
+      "sha256": "699deb162ac812761bbb1e91368757ceb1e556ea7da6b1d87ed3e0b835a0df62",
+      "capturedAt": "2026-10-08T05:25:14.364Z",
+      "size": 53
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/3.gif",
+      "file": "assets/7f8c36563327677c-3.gif",
+      "mime": "image/gif",
+      "sha256": "7f8c36563327677c5c6c2919611bce856e1cf1d6dbb1023f8149f1eb8904b5c4",
+      "capturedAt": "2026-10-08T05:26:03.107Z",
+      "size": 53
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/6.gif",
+      "file": "assets/9087e270773f1e53-6.gif",
+      "mime": "image/gif",
+      "sha256": "9087e270773f1e537c90627e04e940ba45e6d98c8c9ceeddae9165ff42296c5c",
+      "capturedAt": "2026-10-08T05:25:14.364Z",
+      "size": 54
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/7.gif",
+      "file": "assets/78ace08c62f81350-7.gif",
+      "mime": "image/gif",
+      "sha256": "78ace08c62f8135008413e635da9c59e8ced4d7da76db07978001c147880df20",
+      "capturedAt": "2026-10-08T05:26:03.094Z",
+      "size": 53
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/8.gif",
+      "file": "assets/82e9182334f96a5e-8.gif",
+      "mime": "image/gif",
+      "sha256": "82e9182334f96a5e2d887354d6773af8d985c046e8b1294667092edb92a90b65",
+      "capturedAt": "2026-10-08T05:25:14.358Z",
+      "size": 54
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/9.gif",
+      "file": "assets/9cdc2f072f75c11c-9.gif",
+      "mime": "image/gif",
+      "sha256": "9cdc2f072f75c11c48a9d88df2d92ab1a33344c1c4155fc889095b43561b30f5",
+      "capturedAt": "2026-10-08T05:25:14.370Z",
+      "size": 54
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/a.gif",
+      "file": "assets/b967a5e6488e1941-a.gif",
+      "mime": "image/gif",
+      "sha256": "b967a5e6488e1941e7dbe224a61ef77748753d5a98d3683fc01fa6c28c17e12a",
+      "capturedAt": "2026-10-08T05:26:36.418Z",
+      "size": 246
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/aalogo.gif",
+      "file": "assets/a84494e72a155dfa-aalogo.gif",
+      "mime": "image/gif",
+      "sha256": "a84494e72a155dfa9928d14dd643ccec508aefcd2dc75cbab3543c93e4aaa35d",
+      "capturedAt": "2026-10-08T05:26:36.387Z",
+      "size": 111
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/abapc.gif",
+      "file": "assets/1f9eebb8b20c1c80-abapc.gif",
+      "mime": "image/gif",
+      "sha256": "1f9eebb8b20c1c80b9592555a81b0ac05b7d0167bf6c7bd0a878c6f4795c1c35",
+      "capturedAt": "2026-10-08T05:25:52.325Z",
+      "size": 1241
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/abcruiser.gif",
+      "file": "assets/87fe5b10174baa94-abcruiser.gif",
+      "mime": "image/gif",
+      "sha256": "87fe5b10174baa94964d1701aadf0717de1e2f6a16425746f961311158d03ed4",
+      "capturedAt": "2026-10-08T05:26:03.093Z",
+      "size": 250
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/abinfantry.gif",
+      "file": "assets/6bbcb62791b5843a-abinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "6bbcb62791b5843a3f469024f76da17ebfc15753e9c2665bb2bf90b75e6482c6",
+      "capturedAt": "2026-10-08T05:26:03.109Z",
+      "size": 709
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ablander.gif",
+      "file": "assets/6d9867af5c45e58f-ablander.gif",
+      "mime": "image/gif",
+      "sha256": "6d9867af5c45e58f37274b48437146adcdd5287c28f4e7996da622c320ed7cfe",
+      "capturedAt": "2026-10-08T05:26:03.100Z",
+      "size": 286
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ablogo.gif",
+      "file": "assets/38f69bf3f0e1ae42-ablogo.gif",
+      "mime": "image/gif",
+      "sha256": "38f69bf3f0e1ae429ac9ecfe309ac6982cd980114e69f41a198de9df3b2a7af3",
+      "capturedAt": "2026-10-08T05:26:36.372Z",
+      "size": 7388
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/abmech.gif",
+      "file": "assets/9344ea0c9c2cf3fe-abmech.gif",
+      "mime": "image/gif",
+      "sha256": "9344ea0c9c2cf3fe1caee9237ea8825e2a65dbb98112e3dab39f2c1a8b6cc920",
+      "capturedAt": "2026-10-08T05:26:03.122Z",
+      "size": 400
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/abmissile.gif",
+      "file": "assets/a163dd6c0401cb37-abmissile.gif",
+      "mime": "image/gif",
+      "sha256": "a163dd6c0401cb373faecae7e11bb604dff70e6f491d0c555ee2267e8cf4aba1",
+      "capturedAt": "2026-10-08T05:26:03.101Z",
+      "size": 232
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/absub.gif",
+      "file": "assets/991bb4444204a6e8-absub.gif",
+      "mime": "image/gif",
+      "sha256": "991bb4444204a6e8e694ffe6d8b13cf54d88bceda72809a7b5feca9001539b99",
+      "capturedAt": "2026-10-08T05:26:03.092Z",
+      "size": 353
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/acidrainbase.gif",
+      "file": "assets/ef5858aea9302509-acidrainbase.gif",
+      "mime": "image/gif",
+      "sha256": "ef5858aea9302509b3db831c648b9be9aeee5ccf2c3669657532662d6d4ee8be",
+      "capturedAt": "2026-10-08T05:26:03.087Z",
+      "size": 876
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/acidraincity.gif",
+      "file": "assets/b06327607ceb91a1-acidraincity.gif",
+      "mime": "image/gif",
+      "sha256": "b06327607ceb91a17bd1be794018282955bf520d05f001b680bdf3a010a44b15",
+      "capturedAt": "2026-10-08T05:26:03.074Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/acidrainhq.gif",
+      "file": "assets/0502cd86edf28a1d-acidrainhq.gif",
+      "mime": "image/gif",
+      "sha256": "0502cd86edf28a1d8a016e6f145e926f82870f9838539744a9ec607d694092c3",
+      "capturedAt": "2026-10-08T05:26:03.085Z",
+      "size": 329
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/acidrainport.gif",
+      "file": "assets/439a485aa4b6725c-acidrainport.gif",
+      "mime": "image/gif",
+      "sha256": "439a485aa4b6725cc1db714245b2b0cac7425d5c450a4f763c7d9e057e868208",
+      "capturedAt": "2026-10-08T05:26:03.085Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/amberblossomairport.gif",
+      "file": "assets/259ac8d617c310c4-amberblossomairport.gif",
+      "mime": "image/gif",
+      "sha256": "259ac8d617c310c4fcadc1db0c3d2aed0aabb644c97b61526c9683ab1229edf8",
+      "capturedAt": "2026-10-08T05:25:52.295Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/amberblossombase.gif",
+      "file": "assets/6de2131312390daa-amberblossombase.gif",
+      "mime": "image/gif",
+      "sha256": "6de2131312390daac65f996380019deeb90aed18a784d5a75c9cd0dc067206f6",
+      "capturedAt": "2026-10-08T05:25:52.241Z",
+      "size": 873
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/amberblossomcity.gif",
+      "file": "assets/e67daa6a9bed8de2-amberblossomcity.gif",
+      "mime": "image/gif",
+      "sha256": "e67daa6a9bed8de2f7edd553cdadda72168a9406d39309967d1405c974852ed0",
+      "capturedAt": "2026-10-08T05:25:52.262Z",
+      "size": 390
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/amberblossomcomtower.gif",
+      "file": "assets/0bbb8a89b72d1a5e-amberblossomcomtower.gif",
+      "mime": "image/gif",
+      "sha256": "0bbb8a89b72d1a5e19ebf3e371c702cbb7f83362938cec34cad067f33b2dd291",
+      "capturedAt": "2026-10-08T05:25:52.236Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/amberblossomhq.gif",
+      "file": "assets/3a1c1601a6693b86-amberblossomhq.gif",
+      "mime": "image/gif",
+      "sha256": "3a1c1601a6693b868dd1bf6989abcb676dba8417ef9feab545e8c3f6fcea0a64",
+      "capturedAt": "2026-10-08T05:25:52.312Z",
+      "size": 483
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/amberblossomport.gif",
+      "file": "assets/5a2c5236e73d9300-amberblossomport.gif",
+      "mime": "image/gif",
+      "sha256": "5a2c5236e73d9300d49d42e5e237c8dd59a9d9fd78b8393dc931bb04fce42b1e",
+      "capturedAt": "2026-10-08T05:25:52.257Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/aranti-air.gif",
+      "file": "assets/e19f6fa741bb03dd-aranti-air.gif",
+      "mime": "image/gif",
+      "sha256": "e19f6fa741bb03ddf2d84c96577965ac754ea575dc3652b5950924cf202d170f",
+      "capturedAt": "2026-10-08T05:26:03.104Z",
+      "size": 601
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/arinfantry.gif",
+      "file": "assets/d8d264a307ba2284-arinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "d8d264a307ba2284ac7c0bf75af569e5f86ef34f31bcf8280071aa80f1ee235f",
+      "capturedAt": "2026-10-08T05:26:03.124Z",
+      "size": 639
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/arlander.gif",
+      "file": "assets/26d4cc2c2d4041ac-arlander.gif",
+      "mime": "image/gif",
+      "sha256": "26d4cc2c2d4041acba6b7d67ebc2636667f61ccc2bd57f49102056f6495552b1",
+      "capturedAt": "2026-10-08T05:26:03.103Z",
+      "size": 325
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/arlogo.gif",
+      "file": "assets/7fea821c5ca4d3e7-arlogo.gif",
+      "mime": "image/gif",
+      "sha256": "7fea821c5ca4d3e791efc662a793d29b809f68f4d1ee7fe3fb4b0db955150e79",
+      "capturedAt": "2026-10-08T05:26:36.375Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/armissile.gif",
+      "file": "assets/950dff9bb05064f8-armissile.gif",
+      "mime": "image/gif",
+      "sha256": "950dff9bb05064f85a170b4144b1bd86e643d77f78fdaaf2c53953d556ae6971",
+      "capturedAt": "2026-10-08T05:26:03.110Z",
+      "size": 366
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/arrecon.gif",
+      "file": "assets/668fc87fb5e1db5b-arrecon.gif",
+      "mime": "image/gif",
+      "sha256": "668fc87fb5e1db5b437ff6e1711725da24e9e083649b1c8c2e00a71dc7554d2c",
+      "capturedAt": "2026-10-08T05:26:03.113Z",
+      "size": 563
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/b.gif",
+      "file": "assets/141b50933e1a8d7b-b.gif",
+      "mime": "image/gif",
+      "sha256": "141b50933e1a8d7b81f7caf96ba7e2b808b2f7a0acf2fd0b593ee562ae011492",
+      "capturedAt": "2026-10-08T05:26:36.418Z",
+      "size": 230
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bdapc.gif",
+      "file": "assets/6d22945d2572b7ca-bdapc.gif",
+      "mime": "image/gif",
+      "sha256": "6d22945d2572b7ca06afaf1b2d850f05c3043447e6aad885275370960ff399e3",
+      "capturedAt": "2026-10-08T05:25:52.323Z",
+      "size": 571
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bdlogo.gif",
+      "file": "assets/7ad44a42c9f34e57-bdlogo.gif",
+      "mime": "image/gif",
+      "sha256": "7ad44a42c9f34e57224cf5323c68f9110fa1775b29e1d95d30dd92d86a341846",
+      "capturedAt": "2026-10-08T05:26:36.352Z",
+      "size": 145
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bhapc.gif",
+      "file": "assets/3d04da244e5a99e0-bhapc.gif",
+      "mime": "image/gif",
+      "sha256": "3d04da244e5a99e0f4767b737462b48a891b06dbab6e0b25bb8e0d0005f717ba",
+      "capturedAt": "2026-10-08T05:25:52.332Z",
+      "size": 479
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bhbomber.gif",
+      "file": "assets/eba31d371d771d32-bhbomber.gif",
+      "mime": "image/gif",
+      "sha256": "eba31d371d771d3290d41524d42d2ba77f6a6747333a824c8e2ccc7a9e35950d",
+      "capturedAt": "2026-10-08T05:26:03.154Z",
+      "size": 275
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bhfighter.gif",
+      "file": "assets/c7fb6effdef3eea9-bhfighter.gif",
+      "mime": "image/gif",
+      "sha256": "c7fb6effdef3eea9748f681daad61341f0cb6db652f16cb8f26a85df505373cb",
+      "capturedAt": "2026-10-08T05:26:03.140Z",
+      "size": 273
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bhinfantry.gif",
+      "file": "assets/230d2d84c9acd695-bhinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "230d2d84c9acd69598dc73fb52aae48352cdcc5c7bca861ce233eec611852ab4",
+      "capturedAt": "2026-10-08T05:26:03.148Z",
+      "size": 531
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bhlander.gif",
+      "file": "assets/949d0aaf76b318a5-bhlander.gif",
+      "mime": "image/gif",
+      "sha256": "949d0aaf76b318a502a06a6ff83f60be484c2872fa2dc6571a504fa368635b77",
+      "capturedAt": "2026-10-08T05:26:03.142Z",
+      "size": 286
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bhlogo.gif",
+      "file": "assets/c204b6ff7918aeb1-bhlogo.gif",
+      "mime": "image/gif",
+      "sha256": "c204b6ff7918aeb151bde2ce942b40bbc8445e224c632e6d302a1faf4c6098d9",
+      "capturedAt": "2026-10-08T05:26:36.341Z",
+      "size": 97
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bhmissile.gif",
+      "file": "assets/a1cbf0e3f4caab5f-bhmissile.gif",
+      "mime": "image/gif",
+      "sha256": "a1cbf0e3f4caab5fdad86b28e483932ba2bd9d7ce05e151df7ffa39ca34a49e4",
+      "capturedAt": "2026-10-08T05:26:03.148Z",
+      "size": 232
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/blackholeairport.gif",
+      "file": "assets/bd2353ba0f45311d-blackholeairport.gif",
+      "mime": "image/gif",
+      "sha256": "bd2353ba0f45311d4bb3d01021b6b2f2d730172020c0598741a4cacdc410b63a",
+      "capturedAt": "2026-10-08T05:25:52.289Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/blackholebase.gif",
+      "file": "assets/2a2d82eb157b894b-blackholebase.gif",
+      "mime": "image/gif",
+      "sha256": "2a2d82eb157b894b190122fddff06b093e9ed349156137f31199ab0222fc1745",
+      "capturedAt": "2026-10-08T05:25:40.326Z",
+      "size": 873
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/blackholecity.gif",
+      "file": "assets/633c8d6c8e0fb9d7-blackholecity.gif",
+      "mime": "image/gif",
+      "sha256": "633c8d6c8e0fb9d7e92bfce49221c5f526ef869c90650662f52a12cd109831b8",
+      "capturedAt": "2026-10-08T05:25:40.331Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/blackholecomtower.gif",
+      "file": "assets/52f90f052cda00aa-blackholecomtower.gif",
+      "mime": "image/gif",
+      "sha256": "52f90f052cda00aa9576f5adff0c5f2667cd309411f8bb2925960bbe3f76f4b7",
+      "capturedAt": "2026-10-08T05:25:52.271Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/blackholehq.gif",
+      "file": "assets/a031915490ad0b6b-blackholehq.gif",
+      "mime": "image/gif",
+      "sha256": "a031915490ad0b6bc31dc240df6fc4cbe37c77c382de1d0620bd1aa3a0a02548",
+      "capturedAt": "2026-10-08T05:25:52.305Z",
+      "size": 498
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/blackholelab.gif",
+      "file": "assets/2e46b9d6689bd26c-blackholelab.gif",
+      "mime": "image/gif",
+      "sha256": "2e46b9d6689bd26c19619cdf03ac12f0dc945f5e3d490b3579af8526783a4be6",
+      "capturedAt": "2026-10-08T05:25:40.336Z",
+      "size": 432
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/blackholeport.gif",
+      "file": "assets/9dc956798be128d8-blackholeport.gif",
+      "mime": "image/gif",
+      "sha256": "9dc956798be128d869bf2ae6bbfe359e30ec9fcbb15f7152b82869aa5d3c3fc1",
+      "capturedAt": "2026-10-08T05:25:52.261Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bluemoonairport.gif",
+      "file": "assets/f3bac229b846401c-bluemoonairport.gif",
+      "mime": "image/gif",
+      "sha256": "f3bac229b846401ce630443ca3308e727bb6cf9b777758849d2283474a7dc93f",
+      "capturedAt": "2026-10-08T05:25:52.247Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bluemoonbase.gif",
+      "file": "assets/d783dc4d273b6edb-bluemoonbase.gif",
+      "mime": "image/gif",
+      "sha256": "d783dc4d273b6edb7056e47ae730418fb653d0dcc45a0d740fd74f5585eb6632",
+      "capturedAt": "2026-10-08T05:25:40.338Z",
+      "size": 900
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bluemooncity.gif",
+      "file": "assets/ab352e0c755ba343-bluemooncity.gif",
+      "mime": "image/gif",
+      "sha256": "ab352e0c755ba34347d5f8bc2910957cd9bdc461b7875779d8a580754576d2af",
+      "capturedAt": "2026-10-08T05:25:40.343Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bluemooncomtower.gif",
+      "file": "assets/1a81fd8c17ce62ff-bluemooncomtower.gif",
+      "mime": "image/gif",
+      "sha256": "1a81fd8c17ce62ff0b9b2fc57dfb1ac67df81da3f9eb91dca196627cacdfeb2d",
+      "capturedAt": "2026-10-08T05:25:52.297Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bluemoonhq.gif",
+      "file": "assets/1ae9aefe83a6e9d1-bluemoonhq.gif",
+      "mime": "image/gif",
+      "sha256": "1ae9aefe83a6e9d17f6bada2c1cf8e40f7f04e0ba08f4c16a49a36c57b95115b",
+      "capturedAt": "2026-10-08T05:25:52.302Z",
+      "size": 480
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bluemoonlab.gif",
+      "file": "assets/b0f5c95a30ea11a1-bluemoonlab.gif",
+      "mime": "image/gif",
+      "sha256": "b0f5c95a30ea11a114e21910f6baa71b36bad05cc455763b7c35ec0f3229dc23",
+      "capturedAt": "2026-10-08T05:25:40.342Z",
+      "size": 432
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bluemoonport.gif",
+      "file": "assets/7f991483a0295431-bluemoonport.gif",
+      "mime": "image/gif",
+      "sha256": "7f991483a02954317fa51ff59b47b891345bc323184d745c6006a54f41c12151",
+      "capturedAt": "2026-10-08T05:25:52.229Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bmapc.gif",
+      "file": "assets/aca8121ce6719e2a-bmapc.gif",
+      "mime": "image/gif",
+      "sha256": "aca8121ce6719e2aa98d34dcc08603023cd361c8d4ec5bc454f135467091d64e",
+      "capturedAt": "2026-10-08T05:25:52.325Z",
+      "size": 479
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bmb-copter.gif",
+      "file": "assets/c4fb8c1f05d35ba6-bmb-copter.gif",
+      "mime": "image/gif",
+      "sha256": "c4fb8c1f05d35ba667ec8ed354e8d14682ba26341c5fa7b2b37803c8488408f3",
+      "capturedAt": "2026-10-08T05:26:03.172Z",
+      "size": 568
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bmfighter.gif",
+      "file": "assets/8abcfc4a9add059a-bmfighter.gif",
+      "mime": "image/gif",
+      "sha256": "8abcfc4a9add059a1e7e60c4af8f573f227989d21a049fbbaf000cc4d4cb10a1",
+      "capturedAt": "2026-10-08T05:26:03.167Z",
+      "size": 273
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bminfantry.gif",
+      "file": "assets/7d8b49c6c6a99e0f-bminfantry.gif",
+      "mime": "image/gif",
+      "sha256": "7d8b49c6c6a99e0f117cf8af61ed122e386d37e207d199567bd8e577cffa24ea",
+      "capturedAt": "2026-10-08T05:26:03.173Z",
+      "size": 550
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bmlander.gif",
+      "file": "assets/66eb33f8e037efbe-bmlander.gif",
+      "mime": "image/gif",
+      "sha256": "66eb33f8e037efbe0fb054c54ffe8baef136abfba3c303579390be51b8ae4e2a",
+      "capturedAt": "2026-10-08T05:26:03.172Z",
+      "size": 286
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bmlogo.gif",
+      "file": "assets/69590a5d684a331d-bmlogo.gif",
+      "mime": "image/gif",
+      "sha256": "69590a5d684a331dc8c8afcc0064c75c655e4adc3e12c35c9a73de36cefb37c5",
+      "capturedAt": "2026-10-08T05:26:36.340Z",
+      "size": 113
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/bmmissile.gif",
+      "file": "assets/27e8206c1011fdfa-bmmissile.gif",
+      "mime": "image/gif",
+      "sha256": "27e8206c1011fdfa37254096747c4567ea7f7c208a1b4c8452698edfc51fff76",
+      "capturedAt": "2026-10-08T05:26:03.172Z",
+      "size": 323
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/browndesertairport.gif",
+      "file": "assets/b3c4dcc3e8866f41-browndesertairport.gif",
+      "mime": "image/gif",
+      "sha256": "b3c4dcc3e8866f41eabcd99eca41da952405414025307304844f9e1d340e8811",
+      "capturedAt": "2026-10-08T05:25:52.280Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/browndesertbase.gif",
+      "file": "assets/06379d2a2ef62b94-browndesertbase.gif",
+      "mime": "image/gif",
+      "sha256": "06379d2a2ef62b948c424457ace8b6f1b95244cbb019ab3e071c1a5d5cc60a5a",
+      "capturedAt": "2026-10-08T05:25:40.319Z",
+      "size": 578
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/browndesertcity.gif",
+      "file": "assets/495c94f22bc89dbb-browndesertcity.gif",
+      "mime": "image/gif",
+      "sha256": "495c94f22bc89dbbf04ade5c476fac93a25756cdf533b53d794ab40b4aca3aa0",
+      "capturedAt": "2026-10-08T05:25:40.315Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/browndesertcomtower.gif",
+      "file": "assets/019029c1f476793a-browndesertcomtower.gif",
+      "mime": "image/gif",
+      "sha256": "019029c1f476793ae06962823f24cc9a4255a8df4064ea3ba3463f5dcfd031eb",
+      "capturedAt": "2026-10-08T05:25:52.280Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/browndeserthq.gif",
+      "file": "assets/441616a972465c9a-browndeserthq.gif",
+      "mime": "image/gif",
+      "sha256": "441616a972465c9a5265a32d49ab10cacb3ecd5996bd834e4c144a25b29b1ab0",
+      "capturedAt": "2026-10-08T05:25:52.309Z",
+      "size": 471
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/browndesertlab.gif",
+      "file": "assets/093b0b7035f7a86a-browndesertlab.gif",
+      "mime": "image/gif",
+      "sha256": "093b0b7035f7a86a8549762cb3e66107576be46386131da521afc8e8cba33fed",
+      "capturedAt": "2026-10-08T05:25:40.321Z",
+      "size": 432
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/browndesertport.gif",
+      "file": "assets/007aeee8a1f84c0b-browndesertport.gif",
+      "mime": "image/gif",
+      "sha256": "007aeee8a1f84c0b9f05d40842f26a1eff60df8aa00eb1c933d23397d9f3355e",
+      "capturedAt": "2026-10-08T05:25:52.249Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/capture.gif",
+      "file": "assets/2cdf44a35a51db6d-capture.gif",
+      "mime": "image/gif",
+      "sha256": "2cdf44a35a51db6ddf82cb89a12e450fd934e110b2cd5d6edcc0d27a6fde6d5b",
+      "capturedAt": "2026-10-08T05:25:14.349Z",
+      "size": 203
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cianti-air.gif",
+      "file": "assets/322cade54a750c69-cianti-air.gif",
+      "mime": "image/gif",
+      "sha256": "322cade54a750c696a87982c80ca1a6645a83ab73a6e76e61bfe856556ab0979",
+      "capturedAt": "2026-10-08T05:26:03.167Z",
+      "size": 561
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ciapc.gif",
+      "file": "assets/9ffd070c929faa57-ciapc.gif",
+      "mime": "image/gif",
+      "sha256": "9ffd070c929faa5778878ebc292cdc238f404fb0bbe0c3749d660dc9b961f63a",
+      "capturedAt": "2026-10-08T05:25:52.329Z",
+      "size": 520
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ciblackboat.gif",
+      "file": "assets/1547082c3b4b34d6-ciblackboat.gif",
+      "mime": "image/gif",
+      "sha256": "1547082c3b4b34d65744335acd2b2dbec4a0b1dc104f6da9413170c20782b485",
+      "capturedAt": "2026-10-08T05:26:03.154Z",
+      "size": 378
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ciinfantry.gif",
+      "file": "assets/85fd8e9302fb4d24-ciinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "85fd8e9302fb4d248a03849587bc821bcb35af1cfe74aba7570250d4fb58b5c7",
+      "capturedAt": "2026-10-08T05:26:03.160Z",
+      "size": 646
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cilander.gif",
+      "file": "assets/4636b84e012f7a54-cilander.gif",
+      "mime": "image/gif",
+      "sha256": "4636b84e012f7a54a65136fdf00ad69660a62e33239337cb22daaf47c7da8de3",
+      "capturedAt": "2026-10-08T05:26:03.160Z",
+      "size": 272
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cilogo.gif",
+      "file": "assets/8f0c88f6ac51ca9d-cilogo.gif",
+      "mime": "image/gif",
+      "sha256": "8f0c88f6ac51ca9dd459ba53d622778593e41456e8f37091a9ce345f505cbeee",
+      "capturedAt": "2026-10-08T05:26:36.364Z",
+      "size": 121
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cimissile.gif",
+      "file": "assets/f00f881b3b49dda2-cimissile.gif",
+      "mime": "image/gif",
+      "sha256": "f00f881b3b49dda23a894fe60ee3e71079a0a46967ece8798196709c526737f2",
+      "capturedAt": "2026-10-08T05:26:03.160Z",
+      "size": 233
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cirecon.gif",
+      "file": "assets/9052e9467121639e-cirecon.gif",
+      "mime": "image/gif",
+      "sha256": "9052e9467121639e93d29f047d9044c4da1cc0b68c18780ecca2d9ef26aba029",
+      "capturedAt": "2026-10-08T05:26:03.167Z",
+      "size": 519
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cobalticeairport.gif",
+      "file": "assets/1c596d2a9468bec9-cobalticeairport.gif",
+      "mime": "image/gif",
+      "sha256": "1c596d2a9468bec9e909e4f4b6d62a0b5bd7d52365e838caeea7803d2b25a985",
+      "capturedAt": "2026-10-08T05:25:52.286Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cobalticebase.gif",
+      "file": "assets/e97075faed30b29f-cobalticebase.gif",
+      "mime": "image/gif",
+      "sha256": "e97075faed30b29f11ee786c620e745daf89d96c624bf7a6d5fa73477e5d1564",
+      "capturedAt": "2026-10-08T05:25:52.219Z",
+      "size": 873
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cobalticecity.gif",
+      "file": "assets/5fcea5c870a00653-cobalticecity.gif",
+      "mime": "image/gif",
+      "sha256": "5fcea5c870a00653a00a28e2282a3b01cb5ac0ddfdf8d445b56ce373119e1038",
+      "capturedAt": "2026-10-08T05:25:52.254Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cobalticecomtower.gif",
+      "file": "assets/c71fb696c57601a0-cobalticecomtower.gif",
+      "mime": "image/gif",
+      "sha256": "c71fb696c57601a092f84936c33d68bd174f6f68f7d13c1a0d310b51d68e3238",
+      "capturedAt": "2026-10-08T05:25:52.299Z",
+      "size": 468
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cobalticehq.gif",
+      "file": "assets/3160af6fefd685c1-cobalticehq.gif",
+      "mime": "image/gif",
+      "sha256": "3160af6fefd685c14045097d944494a476846d62bd0aa020620bc88a378eca7e",
+      "capturedAt": "2026-10-08T05:25:52.315Z",
+      "size": 3166
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/cobalticeport.gif",
+      "file": "assets/07402268bfea516e-cobalticeport.gif",
+      "mime": "image/gif",
+      "sha256": "07402268bfea516ef5e7b072f00568ed3a8b04c1c7f8e6c6caef72d55e490008",
+      "capturedAt": "2026-10-08T05:25:52.219Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/fogload.gif",
+      "file": "assets/51d6d61ccc993223-fogload.gif",
+      "mime": "image/gif",
+      "sha256": "51d6d61ccc99322381765192f76beec2c7c1f64914ba49612974c4ce7f33b3e4",
+      "capturedAt": "2026-10-08T05:25:14.352Z",
+      "size": 839
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geanti-air.gif",
+      "file": "assets/df1301b99eae6692-geanti-air.gif",
+      "mime": "image/gif",
+      "sha256": "df1301b99eae6692418a795b17dd45b65d5614f5418b95be591a25ee37da7b7d",
+      "capturedAt": "2026-10-08T05:25:14.258Z",
+      "size": 559
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geanti-air.gif?v=1781618929",
+      "file": "assets/df1301b99eae6692-geanti-air.gif",
+      "mime": "image/gif",
+      "sha256": "df1301b99eae6692418a795b17dd45b65d5614f5418b95be591a25ee37da7b7d",
+      "capturedAt": "2026-10-08T05:25:14.371Z",
+      "size": 559
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geapc.gif",
+      "file": "assets/657b0918328ae6a9-geapc.gif",
+      "mime": "image/gif",
+      "sha256": "657b0918328ae6a945dc68aeafdf09b8551d751343f558b3f02b777957ccacba",
+      "capturedAt": "2026-10-08T05:25:14.258Z",
+      "size": 478
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geapc.gif?v=1781618929",
+      "file": "assets/657b0918328ae6a9-geapc.gif",
+      "mime": "image/gif",
+      "sha256": "657b0918328ae6a945dc68aeafdf09b8551d751343f558b3f02b777957ccacba",
+      "capturedAt": "2026-10-08T05:25:14.366Z",
+      "size": 478
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geartillery.gif",
+      "file": "assets/dd609f769496440e-geartillery.gif",
+      "mime": "image/gif",
+      "sha256": "dd609f769496440eab3d183b8544bbadbff5bbdd0b55731264c03ea0747ebff0",
+      "capturedAt": "2026-10-08T05:25:14.259Z",
+      "size": 525
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geb-copter.gif",
+      "file": "assets/f3e26e565de7b286-geb-copter.gif",
+      "mime": "image/gif",
+      "sha256": "f3e26e565de7b2861856652035232bb14c566403cc8b6f15ffed757920d09e8f",
+      "capturedAt": "2026-10-08T05:25:14.264Z",
+      "size": 568
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geb-copter.gif?v=1781618929",
+      "file": "assets/f3e26e565de7b286-geb-copter.gif",
+      "mime": "image/gif",
+      "sha256": "f3e26e565de7b2861856652035232bb14c566403cc8b6f15ffed757920d09e8f",
+      "capturedAt": "2026-10-08T05:25:14.371Z",
+      "size": 568
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geblackboat.gif",
+      "file": "assets/43b3f0bc266a1c50-geblackboat.gif",
+      "mime": "image/gif",
+      "sha256": "43b3f0bc266a1c504769763964acb1aeb56ddb7d1e9199923ff0f093819e7bca",
+      "capturedAt": "2026-10-08T05:25:14.265Z",
+      "size": 378
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gebomber.gif",
+      "file": "assets/b8114a3279dcd23a-gebomber.gif",
+      "mime": "image/gif",
+      "sha256": "b8114a3279dcd23aadc06e1f2c6da0cb2e129397fba69238b4e84cbf88e6fbbd",
+      "capturedAt": "2026-10-08T05:25:14.270Z",
+      "size": 302
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gecruiser.gif",
+      "file": "assets/734238a4eb0b20e3-gecruiser.gif",
+      "mime": "image/gif",
+      "sha256": "734238a4eb0b20e340ba5bb210e78011dacfc044d3b129ffed42762569ad99e6",
+      "capturedAt": "2026-10-08T05:25:14.271Z",
+      "size": 250
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gefighter.gif",
+      "file": "assets/fee17a9b6c887d39-gefighter.gif",
+      "mime": "image/gif",
+      "sha256": "fee17a9b6c887d39e91032a47e0fdd5c7cbf79e0115225666d553d6a16368e28",
+      "capturedAt": "2026-10-08T05:25:14.271Z",
+      "size": 277
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geinfantry.gif",
+      "file": "assets/d92b8ed34b20e07d-geinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "d92b8ed34b20e07d4ad8b2f0b0f97f7194c0f859e9c5ec7c71f9630368c54869",
+      "capturedAt": "2026-10-08T05:25:14.276Z",
+      "size": 541
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geinfantry.gif?v=1781618929",
+      "file": "assets/d92b8ed34b20e07d-geinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "d92b8ed34b20e07d4ad8b2f0b0f97f7194c0f859e9c5ec7c71f9630368c54869",
+      "capturedAt": "2026-10-08T05:25:14.346Z",
+      "size": 541
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gelander.gif",
+      "file": "assets/17fb147a0547c642-gelander.gif",
+      "mime": "image/gif",
+      "sha256": "17fb147a0547c64206e5c7b079179dcdf2d19454a1005fd49495066846e72813",
+      "capturedAt": "2026-10-08T05:25:14.276Z",
+      "size": 285
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gelogo.gif",
+      "file": "assets/34689a2d54d2d730-gelogo.gif",
+      "mime": "image/gif",
+      "sha256": "34689a2d54d2d730b8b145babf91160569fa1ea4f1514f67ec8be92b759d83b6",
+      "capturedAt": "2026-10-08T05:26:36.341Z",
+      "size": 114
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gemd.tank.gif",
+      "file": "assets/635cb67937a88e02-gemd.tank.gif",
+      "mime": "image/gif",
+      "sha256": "635cb67937a88e02aaf6e67e520e0d87e5f67c25a535da26cb61213f0c04c9ff",
+      "capturedAt": "2026-10-08T05:25:14.277Z",
+      "size": 562
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gemech.gif",
+      "file": "assets/58b4139f4fa6c090-gemech.gif",
+      "mime": "image/gif",
+      "sha256": "58b4139f4fa6c090711be38b1304d3927fd585a604d014e723d95cdc9aa9f5ec",
+      "capturedAt": "2026-10-08T05:25:14.277Z",
+      "size": 350
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gemech.gif?v=1781618929",
+      "file": "assets/58b4139f4fa6c090-gemech.gif",
+      "mime": "image/gif",
+      "sha256": "58b4139f4fa6c090711be38b1304d3927fd585a604d014e723d95cdc9aa9f5ec",
+      "capturedAt": "2026-10-08T05:25:14.357Z",
+      "size": 350
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gemissile.gif",
+      "file": "assets/2f6afe20f83027b6-gemissile.gif",
+      "mime": "image/gif",
+      "sha256": "2f6afe20f83027b6777ce343a8c6a3cc8c347f85caff9f5380728c9057a82032",
+      "capturedAt": "2026-10-08T05:25:14.284Z",
+      "size": 320
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/geneotank.gif",
+      "file": "assets/a1978ba216668eb1-geneotank.gif",
+      "mime": "image/gif",
+      "sha256": "a1978ba216668eb17c13062bd988317785cc8645abb61c8bd61e8972a77d14f1",
+      "capturedAt": "2026-10-08T05:25:14.286Z",
+      "size": 570
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gepiperunner.gif",
+      "file": "assets/cc26e8e8497b1222-gepiperunner.gif",
+      "mime": "image/gif",
+      "sha256": "cc26e8e8497b122251405443f95f807dbd9d5eecf65e40fffd95fd8835d4013a",
+      "capturedAt": "2026-10-08T05:25:14.287Z",
+      "size": 303
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gerecon.gif",
+      "file": "assets/bddf94243ce8b392-gerecon.gif",
+      "mime": "image/gif",
+      "sha256": "bddf94243ce8b39261ee46cb1050cea02716206646b0eeba6da8eb34eea4fa59",
+      "capturedAt": "2026-10-08T05:25:14.291Z",
+      "size": 481
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gerecon.gif?v=1781618929",
+      "file": "assets/bddf94243ce8b392-gerecon.gif",
+      "mime": "image/gif",
+      "sha256": "bddf94243ce8b39261ee46cb1050cea02716206646b0eeba6da8eb34eea4fa59",
+      "capturedAt": "2026-10-08T05:25:14.357Z",
+      "size": 481
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gerocket.gif",
+      "file": "assets/3bcaffbff2ad43a2-gerocket.gif",
+      "mime": "image/gif",
+      "sha256": "3bcaffbff2ad43a240e1dde8ccf9e40f82b36f45db4fa06b4c342e080207156d",
+      "capturedAt": "2026-10-08T05:25:14.294Z",
+      "size": 302
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gesub.gif",
+      "file": "assets/dc728ccca7aefb64-gesub.gif",
+      "mime": "image/gif",
+      "sha256": "dc728ccca7aefb64b48ccfc8f270870026839ef93355cb12c19f7c54d9014f2a",
+      "capturedAt": "2026-10-08T05:25:14.297Z",
+      "size": 359
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/get-copter.gif",
+      "file": "assets/9fa3580f2da68285-get-copter.gif",
+      "mime": "image/gif",
+      "sha256": "9fa3580f2da68285d4127a1f2b2841f80d7530c54e774714587f74fc7f30485f",
+      "capturedAt": "2026-10-08T05:25:14.299Z",
+      "size": 477
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/getank.gif",
+      "file": "assets/0ce0cfa845529012-getank.gif",
+      "mime": "image/gif",
+      "sha256": "0ce0cfa8455290122bb6fd9dd6fd7d77b4e70ee74dca2bfc4b489c3f1e7f87ff",
+      "capturedAt": "2026-10-08T05:25:14.302Z",
+      "size": 414
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/getank.gif?v=1781618929",
+      "file": "assets/0ce0cfa845529012-getank.gif",
+      "mime": "image/gif",
+      "sha256": "0ce0cfa8455290122bb6fd9dd6fd7d77b4e70ee74dca2bfc4b489c3f1e7f87ff",
+      "capturedAt": "2026-10-08T05:25:14.353Z",
+      "size": 414
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greenearthairport.gif",
+      "file": "assets/14a263dd6e109a1f-greenearthairport.gif",
+      "mime": "image/gif",
+      "sha256": "14a263dd6e109a1f75159f894e0406b8306b411b74689212b2bacd96e17b63fa",
+      "capturedAt": "2026-10-08T05:25:14.339Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greenearthbase.gif",
+      "file": "assets/32bf677b6d79ca0f-greenearthbase.gif",
+      "mime": "image/gif",
+      "sha256": "32bf677b6d79ca0fd1d1d358a26f6173b3563566386dcc488f17f56028f3b860",
+      "capturedAt": "2026-10-08T05:25:14.342Z",
+      "size": 900
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greenearthcity.gif",
+      "file": "assets/863b2545ba8a07c9-greenearthcity.gif",
+      "mime": "image/gif",
+      "sha256": "863b2545ba8a07c9642920dd6d6bde95432c794a24cfb8266427055479a1a627",
+      "capturedAt": "2026-10-08T05:25:14.330Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greenearthcomtower.gif",
+      "file": "assets/fd3cd1abab562126-greenearthcomtower.gif",
+      "mime": "image/gif",
+      "sha256": "fd3cd1abab562126f7a9b8f1915cadf07ece868634ef5511af913fed554a0918",
+      "capturedAt": "2026-10-08T05:25:14.462Z",
+      "size": 468
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greenearthhq.gif",
+      "file": "assets/0fbf3c17636909cb-greenearthhq.gif",
+      "mime": "image/gif",
+      "sha256": "0fbf3c17636909cbaa589a0cd93384f62abe882e8baae510b06fdb1bc9a8f568",
+      "capturedAt": "2026-10-08T05:25:14.330Z",
+      "size": 543
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greenearthlab.gif",
+      "file": "assets/b57634cd5569c12a-greenearthlab.gif",
+      "mime": "image/gif",
+      "sha256": "b57634cd5569c12a185f8c0ab9ffc7be896daaee48104e4c6f1771ca6304d478",
+      "capturedAt": "2026-10-08T05:25:14.456Z",
+      "size": 432
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greenearthport.gif",
+      "file": "assets/a77c85663d3d72ae-greenearthport.gif",
+      "mime": "image/gif",
+      "sha256": "a77c85663d3d72ae0da28a8f9ad9bc954d8d95457961c5d580c1cce15e0aa366",
+      "capturedAt": "2026-10-08T05:25:14.456Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greyskyairport.gif",
+      "file": "assets/81924c2c7a6c17ad-greyskyairport.gif",
+      "mime": "image/gif",
+      "sha256": "81924c2c7a6c17ad33dedd4a1314097041d4ba8af0e2a8159d500dd06d930065",
+      "capturedAt": "2026-10-08T05:25:52.265Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greyskybase.gif",
+      "file": "assets/0865db8d079f7237-greyskybase.gif",
+      "mime": "image/gif",
+      "sha256": "0865db8d079f7237fd3278138d195036e4c7964ff1b3bd175633af248a3ceaa3",
+      "capturedAt": "2026-10-08T05:25:40.338Z",
+      "size": 873
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greyskycity.gif",
+      "file": "assets/1e089a899057a117-greyskycity.gif",
+      "mime": "image/gif",
+      "sha256": "1e089a899057a1179e4c21eaa0ab8afc0a13da0e96747c3c65ea69a646f3c11a",
+      "capturedAt": "2026-10-08T05:25:40.344Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greyskycomtower.gif",
+      "file": "assets/43e9b28af3f8e517-greyskycomtower.gif",
+      "mime": "image/gif",
+      "sha256": "43e9b28af3f8e517fde102745cae1d7ba13c9a10b910a959766b7835453f8032",
+      "capturedAt": "2026-10-08T05:25:52.248Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greyskyhq.gif",
+      "file": "assets/b25f18851aeeb46e-greyskyhq.gif",
+      "mime": "image/gif",
+      "sha256": "b25f18851aeeb46e7a26d21435a6456ab552e79e76666d1c693c66126d051365",
+      "capturedAt": "2026-10-08T05:25:52.308Z",
+      "size": 520
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greyskylab.gif",
+      "file": "assets/331b1289e5884210-greyskylab.gif",
+      "mime": "image/gif",
+      "sha256": "331b1289e58842105ffce0fa40c0f293b1071c218ae588f7a36a5ee0720837b9",
+      "capturedAt": "2026-10-08T05:25:40.343Z",
+      "size": 432
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/greyskyport.gif",
+      "file": "assets/b69d4d0e9f8ba7b2-greyskyport.gif",
+      "mime": "image/gif",
+      "sha256": "b69d4d0e9f8ba7b2ef8ce767eb6dbef77eeccc1b0ab78a55febec921dedab90f",
+      "capturedAt": "2026-10-08T05:25:52.241Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gs_gebattleship.gif",
+      "file": "assets/eabc17f5798ae470-gs_gebattleship.gif",
+      "mime": "image/gif",
+      "sha256": "eabc17f5798ae4709d87a44034c1a217b225b57d226cb90502f38361535917f4",
+      "capturedAt": "2026-10-08T05:25:14.265Z",
+      "size": 300
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gs_geblackbomb.gif",
+      "file": "assets/8a6b201cca68e71a-gs_geblackbomb.gif",
+      "mime": "image/gif",
+      "sha256": "8a6b201cca68e71ae825cdb42e17b9debdfe3a367c6978e805524566ba6f677a",
+      "capturedAt": "2026-10-08T05:25:14.265Z",
+      "size": 477
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gs_gecarrier.gif",
+      "file": "assets/c0f70642ceb2cb51-gs_gecarrier.gif",
+      "mime": "image/gif",
+      "sha256": "c0f70642ceb2cb51ee2532c0376e328c9a83b310840389ef137cce9d047e288f",
+      "capturedAt": "2026-10-08T05:25:14.271Z",
+      "size": 247
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gs_gefighter.gif",
+      "file": "assets/5a353dbfc0faf803-gs_gefighter.gif",
+      "mime": "image/gif",
+      "sha256": "5a353dbfc0faf80319b65a2f0028457499dea428b5626a50d9315583002602a1",
+      "capturedAt": "2026-10-08T05:26:36.352Z",
+      "size": 277
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gs_gemegatank.gif",
+      "file": "assets/71645b2ae8dd42e8-gs_gemegatank.gif",
+      "mime": "image/gif",
+      "sha256": "71645b2ae8dd42e8d8f484334088050639df17d76361c00ed67686fed92b787b",
+      "capturedAt": "2026-10-08T05:25:14.284Z",
+      "size": 681
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gs_gestealth.gif",
+      "file": "assets/7d134e7596a6139d-gs_gestealth.gif",
+      "mime": "image/gif",
+      "sha256": "7d134e7596a6139d2599507207f36305347be0fe322ec83fa11c1f61e3e4862b",
+      "capturedAt": "2026-10-08T05:25:14.297Z",
+      "size": 332
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gs_neutralcity.gif",
+      "file": "assets/6ee1d69d043f7cda-gs_neutralcity.gif",
+      "mime": "image/gif",
+      "sha256": "6ee1d69d043f7cda297e1f79e0ebfda7221852505aefaabe49d1005dd2935613",
+      "capturedAt": "2026-10-08T05:26:36.333Z",
+      "size": 182
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gsapc.gif",
+      "file": "assets/9a123596d6b2224e-gsapc.gif",
+      "mime": "image/gif",
+      "sha256": "9a123596d6b2224ebbfc969175d0577bbdd2f3377af3843e167934296a37df5b",
+      "capturedAt": "2026-10-08T05:25:52.337Z",
+      "size": 1288
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/gslogo.gif",
+      "file": "assets/81c83d43dc76f531-gslogo.gif",
+      "mime": "image/gif",
+      "sha256": "81c83d43dc76f53170d29b23a50fa3a24ffb7e616e62a21437c9aa1117751548",
+      "capturedAt": "2026-10-08T05:26:36.361Z",
+      "size": 119
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/hpipeseam.gif",
+      "file": "assets/4b830a0f9c7ea356-hpipeseam.gif",
+      "mime": "image/gif",
+      "sha256": "4b830a0f9c7ea3563113fcb4c33372a2bd50e3d92c711e53cf09984d7fef72e5",
+      "capturedAt": "2026-10-08T05:26:03.075Z",
+      "size": 178
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/jadesunairport.gif",
+      "file": "assets/3aa3c9de50fae647-jadesunairport.gif",
+      "mime": "image/gif",
+      "sha256": "3aa3c9de50fae647077fb8e07a32ed67cec26786aa1ef3fa37fb67b51cabea55",
+      "capturedAt": "2026-10-08T05:25:52.236Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/jadesunbase.gif",
+      "file": "assets/08364b28031682a8-jadesunbase.gif",
+      "mime": "image/gif",
+      "sha256": "08364b28031682a8d3fa0e8a97a3d39ccc226d6a37db9e725213210c0279963f",
+      "capturedAt": "2026-10-08T05:25:52.291Z",
+      "size": 873
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/jadesuncity.gif",
+      "file": "assets/24a3ef8a733ec796-jadesuncity.gif",
+      "mime": "image/gif",
+      "sha256": "24a3ef8a733ec796070f01ed73661043c27862909e345b21dadf98fd91d26672",
+      "capturedAt": "2026-10-08T05:25:52.248Z",
+      "size": 390
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/jadesuncomtower.gif",
+      "file": "assets/861501be992734cd-jadesuncomtower.gif",
+      "mime": "image/gif",
+      "sha256": "861501be992734cda405595f3d9eb8c05f154cdfd17abb534104ffe06565fbb0",
+      "capturedAt": "2026-10-08T05:25:52.298Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/jadesunhq.gif",
+      "file": "assets/3f2265b6da1ff190-jadesunhq.gif",
+      "mime": "image/gif",
+      "sha256": "3f2265b6da1ff190a33f7e55651d1fba59bb1f56be31797724316bf802fafa97",
+      "capturedAt": "2026-10-08T05:25:52.312Z",
+      "size": 465
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/jadesunport.gif",
+      "file": "assets/4728a8dadada00d0-jadesunport.gif",
+      "mime": "image/gif",
+      "sha256": "4728a8dadada00d0408624b6066fc3362e5ab7717925d386ef10a25031bc2b80",
+      "capturedAt": "2026-10-08T05:25:52.235Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/jsapc.gif",
+      "file": "assets/471a72fe66dc25bd-jsapc.gif",
+      "mime": "image/gif",
+      "sha256": "471a72fe66dc25bd5a36eb9d54e78d223571f4b352fd423c36c6d5e22ecc0fc9",
+      "capturedAt": "2026-10-08T05:25:52.328Z",
+      "size": 1292
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/jslogo.gif",
+      "file": "assets/1a8cc2f400a78f05-jslogo.gif",
+      "mime": "image/gif",
+      "sha256": "1a8cc2f400a78f05dc77aae477b4f1b83e5979900473cec1ad594b66eebd22d7",
+      "capturedAt": "2026-10-08T05:26:36.382Z",
+      "size": 156
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/missilesilo.gif",
+      "file": "assets/a576a665142a8e07-missilesilo.gif",
+      "mime": "image/gif",
+      "sha256": "a576a665142a8e07b1d7e2035597805a7530e8fa3151c176835764e243c735cd",
+      "capturedAt": "2026-10-08T05:26:03.068Z",
+      "size": 169
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/missilesiloempty.gif",
+      "file": "assets/dca72a8d5d559561-missilesiloempty.gif",
+      "mime": "image/gif",
+      "sha256": "dca72a8d5d559561c372c2b13aa504cbf75f52083621cb6d3efe54567084952b",
+      "capturedAt": "2026-10-08T05:25:14.336Z",
+      "size": 97
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/nelogo.gif",
+      "file": "assets/dbbe1e8dc21e5d2b-nelogo.gif",
+      "mime": "image/gif",
+      "sha256": "dbbe1e8dc21e5d2b951d62ad2c612ac1edbc0ce0d4246a25df56b7829994e230",
+      "capturedAt": "2026-10-08T05:26:36.360Z",
+      "size": 121
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/neutralairport.gif",
+      "file": "assets/c8efa252b17404bd-neutralairport.gif",
+      "mime": "image/gif",
+      "sha256": "c8efa252b17404bd6ca2133e00098931e14b1f190129328c168994730ce02da3",
+      "capturedAt": "2026-10-08T05:25:14.342Z",
+      "size": 126
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/neutralbase.gif",
+      "file": "assets/837756399992f60e-neutralbase.gif",
+      "mime": "image/gif",
+      "sha256": "837756399992f60e751e7b4b35b83fa39a9eacea2e66ab1156af4fa94d0b4cde",
+      "capturedAt": "2026-10-08T05:25:14.333Z",
+      "size": 146
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/neutralcity.gif",
+      "file": "assets/e76720568ecb0fe5-neutralcity.gif",
+      "mime": "image/gif",
+      "sha256": "e76720568ecb0fe501c6db0651b1a898d580d17247c866c77f6036d3bb071fe5",
+      "capturedAt": "2026-10-08T05:25:14.333Z",
+      "size": 139
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/neutralcomtower.gif",
+      "file": "assets/332c8cfaaccbb0ba-neutralcomtower.gif",
+      "mime": "image/gif",
+      "sha256": "332c8cfaaccbb0bacab79b50942d61c75ba672b4c02786d5b5ba8e7b7ca533a2",
+      "capturedAt": "2026-10-08T05:25:14.336Z",
+      "size": 176
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/neutrallab.gif",
+      "file": "assets/13155a29f548b225-neutrallab.gif",
+      "mime": "image/gif",
+      "sha256": "13155a29f548b225565f79b24c3d437fade550447bd93a2ab204214718f1091a",
+      "capturedAt": "2026-10-08T05:26:03.068Z",
+      "size": 155
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/neutralport.gif",
+      "file": "assets/acc3f009075ca3b2-neutralport.gif",
+      "mime": "image/gif",
+      "sha256": "acc3f009075ca3b282b5c18f9ca209377c3b3f3666c6d2b19004d26fdf65377a",
+      "capturedAt": "2026-10-08T05:25:14.339Z",
+      "size": 123
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/orangestarairport.gif",
+      "file": "assets/0c8d14cce0d0bed2-orangestarairport.gif",
+      "mime": "image/gif",
+      "sha256": "0c8d14cce0d0bed2621cfd29c4fe60d2440a0d58a886c56d1c9d902ba3fc3d5d",
+      "capturedAt": "2026-10-08T05:25:52.274Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/orangestarbase.gif",
+      "file": "assets/12dc9cbc9691ebd7-orangestarbase.gif",
+      "mime": "image/gif",
+      "sha256": "12dc9cbc9691ebd7c45c22149723eaa946d15c7f1e7054becda64726ac7c3f2b",
+      "capturedAt": "2026-10-08T05:25:40.330Z",
+      "size": 900
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/orangestarcity.gif",
+      "file": "assets/0eb7a7fd0878f568-orangestarcity.gif",
+      "mime": "image/gif",
+      "sha256": "0eb7a7fd0878f5682a2833602e5060908b8a0f7ca531a90de3d933f9214e8a51",
+      "capturedAt": "2026-10-08T05:25:40.337Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/orangestarcomtower.gif",
+      "file": "assets/109d03fb16665393-orangestarcomtower.gif",
+      "mime": "image/gif",
+      "sha256": "109d03fb16665393e25561bc2853a23a55710b2c4a4d56543ac76d275aa74382",
+      "capturedAt": "2026-10-08T05:25:52.292Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/orangestarhq.gif",
+      "file": "assets/c48458fb6bac985d-orangestarhq.gif",
+      "mime": "image/gif",
+      "sha256": "c48458fb6bac985d6ec536f2853684d2521ee2512d23b5103623edf70725dc79",
+      "capturedAt": "2026-10-08T05:25:52.302Z",
+      "size": 474
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/orangestarlab.gif",
+      "file": "assets/359269eabc9a9236-orangestarlab.gif",
+      "mime": "image/gif",
+      "sha256": "359269eabc9a92364c5eb6dccd452a0bf593abb577df1966972a5fc207fba389",
+      "capturedAt": "2026-10-08T05:25:40.333Z",
+      "size": 432
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/orangestarport.gif",
+      "file": "assets/dd7282b5d40f63fd-orangestarport.gif",
+      "mime": "image/gif",
+      "sha256": "dd7282b5d40f63fdcfc77fceca08bd0cfd5114b0ab3ffa1effbb4c9918199cc6",
+      "capturedAt": "2026-10-08T05:25:52.219Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osanti-air.gif",
+      "file": "assets/6101dc3ec6d8129f-osanti-air.gif",
+      "mime": "image/gif",
+      "sha256": "6101dc3ec6d8129fe665387dd4bd82c67989beef9506b2ce6ce80dcd831893d4",
+      "capturedAt": "2026-10-08T05:27:23.696Z",
+      "size": 559
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osapc.gif",
+      "file": "assets/15bcabda1129fdca-osapc.gif",
+      "mime": "image/gif",
+      "sha256": "15bcabda1129fdca3e76c99cb50c6342926a771fd913033bccb7c904739a1960",
+      "capturedAt": "2026-10-08T05:25:52.322Z",
+      "size": 478
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osartillery.gif",
+      "file": "assets/e6b7f1849a64c725-osartillery.gif",
+      "mime": "image/gif",
+      "sha256": "e6b7f1849a64c7256568a82a47ee72c7954152768c7971923e3a195963d0dc6a",
+      "capturedAt": "2026-10-08T05:27:23.696Z",
+      "size": 525
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osb-copter.gif",
+      "file": "assets/2fed76e0fbac540c-osb-copter.gif",
+      "mime": "image/gif",
+      "sha256": "2fed76e0fbac540ca8400ceae722727038e49dcb4dfed614e8d9397449afa235",
+      "capturedAt": "2026-10-08T05:26:14.050Z",
+      "size": 568
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osbattleship.gif",
+      "file": "assets/0c74ddc0a7cf6c96-osbattleship.gif",
+      "mime": "image/gif",
+      "sha256": "0c74ddc0a7cf6c965ae7f3f9d2100b459548f151a8d9e2f13fba33112828fd5a",
+      "capturedAt": "2026-10-08T05:27:23.704Z",
+      "size": 300
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osblackboat.gif",
+      "file": "assets/6ec182e896d3bda0-osblackboat.gif",
+      "mime": "image/gif",
+      "sha256": "6ec182e896d3bda0ec78c8c2cbfcaa0f86d0b716151ffc567f3d7b4f06481bb0",
+      "capturedAt": "2026-10-08T05:27:23.708Z",
+      "size": 378
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osblackbomb.gif",
+      "file": "assets/8c4799b243db68ed-osblackbomb.gif",
+      "mime": "image/gif",
+      "sha256": "8c4799b243db68edb4d902c6b0f99af007b0e123e0936f9f96526c9a3211ac21",
+      "capturedAt": "2026-10-08T05:27:23.719Z",
+      "size": 486
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osbomber.gif",
+      "file": "assets/b4c4c3b5a962d00c-osbomber.gif",
+      "mime": "image/gif",
+      "sha256": "b4c4c3b5a962d00c86b0be65aeac42530be8a965a5b58a26328e9732ca2fabc8",
+      "capturedAt": "2026-10-08T05:27:23.703Z",
+      "size": 302
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/oscarrier.gif",
+      "file": "assets/423639689107fdf8-oscarrier.gif",
+      "mime": "image/gif",
+      "sha256": "423639689107fdf8daa655296bdb7604beec57dbc27829f67ad5007926c2025a",
+      "capturedAt": "2026-10-08T05:27:23.709Z",
+      "size": 247
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/oscruiser.gif",
+      "file": "assets/83276d87b7143fda-oscruiser.gif",
+      "mime": "image/gif",
+      "sha256": "83276d87b7143fda5732ee52cb07061c23ff59c2daf2d403e409d96eccda6525",
+      "capturedAt": "2026-10-08T05:26:03.177Z",
+      "size": 250
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osfighter.gif",
+      "file": "assets/440486933ab1e221-osfighter.gif",
+      "mime": "image/gif",
+      "sha256": "440486933ab1e221161ee42ad636df01be449d9afd50294c5d99b9ac43242516",
+      "capturedAt": "2026-10-08T05:27:23.702Z",
+      "size": 277
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osinfantry.gif",
+      "file": "assets/fc964e8b948b3a61-osinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "fc964e8b948b3a61873f299c1b86a801691ea56bcc1c3ec2c9864001851dd06d",
+      "capturedAt": "2026-10-08T05:26:03.179Z",
+      "size": 564
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/oslander.gif",
+      "file": "assets/105640a371c593ea-oslander.gif",
+      "mime": "image/gif",
+      "sha256": "105640a371c593eabaa9003d0089e07e5e7aa9d6ae72d47a0ab8459fa950528d",
+      "capturedAt": "2026-10-08T05:26:03.179Z",
+      "size": 285
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/oslogo.gif",
+      "file": "assets/43aae64ff4d670a4-oslogo.gif",
+      "mime": "image/gif",
+      "sha256": "43aae64ff4d670a4f0c90e78e23042e193ed21e992b398ddaa00560580e18964",
+      "capturedAt": "2026-10-08T05:26:36.335Z",
+      "size": 116
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osmd.tank.gif",
+      "file": "assets/9f2b9e14aff3dcd7-osmd.tank.gif",
+      "mime": "image/gif",
+      "sha256": "9f2b9e14aff3dcd73b1ba353a64c6199dde5b644ff614cb7234fafcd2ede313a",
+      "capturedAt": "2026-10-08T05:27:23.687Z",
+      "size": 562
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osmech.gif",
+      "file": "assets/400ab4974510c443-osmech.gif",
+      "mime": "image/gif",
+      "sha256": "400ab4974510c44391693637f0d775f5c60c2fb6a2cf952f4b9d6277b1b2f54e",
+      "capturedAt": "2026-10-08T05:26:03.182Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osmegatank.gif",
+      "file": "assets/1d58fc9e3e451682-osmegatank.gif",
+      "mime": "image/gif",
+      "sha256": "1d58fc9e3e45168298dcd9ebdb895fa8142a14f86f9e7114448beffcbf600d7a",
+      "capturedAt": "2026-10-08T05:27:23.719Z",
+      "size": 721
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osmissile.gif",
+      "file": "assets/7d6de944602e6a01-osmissile.gif",
+      "mime": "image/gif",
+      "sha256": "7d6de944602e6a0196e1f3f1c5cd138c526d58e4241857281867ca8b21df5443",
+      "capturedAt": "2026-10-08T05:26:03.179Z",
+      "size": 320
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osneotank.gif",
+      "file": "assets/f3f2652db0735041-osneotank.gif",
+      "mime": "image/gif",
+      "sha256": "f3f2652db0735041e5e712cc7d99c36e22406611aa7bf8db5a4687696ef82fd9",
+      "capturedAt": "2026-10-08T05:27:23.715Z",
+      "size": 570
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ospiperunner.gif",
+      "file": "assets/8b4d33ac4b1973f0-ospiperunner.gif",
+      "mime": "image/gif",
+      "sha256": "8b4d33ac4b1973f0c19326ff56b7bb90895f059aae05474575abd684abb463dd",
+      "capturedAt": "2026-10-08T05:27:23.716Z",
+      "size": 343
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osrecon.gif",
+      "file": "assets/c806f7a878bd0fb5-osrecon.gif",
+      "mime": "image/gif",
+      "sha256": "c806f7a878bd0fb5c2321ca72142ae70a5a79ca43fe288ffb363fb881e042bd2",
+      "capturedAt": "2026-10-08T05:27:23.694Z",
+      "size": 481
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osrocket.gif",
+      "file": "assets/9d9502908adb0d30-osrocket.gif",
+      "mime": "image/gif",
+      "sha256": "9d9502908adb0d303670c4c1d121a3477d36f6d66afba224ec1d748589d7152e",
+      "capturedAt": "2026-10-08T05:27:23.696Z",
+      "size": 302
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/osstealth.gif",
+      "file": "assets/42f9bee1b0c33d64-osstealth.gif",
+      "mime": "image/gif",
+      "sha256": "42f9bee1b0c33d64a1941a4fb3e15fbbbf04a7b28c6a6a53a7e486ef8fa3a644",
+      "capturedAt": "2026-10-08T05:27:23.709Z",
+      "size": 332
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ossub.gif",
+      "file": "assets/e4d9d50c23de710b-ossub.gif",
+      "mime": "image/gif",
+      "sha256": "e4d9d50c23de710bdf42826393305c35ab3cd892981e5b324179ae205172e1e1",
+      "capturedAt": "2026-10-08T05:27:23.708Z",
+      "size": 359
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ost-copter.gif",
+      "file": "assets/8f1ab61b0a58aa4c-ost-copter.gif",
+      "mime": "image/gif",
+      "sha256": "8f1ab61b0a58aa4cd448a738d68766f49763974b0bc58c336692d6f4f7d0d601",
+      "capturedAt": "2026-10-08T05:27:23.703Z",
+      "size": 475
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ostank.gif",
+      "file": "assets/b44e0e9bf11b1cb8-ostank.gif",
+      "mime": "image/gif",
+      "sha256": "b44e0e9bf11b1cb8db6d9c8673704e7426cfddc2775a61d03a8e0e17b4d6c7cc",
+      "capturedAt": "2026-10-08T05:27:23.687Z",
+      "size": 414
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pcanti-air.gif",
+      "file": "assets/071bd484a36bd68c-pcanti-air.gif",
+      "mime": "image/gif",
+      "sha256": "071bd484a36bd68c4b28e2b5179f5e11b0a1f63247add0675d021ef48584fd95",
+      "capturedAt": "2026-10-08T05:26:03.185Z",
+      "size": 559
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pcapc.gif",
+      "file": "assets/4274a39b7fcb5c67-pcapc.gif",
+      "mime": "image/gif",
+      "sha256": "4274a39b7fcb5c67c9e6610c8353f52b6ec3ca95979a6a3d62483aa40f620a31",
+      "capturedAt": "2026-10-08T05:25:52.332Z",
+      "size": 524
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pcblackboat.gif",
+      "file": "assets/ebfd49b4173078d0-pcblackboat.gif",
+      "mime": "image/gif",
+      "sha256": "ebfd49b4173078d093355bf7f941118c798ea724231eca054ccf3314dbeed1ae",
+      "capturedAt": "2026-10-08T05:26:03.192Z",
+      "size": 557
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pcinfantry.gif",
+      "file": "assets/85ae5ed047e3cb09-pcinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "85ae5ed047e3cb09f88669df4c44d65c63a079600d6e9f7deaaf90e200ffa648",
+      "capturedAt": "2026-10-08T05:26:03.185Z",
+      "size": 602
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pclander.gif",
+      "file": "assets/164d65079cc4a8d4-pclander.gif",
+      "mime": "image/gif",
+      "sha256": "164d65079cc4a8d427e1a0c2ecd76f9471ee7b6a153d2fddf6f18d59de50b809",
+      "capturedAt": "2026-10-08T05:26:03.193Z",
+      "size": 286
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pclogo.gif",
+      "file": "assets/fe85fdcdfe5156d1-pclogo.gif",
+      "mime": "image/gif",
+      "sha256": "fe85fdcdfe5156d162c601466527eb9cc3638af9d9b9a534a6a22e499e6a9042",
+      "capturedAt": "2026-10-08T05:26:36.364Z",
+      "size": 115
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pcmissile.gif",
+      "file": "assets/002e98663ea20def-pcmissile.gif",
+      "mime": "image/gif",
+      "sha256": "002e98663ea20defb3744364f7463afd72c9a3f145902a6486ba7aa81f3b5ced",
+      "capturedAt": "2026-10-08T05:26:03.191Z",
+      "size": 233
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pcrecon.gif",
+      "file": "assets/2b065ff8f5851b29-pcrecon.gif",
+      "mime": "image/gif",
+      "sha256": "2b065ff8f5851b29a6e557e7f23e6f9986768be02cf2deb4b22b847cd998b275",
+      "capturedAt": "2026-10-08T05:26:03.188Z",
+      "size": 524
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pinkcosmosairport.gif",
+      "file": "assets/2eb624a2e79b9936-pinkcosmosairport.gif",
+      "mime": "image/gif",
+      "sha256": "2eb624a2e79b9936fb30c684cc455d72a32aa1d8eaf7599900709c879e3decc4",
+      "capturedAt": "2026-10-08T05:25:52.268Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pinkcosmosbase.gif",
+      "file": "assets/2bde85ba3dd5c605-pinkcosmosbase.gif",
+      "mime": "image/gif",
+      "sha256": "2bde85ba3dd5c605c4c9c905caa8ce25d55ef4d0c2012d23b36c4d94f1352008",
+      "capturedAt": "2026-10-08T05:25:52.290Z",
+      "size": 602
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pinkcosmoscity.gif",
+      "file": "assets/d654651e3ecd2c7d-pinkcosmoscity.gif",
+      "mime": "image/gif",
+      "sha256": "d654651e3ecd2c7dd311d62afdcc7618a08901e2f1089c10fc7b1b3fd914255e",
+      "capturedAt": "2026-10-08T05:25:52.265Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pinkcosmoscomtower.gif",
+      "file": "assets/0ab0e957d39ffbcd-pinkcosmoscomtower.gif",
+      "mime": "image/gif",
+      "sha256": "0ab0e957d39ffbcd0e664d2d01a52b379e1ce622dce131cde9d1ef5761081227",
+      "capturedAt": "2026-10-08T05:25:52.273Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pinkcosmoshq.gif",
+      "file": "assets/b6a95de8a84316f7-pinkcosmoshq.gif",
+      "mime": "image/gif",
+      "sha256": "b6a95de8a84316f7e001e0c0e7a14779fabd92d0e56d4e5b9bf225261e658254",
+      "capturedAt": "2026-10-08T05:25:52.316Z",
+      "size": 522
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pinkcosmosport.gif",
+      "file": "assets/e50a47bceb2c5f9c-pinkcosmosport.gif",
+      "mime": "image/gif",
+      "sha256": "e50a47bceb2c5f9c2b953c90b541bd9bb8c03b8cf62aa5e00c00def2f8950d21",
+      "capturedAt": "2026-10-08T05:25:52.229Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/plain.gif",
+      "file": "assets/b9a5c81617a9ee6e-plain.gif",
+      "mime": "image/gif",
+      "sha256": "b9a5c81617a9ee6e0b05f6948bbccc915f07a359db65a2bd9cbb6a6a43f443a0",
+      "capturedAt": "2026-10-08T05:27:23.748Z",
+      "size": 165
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/plapc.gif",
+      "file": "assets/e0d94494d1c31da8-plapc.gif",
+      "mime": "image/gif",
+      "sha256": "e0d94494d1c31da83663ca332651f2bdc23489b3e62aa4e6c596c32d9af5ab21",
+      "capturedAt": "2026-10-08T05:25:52.337Z",
+      "size": 577
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/plcruiser.gif",
+      "file": "assets/46e3cc460aadc3ab-plcruiser.gif",
+      "mime": "image/gif",
+      "sha256": "46e3cc460aadc3ab4376f26925cf0a933be608f6f968c196d97972c67a20c71c",
+      "capturedAt": "2026-10-08T05:26:03.136Z",
+      "size": 295
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/plinfantry.gif",
+      "file": "assets/f375a9511368cc4d-plinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "f375a9511368cc4dd1aee02ac902fdc9afb6767e3ab22dabb85e6934829234d7",
+      "capturedAt": "2026-10-08T05:26:03.127Z",
+      "size": 695
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pllander.gif",
+      "file": "assets/2922f1cc9c95f553-pllander.gif",
+      "mime": "image/gif",
+      "sha256": "2922f1cc9c95f5533ec4cf5f07509d782b703b3547fce451f39f39c8241beb46",
+      "capturedAt": "2026-10-08T05:26:03.135Z",
+      "size": 328
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/pllogo.gif",
+      "file": "assets/54069519121d72b0-pllogo.gif",
+      "mime": "image/gif",
+      "sha256": "54069519121d72b0e06cafa6859a05cdba19473beda94395f090696a09aaf94f",
+      "capturedAt": "2026-10-08T05:26:36.369Z",
+      "size": 146
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/plmech.gif",
+      "file": "assets/c2d13b838b160d77-plmech.gif",
+      "mime": "image/gif",
+      "sha256": "c2d13b838b160d776429f2c224a9e6911fd20212cc03959661fd08395ed30e6e",
+      "capturedAt": "2026-10-08T05:26:03.126Z",
+      "size": 450
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/plmissile.gif",
+      "file": "assets/98f24048cba25c2d-plmissile.gif",
+      "mime": "image/gif",
+      "sha256": "98f24048cba25c2db14fc4f9ecb7992499952dea4b27bf93fa1029763a3fe159",
+      "capturedAt": "2026-10-08T05:26:03.133Z",
+      "size": 351
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/purplelightningairport.gif",
+      "file": "assets/415bf245e8ffea7e-purplelightningairport.gif",
+      "mime": "image/gif",
+      "sha256": "415bf245e8ffea7e75d67054739ecba4551be606b191f591befca67cfc577a7d",
+      "capturedAt": "2026-10-08T05:25:52.242Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/purplelightningbase.gif",
+      "file": "assets/9b2f679db1da15b2-purplelightningbase.gif",
+      "mime": "image/gif",
+      "sha256": "9b2f679db1da15b2266591784dddda97aa91e72141fc0e698c53b53e24d63636",
+      "capturedAt": "2026-10-08T05:25:52.229Z",
+      "size": 876
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/purplelightningcity.gif",
+      "file": "assets/0bb0c7c2f9c8de78-purplelightningcity.gif",
+      "mime": "image/gif",
+      "sha256": "0bb0c7c2f9c8de78596aafec59cc562e2a0ace1848822787759b7b64ec86590b",
+      "capturedAt": "2026-10-08T05:25:52.285Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/purplelightningcomtower.gif",
+      "file": "assets/ea203dc5023fb807-purplelightningcomtower.gif",
+      "mime": "image/gif",
+      "sha256": "ea203dc5023fb8075eca7838717e6a0a557e082128c080d9109290723d1eb7ff",
+      "capturedAt": "2026-10-08T05:25:52.271Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/purplelightninghq.gif",
+      "file": "assets/278ed3304deed5a2-purplelightninghq.gif",
+      "mime": "image/gif",
+      "sha256": "278ed3304deed5a24f95ad9af08c2216a73ba427a526cf0aad53476629676241",
+      "capturedAt": "2026-10-08T05:25:52.319Z",
+      "size": 453
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/purplelightningport.gif",
+      "file": "assets/46742b1de6eb3291-purplelightningport.gif",
+      "mime": "image/gif",
+      "sha256": "46742b1de6eb329195923a339949ecf7cc4d3ef95c1fe610bdf5fe67ddd60eb1",
+      "capturedAt": "2026-10-08T05:25:52.267Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/redfireairport.gif",
+      "file": "assets/316448265e2247ef-redfireairport.gif",
+      "mime": "image/gif",
+      "sha256": "316448265e2247ef7f1c49c28ff2fc280790d8cf05f1961827ec3d36a3268512",
+      "capturedAt": "2026-10-08T05:25:52.242Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/redfirebase.gif",
+      "file": "assets/2a35648c8e232878-redfirebase.gif",
+      "mime": "image/gif",
+      "sha256": "2a35648c8e2328781edbec15a75d7b9b8df654b9f1e4034cd564f47d679fe177",
+      "capturedAt": "2026-10-08T05:25:40.323Z",
+      "size": 873
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/redfirecity.gif",
+      "file": "assets/4710fa4082d3c175-redfirecity.gif",
+      "mime": "image/gif",
+      "sha256": "4710fa4082d3c175eec9e0749288c938a920956f145095dc9a57411ea77d91e6",
+      "capturedAt": "2026-10-08T05:25:40.322Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/redfirecomtower.gif",
+      "file": "assets/e91fa2bddebff176-redfirecomtower.gif",
+      "mime": "image/gif",
+      "sha256": "e91fa2bddebff176d0ea75d7304ab7fed2fcb140904758c1b5c29115c31f38a4",
+      "capturedAt": "2026-10-08T05:25:52.284Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/redfirehq.gif",
+      "file": "assets/6c1d84e71911e323-redfirehq.gif",
+      "mime": "image/gif",
+      "sha256": "6c1d84e71911e32304a6044504a056c546eeb772b55b74a67e36108e188f5647",
+      "capturedAt": "2026-10-08T05:25:52.305Z",
+      "size": 1783
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/redfirelab.gif",
+      "file": "assets/803dacb41b624934-redfirelab.gif",
+      "mime": "image/gif",
+      "sha256": "803dacb41b624934dd6fed6fc6bba138eacacd9c91039993a2730e677483f5db",
+      "capturedAt": "2026-10-08T05:25:40.330Z",
+      "size": 432
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/redfireport.gif",
+      "file": "assets/7af5661ab243b49d-redfireport.gif",
+      "mime": "image/gif",
+      "sha256": "7af5661ab243b49d53c8ebb938044a5b4e9ae70543fd0d9c9cb529d64995a4ba",
+      "capturedAt": "2026-10-08T05:25:52.217Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/rfapc.gif",
+      "file": "assets/3e5471719ae4b76a-rfapc.gif",
+      "mime": "image/gif",
+      "sha256": "3e5471719ae4b76acd42380ec7d0efc68c147ff67148010106e45ca0271531d7",
+      "capturedAt": "2026-10-08T05:25:52.335Z",
+      "size": 1262
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/rflogo.gif",
+      "file": "assets/b446742771b1a305-rflogo.gif",
+      "mime": "image/gif",
+      "sha256": "b446742771b1a305912930d57d78486246e9dc88700061bf5a36045c6ed54370",
+      "capturedAt": "2026-10-08T05:26:36.352Z",
+      "size": 120
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/sclogo.gif",
+      "file": "assets/a2f5dc550164f887-sclogo.gif",
+      "mime": "image/gif",
+      "sha256": "a2f5dc550164f8879bb3432e329f10443866ea7a8f48c5f93a562a282c442fa0",
+      "capturedAt": "2026-10-08T05:27:23.687Z",
+      "size": 4098
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tealgalaxyairport.gif",
+      "file": "assets/b5301529e1ba2143-tealgalaxyairport.gif",
+      "mime": "image/gif",
+      "sha256": "b5301529e1ba21439a90362c7bb1fd0d39700947ba98c21978a357f94cc9e2fb",
+      "capturedAt": "2026-10-08T05:25:52.276Z",
+      "size": 345
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tealgalaxybase.gif",
+      "file": "assets/1c7637f10ddaa2c2-tealgalaxybase.gif",
+      "mime": "image/gif",
+      "sha256": "1c7637f10ddaa2c2b5103c15296445f7899d41681628bda759488344c72d81f1",
+      "capturedAt": "2026-10-08T05:25:52.277Z",
+      "size": 876
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tealgalaxycity.gif",
+      "file": "assets/4b032904c05729aa-tealgalaxycity.gif",
+      "mime": "image/gif",
+      "sha256": "4b032904c05729aa03c18614fd6b11b295e4adbdc4df42c4e24b40f146919ad8",
+      "capturedAt": "2026-10-08T05:25:52.235Z",
+      "size": 384
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tealgalaxycomtower.gif",
+      "file": "assets/3e39a081448a990f-tealgalaxycomtower.gif",
+      "mime": "image/gif",
+      "sha256": "3e39a081448a990ff6da595061faa6b6ea0893c498758899359b1c9263cfcc17",
+      "capturedAt": "2026-10-08T05:25:52.284Z",
+      "size": 495
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tealgalaxyhq.gif",
+      "file": "assets/5e9726b50c51e46c-tealgalaxyhq.gif",
+      "mime": "image/gif",
+      "sha256": "5e9726b50c51e46cc9eaad116453e1f67d54c7c6e409bc9c6604b7575b171200",
+      "capturedAt": "2026-10-08T05:25:52.318Z",
+      "size": 532
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tealgalaxyport.gif",
+      "file": "assets/8de2da631d57140a-tealgalaxyport.gif",
+      "mime": "image/gif",
+      "sha256": "8de2da631d57140ae906c880dc5af61d364d22ea14cc05f9dc7c58a9781e4da5",
+      "capturedAt": "2026-10-08T05:25:52.229Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tgapc.gif",
+      "file": "assets/0e330e35a30a6f2c-tgapc.gif",
+      "mime": "image/gif",
+      "sha256": "0e330e35a30a6f2c9bad721606322e327c7307f9149a07f2c0de6321a180feb2",
+      "capturedAt": "2026-10-08T05:25:52.335Z",
+      "size": 656
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tgcruiser.gif",
+      "file": "assets/a863c496df29ce32-tgcruiser.gif",
+      "mime": "image/gif",
+      "sha256": "a863c496df29ce32da4c0b44bf8710638401548d49cc04634f4cef3345e598a9",
+      "capturedAt": "2026-10-08T05:26:03.198Z",
+      "size": 396
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tginfantry.gif",
+      "file": "assets/0a17ee2e7875287e-tginfantry.gif",
+      "mime": "image/gif",
+      "sha256": "0a17ee2e7875287e93e31c5f6549faceb446b030c3ca59a079ccea97486d75e7",
+      "capturedAt": "2026-10-08T05:26:03.192Z",
+      "size": 571
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tglander.gif",
+      "file": "assets/d27d9a98fcf42782-tglander.gif",
+      "mime": "image/gif",
+      "sha256": "d27d9a98fcf42782c9e2db8546e3c1062764cade516ab89c533ebdd0f3bdc7a9",
+      "capturedAt": "2026-10-08T05:26:03.197Z",
+      "size": 432
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tglogo.gif",
+      "file": "assets/391e7749aae3dced-tglogo.gif",
+      "mime": "image/gif",
+      "sha256": "391e7749aae3dcedf1db8ba1fb9414cccc1cb96cfc18493a1fdc5c75af4ee982",
+      "capturedAt": "2026-10-08T05:26:36.374Z",
+      "size": 130
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tgmech.gif",
+      "file": "assets/706815c881011ca0-tgmech.gif",
+      "mime": "image/gif",
+      "sha256": "706815c881011ca0037f01a6b199e74ba21af5281b1dd9ce6038ada07d4c80a1",
+      "capturedAt": "2026-10-08T05:26:03.186Z",
+      "size": 348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/tgmissile.gif",
+      "file": "assets/34badb27b781745c-tgmissile.gif",
+      "mime": "image/gif",
+      "sha256": "34badb27b781745c63224bcdae6a5fb6a1d9ddd898ed91c5e50f166d94d85fda",
+      "capturedAt": "2026-10-08T05:26:03.197Z",
+      "size": 403
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/uwlogo.gif",
+      "file": "assets/373be7d0c8cd55ee-uwlogo.gif",
+      "mime": "image/gif",
+      "sha256": "373be7d0c8cd55ee9fa5e8bf64609126c105babd7e936f2ef34f73d01e1b5141",
+      "capturedAt": "2026-10-08T05:26:36.390Z",
+      "size": 131
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/vpipeseam.gif",
+      "file": "assets/d9fb3bb9fd67daf4-vpipeseam.gif",
+      "mime": "image/gif",
+      "sha256": "d9fb3bb9fd67daf43e6f3395221bc71c685f17f8befacfa294870405487ca1a7",
+      "capturedAt": "2026-10-08T05:26:03.068Z",
+      "size": 191
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/whitenovabase.gif",
+      "file": "assets/e0c7134daad5ab81-whitenovabase.gif",
+      "mime": "image/gif",
+      "sha256": "e0c7134daad5ab81e8bc09a4f71d569738645486c1824fd9821f2419525ad060",
+      "capturedAt": "2026-10-08T05:26:03.069Z",
+      "size": 626
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/whitenovacity.gif",
+      "file": "assets/e7c95aecd57c2f20-whitenovacity.gif",
+      "mime": "image/gif",
+      "sha256": "e7c95aecd57c2f20f0cf5fbab7906c7a3967b132267fc244882c2162b9ec21eb",
+      "capturedAt": "2026-10-08T05:26:03.087Z",
+      "size": 287
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/whitenovahq.gif",
+      "file": "assets/d759746a0e544f46-whitenovahq.gif",
+      "mime": "image/gif",
+      "sha256": "d759746a0e544f46d4939a49612ac10a6254077d584a57bb425fcf163f6c5dcc",
+      "capturedAt": "2026-10-08T05:26:03.074Z",
+      "size": 387
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/whitenovaport.gif",
+      "file": "assets/29cd25459cc766e6-whitenovaport.gif",
+      "mime": "image/gif",
+      "sha256": "29cd25459cc766e6859c6ad83a76ff63655849cb2cf2656ef17765c59c796ec4",
+      "capturedAt": "2026-10-08T05:26:03.075Z",
+      "size": 251
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/wnapc.gif",
+      "file": "assets/6ec1a7a9fac9c0de-wnapc.gif",
+      "mime": "image/gif",
+      "sha256": "6ec1a7a9fac9c0dec832575b75cfcce78ec26cc146fd722de2e1b3706e5d7d05",
+      "capturedAt": "2026-10-08T05:26:03.166Z",
+      "size": 530
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/wnb-copter.gif",
+      "file": "assets/5a6fd90d6aab5fd9-wnb-copter.gif",
+      "mime": "image/gif",
+      "sha256": "5a6fd90d6aab5fd98fc1946a0254f23b57ab850c4d0a9278864a7c1782635aa7",
+      "capturedAt": "2026-10-08T05:26:03.149Z",
+      "size": 590
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/wnfighter.gif",
+      "file": "assets/9a472f3d553b444f-wnfighter.gif",
+      "mime": "image/gif",
+      "sha256": "9a472f3d553b444f914760df191fcced9ed5ba0f9af65b3f3f8f200a4f70d65d",
+      "capturedAt": "2026-10-08T05:26:03.149Z",
+      "size": 322
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/wninfantry.gif",
+      "file": "assets/f8b4ea2a75767e83-wninfantry.gif",
+      "mime": "image/gif",
+      "sha256": "f8b4ea2a75767e83cb49c33a7ebd806cf3b0ba1db1391f4ccd5dad390085603e",
+      "capturedAt": "2026-10-08T05:26:03.154Z",
+      "size": 565
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/wnlander.gif",
+      "file": "assets/3e63aaffbf178947-wnlander.gif",
+      "mime": "image/gif",
+      "sha256": "3e63aaffbf1789473742b1941593682f61f7deb794e05fc59142bf27ed585d80",
+      "capturedAt": "2026-10-08T05:26:03.160Z",
+      "size": 332
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/wnlogo.gif",
+      "file": "assets/d861ebe77a4b8f52-wnlogo.gif",
+      "mime": "image/gif",
+      "sha256": "d861ebe77a4b8f5242c706803c598ff211c8dd5babce7040f3d7c243061f8b90",
+      "capturedAt": "2026-10-08T05:26:36.383Z",
+      "size": 111
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/wnmissile.gif",
+      "file": "assets/1f685f6dccc11e85-wnmissile.gif",
+      "mime": "image/gif",
+      "sha256": "1f685f6dccc11e858fd3502882e53ba1ffd133b9281a91c8ae10f48f58f7d4a4",
+      "capturedAt": "2026-10-08T05:26:03.155Z",
+      "size": 364
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ycanti-air.gif",
+      "file": "assets/5c9399f4021cc070-ycanti-air.gif",
+      "mime": "image/gif",
+      "sha256": "5c9399f4021cc0704d1d2901bb90fe0b746015a9e491f766578a276a630453cb",
+      "capturedAt": "2026-10-08T05:26:03.137Z",
+      "size": 556
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ycapc.gif",
+      "file": "assets/0d7122585c00babe-ycapc.gif",
+      "mime": "image/gif",
+      "sha256": "0d7122585c00babee7390b3ad054d5cb06320d073384bdba9f45fc7b73542449",
+      "capturedAt": "2026-10-08T05:25:14.442Z",
+      "size": 479
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ycapc.gif?v=1781618930",
+      "file": "assets/0d7122585c00babe-ycapc.gif",
+      "mime": "image/gif",
+      "sha256": "0d7122585c00babee7390b3ad054d5cb06320d073384bdba9f45fc7b73542449",
+      "capturedAt": "2026-10-08T05:25:14.352Z",
+      "size": 479
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ycinfantry.gif",
+      "file": "assets/247677e099509136-ycinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "247677e0995091367e50bfef1e1a45057ea980ee8e94efd0400ab6ef063080ca",
+      "capturedAt": "2026-10-08T05:25:14.437Z",
+      "size": 573
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ycinfantry.gif?v=1781618930",
+      "file": "assets/247677e099509136-ycinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "247677e0995091367e50bfef1e1a45057ea980ee8e94efd0400ab6ef063080ca",
+      "capturedAt": "2026-10-08T05:25:14.360Z",
+      "size": 573
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yclander.gif",
+      "file": "assets/e2a8292c455720ef-yclander.gif",
+      "mime": "image/gif",
+      "sha256": "e2a8292c455720ef0a4661769fc6fce310e5cad2a3a94cce7c3192ac715562ee",
+      "capturedAt": "2026-10-08T05:26:03.141Z",
+      "size": 286
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yclogo.gif",
+      "file": "assets/96ff047f0c737cf8-yclogo.gif",
+      "mime": "image/gif",
+      "sha256": "96ff047f0c737cf8629aaaaba7f510c26d710449ea2a8d879ae2c1bcea82aa55",
+      "capturedAt": "2026-10-08T05:26:36.341Z",
+      "size": 114
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ycmissile.gif",
+      "file": "assets/a1ae83273d6fdb29-ycmissile.gif",
+      "mime": "image/gif",
+      "sha256": "a1ae83273d6fdb2959ea68e3550b01619c772e70e19ee5f505553814fbd3557b",
+      "capturedAt": "2026-10-08T05:26:03.142Z",
+      "size": 323
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ycrecon.gif",
+      "file": "assets/0a8cfc7818a56a96-ycrecon.gif",
+      "mime": "image/gif",
+      "sha256": "0a8cfc7818a56a96a19aae7d4461edc22aea6baa49d7bb4329ad36efd81b4dad",
+      "capturedAt": "2026-10-08T05:25:14.442Z",
+      "size": 486
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/ycrecon.gif?v=1781618930",
+      "file": "assets/0a8cfc7818a56a96-ycrecon.gif",
+      "mime": "image/gif",
+      "sha256": "0a8cfc7818a56a96a19aae7d4461edc22aea6baa49d7bb4329ad36efd81b4dad",
+      "capturedAt": "2026-10-08T05:25:14.364Z",
+      "size": 486
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yctank.gif",
+      "file": "assets/6f6e16206b21864a-yctank.gif",
+      "mime": "image/gif",
+      "sha256": "6f6e16206b21864a10cbb7d7cd0eaf897b369c926c071e19a23b05ac65d4ac53",
+      "capturedAt": "2026-10-08T05:25:14.442Z",
+      "size": 418
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yctank.gif?v=1781618930",
+      "file": "assets/6f6e16206b21864a-yctank.gif",
+      "mime": "image/gif",
+      "sha256": "6f6e16206b21864a10cbb7d7cd0eaf897b369c926c071e19a23b05ac65d4ac53",
+      "capturedAt": "2026-10-08T05:25:14.371Z",
+      "size": 418
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yellowcometairport.gif",
+      "file": "assets/aa107eb35a1714d8-yellowcometairport.gif",
+      "mime": "image/gif",
+      "sha256": "aa107eb35a1714d8907a90383b841991955f57deb9e4cde89a5bfed4579fd393",
+      "capturedAt": "2026-10-08T05:25:14.450Z",
+      "size": 257
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yellowcometbase.gif",
+      "file": "assets/bbfe90525d75bd12-yellowcometbase.gif",
+      "mime": "image/gif",
+      "sha256": "bbfe90525d75bd12313a43d8b60a51c0486cac97f3b0a25ec374ac737fdb7cef",
+      "capturedAt": "2026-10-08T05:25:14.448Z",
+      "size": 602
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yellowcometcity.gif",
+      "file": "assets/ddaa2412003a1caa-yellowcometcity.gif",
+      "mime": "image/gif",
+      "sha256": "ddaa2412003a1caa8eac7ec8a9b28c4654d0ddd4252b2f8b5ab4538036e4c617",
+      "capturedAt": "2026-10-08T05:25:14.443Z",
+      "size": 283
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yellowcometcomtower.gif",
+      "file": "assets/22ca282fa3403cbd-yellowcometcomtower.gif",
+      "mime": "image/gif",
+      "sha256": "22ca282fa3403cbda651732ef0708dd9005d833c338686dcf2fae76425672e00",
+      "capturedAt": "2026-10-08T05:25:14.455Z",
+      "size": 357
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yellowcomethq.gif",
+      "file": "assets/20478eee429945ce-yellowcomethq.gif",
+      "mime": "image/gif",
+      "sha256": "20478eee429945ce5ab379c9ccbfb50d8aa97c73a69a77ae1f9f2f8d6f33eecf",
+      "capturedAt": "2026-10-08T05:25:14.346Z",
+      "size": 361
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yellowcometlab.gif",
+      "file": "assets/d66b53e9fc0c0af1-yellowcometlab.gif",
+      "mime": "image/gif",
+      "sha256": "d66b53e9fc0c0af1e95c8b7ff539049773b40cf5e8fc293557ccb93c0a60e601",
+      "capturedAt": "2026-10-08T05:25:14.447Z",
+      "size": 315
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/ani/yellowcometport.gif",
+      "file": "assets/9cc9062f57d0ebf6-yellowcometport.gif",
+      "mime": "image/gif",
+      "sha256": "9cc9062f57d0ebf66f8fcd56502003dfb97d7bd5f41971d7a066f0028bda1296",
+      "capturedAt": "2026-10-08T05:25:14.451Z",
+      "size": 251
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw1/bluestar.gif",
+      "file": "assets/d25a4a22acd69b51-bluestar.gif",
+      "mime": "image/gif",
+      "sha256": "d25a4a22acd69b515be403edb0c8bc134aa2474bc790129fbc6bd8cf30441c04",
+      "capturedAt": "2026-10-08T05:28:03.190Z",
+      "size": 191
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw1/gefighter.gif",
+      "file": "assets/671aa3d82742f1ff-gefighter.gif",
+      "mime": "image/gif",
+      "sha256": "671aa3d82742f1ff945b51c85329ab790f19f7a357de04d39eb8a692d872ab23",
+      "capturedAt": "2026-10-08T05:25:40.314Z",
+      "size": 159
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw1/redstar.gif",
+      "file": "assets/b5e8551e54b2c962-redstar.gif",
+      "mime": "image/gif",
+      "sha256": "b5e8551e54b2c9622bd337a0574eff1bf022ff79ee184190ae6de8cba156fe1c",
+      "capturedAt": "2026-10-08T05:28:03.190Z",
+      "size": 183
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/aainfantry.gif",
+      "file": "assets/a8200421cfcf8805-aainfantry.gif",
+      "mime": "image/gif",
+      "sha256": "a8200421cfcf8805c1a0674eff73f7b250ee5484afdd32ffaa6406e3f65dda41",
+      "capturedAt": "2026-10-08T05:25:14.230Z",
+      "size": 944
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/aalogo.gif",
+      "file": "assets/a84494e72a155dfa-aalogo.gif",
+      "mime": "image/gif",
+      "sha256": "a84494e72a155dfa9928d14dd643ccec508aefcd2dc75cbab3543c93e4aaa35d",
+      "capturedAt": "2026-10-08T05:25:14.419Z",
+      "size": 111
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/ablogo.gif",
+      "file": "assets/38f69bf3f0e1ae42-ablogo.gif",
+      "mime": "image/gif",
+      "sha256": "38f69bf3f0e1ae429ac9ecfe309ac6982cd980114e69f41a198de9df3b2a7af3",
+      "capturedAt": "2026-10-08T05:25:14.405Z",
+      "size": 7388
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/arlogo.gif",
+      "file": "assets/7fea821c5ca4d3e7-arlogo.gif",
+      "mime": "image/gif",
+      "sha256": "7fea821c5ca4d3e791efc662a793d29b809f68f4d1ee7fe3fb4b0db955150e79",
+      "capturedAt": "2026-10-08T05:25:14.414Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/bdlogo.gif",
+      "file": "assets/7b151312da95b083-bdlogo.gif",
+      "mime": "image/gif",
+      "sha256": "7b151312da95b0838731432db6fe5e7c16f3e47642cba679b6cf0bf32f13449a",
+      "capturedAt": "2026-10-08T05:25:14.402Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/bhlogo.gif",
+      "file": "assets/030adec9a23b4894-bhlogo.gif",
+      "mime": "image/gif",
+      "sha256": "030adec9a23b4894b1f5de9f0003709201a503cecfdcf4dcde6e3e16c1615c75",
+      "capturedAt": "2026-10-08T05:25:14.399Z",
+      "size": 97
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/bluestar.gif",
+      "file": "assets/d25a4a22acd69b51-bluestar.gif",
+      "mime": "image/gif",
+      "sha256": "d25a4a22acd69b515be403edb0c8bc134aa2474bc790129fbc6bd8cf30441c04",
+      "capturedAt": "2026-10-08T05:25:14.436Z",
+      "size": 191
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/bmlogo.gif",
+      "file": "assets/ed6ded7ad067ca96-bmlogo.gif",
+      "mime": "image/gif",
+      "sha256": "ed6ded7ad067ca96ea43e1299224431410d9a710dd2ce165ec20058ab488cbac",
+      "capturedAt": "2026-10-08T05:25:14.393Z",
+      "size": 113
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/cilogo.gif",
+      "file": "assets/8f0c88f6ac51ca9d-cilogo.gif",
+      "mime": "image/gif",
+      "sha256": "8f0c88f6ac51ca9dd459ba53d622778593e41456e8f37091a9ce345f505cbeee",
+      "capturedAt": "2026-10-08T05:25:14.407Z",
+      "size": 121
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/commtowericon.gif",
+      "file": "assets/a706399be03bc49c-commtowericon.gif",
+      "mime": "image/gif",
+      "sha256": "a706399be03bc49c08bc7a667c521e1817605636dc2553671a5a760d91bc6da5",
+      "capturedAt": "2026-10-08T05:25:14.463Z",
+      "size": 125
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/gelogo.gif",
+      "file": "assets/5ffd9d37b816cde3-gelogo.gif",
+      "mime": "image/gif",
+      "sha256": "5ffd9d37b816cde337641156dbb254b98156796dfbade0f085966dea223ea117",
+      "capturedAt": "2026-10-08T05:25:14.394Z",
+      "size": 114
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/gestealth.gif",
+      "file": "assets/2c60798a77eb2489-gestealth.gif",
+      "mime": "image/gif",
+      "sha256": "2c60798a77eb24891a605e50b5a079e49a58bb1667657800539d24a746f2b498",
+      "capturedAt": "2026-10-08T05:27:23.742Z",
+      "size": 170
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/gslogo.gif",
+      "file": "assets/7c7294391881bf44-gslogo.gif",
+      "mime": "image/gif",
+      "sha256": "7c7294391881bf44c1de676bcd1bf31fcb07ef46e03ea7921d5d5abcbc6ba94f",
+      "capturedAt": "2026-10-08T05:25:14.401Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/jslogo.gif",
+      "file": "assets/1a8cc2f400a78f05-jslogo.gif",
+      "mime": "image/gif",
+      "sha256": "1a8cc2f400a78f05dc77aae477b4f1b83e5979900473cec1ad594b66eebd22d7",
+      "capturedAt": "2026-10-08T05:25:14.405Z",
+      "size": 156
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/load.gif",
+      "file": "assets/cb62d1369a3fa233-load.gif",
+      "mime": "image/gif",
+      "sha256": "cb62d1369a3fa233febe9795e2d3a96df45d6f57bb860e3df1ebdcca344dd8d1",
+      "capturedAt": "2026-10-08T05:25:14.376Z",
+      "size": 285
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/neinfantry.gif",
+      "file": "assets/0b00e6dc19daeba7-neinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "0b00e6dc19daeba757e3a1930aed54637141335119f8eebb95eea29b6f7bfa7a",
+      "capturedAt": "2026-10-08T05:25:14.230Z",
+      "size": 262
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/nelogo.gif",
+      "file": "assets/dbbe1e8dc21e5d2b-nelogo.gif",
+      "mime": "image/gif",
+      "sha256": "dbbe1e8dc21e5d2b951d62ad2c612ac1edbc0ce0d4246a25df56b7829994e230",
+      "capturedAt": "2026-10-08T05:25:14.423Z",
+      "size": 121
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/neutralcity.gif",
+      "file": "assets/5501338af3db1215-neutralcity.gif",
+      "mime": "image/gif",
+      "sha256": "5501338af3db1215e4ada4c66134f7a15be1ac2902ac111de70660101c941872",
+      "capturedAt": "2026-10-08T05:27:23.743Z",
+      "size": 139
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/oslogo.gif",
+      "file": "assets/5c6ae727d41e11fc-oslogo.gif",
+      "mime": "image/gif",
+      "sha256": "5c6ae727d41e11fc561b21779fe9bc7a31c2f94b2b0c22e38e4092f4459a9130",
+      "capturedAt": "2026-10-08T05:25:14.393Z",
+      "size": 116
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/pclogo.gif",
+      "file": "assets/fe85fdcdfe5156d1-pclogo.gif",
+      "mime": "image/gif",
+      "sha256": "fe85fdcdfe5156d162c601466527eb9cc3638af9d9b9a534a6a22e499e6a9042",
+      "capturedAt": "2026-10-08T05:25:14.408Z",
+      "size": 115
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/pllogo.gif",
+      "file": "assets/54069519121d72b0-pllogo.gif",
+      "mime": "image/gif",
+      "sha256": "54069519121d72b0e06cafa6859a05cdba19473beda94395f090696a09aaf94f",
+      "capturedAt": "2026-10-08T05:25:14.411Z",
+      "size": 146
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/redstar.gif",
+      "file": "assets/b5e8551e54b2c962-redstar.gif",
+      "mime": "image/gif",
+      "sha256": "b5e8551e54b2c9622bd337a0574eff1bf022ff79ee184190ae6de8cba156fe1c",
+      "capturedAt": "2026-10-08T05:25:14.436Z",
+      "size": 183
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/rflogo.gif",
+      "file": "assets/e0906f5027e5c7fc-rflogo.gif",
+      "mime": "image/gif",
+      "sha256": "e0906f5027e5c7fc51c839f1f9c2d8b5f82106701a9411d93ab3129f2df2bf86",
+      "capturedAt": "2026-10-08T05:25:14.399Z",
+      "size": 120
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/scinfantry.gif",
+      "file": "assets/15f0c3e82e20a52b-scinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "15f0c3e82e20a52b27b9ac2f941919fb76e207e334f0516463c6d597c3822c67",
+      "capturedAt": "2026-10-08T05:25:14.230Z",
+      "size": 4098
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/sclogo.gif",
+      "file": "assets/a2f5dc550164f887-sclogo.gif",
+      "mime": "image/gif",
+      "sha256": "a2f5dc550164f8879bb3432e329f10443866ea7a8f48c5f93a562a282c442fa0",
+      "capturedAt": "2026-10-08T05:25:14.423Z",
+      "size": 4098
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/tglogo.gif",
+      "file": "assets/391e7749aae3dced-tglogo.gif",
+      "mime": "image/gif",
+      "sha256": "391e7749aae3dcedf1db8ba1fb9414cccc1cb96cfc18493a1fdc5c75af4ee982",
+      "capturedAt": "2026-10-08T05:25:14.410Z",
+      "size": 130
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/uwlogo.gif",
+      "file": "assets/373be7d0c8cd55ee-uwlogo.gif",
+      "mime": "image/gif",
+      "sha256": "373be7d0c8cd55ee9fa5e8bf64609126c105babd7e936f2ef34f73d01e1b5141",
+      "capturedAt": "2026-10-08T05:25:14.423Z",
+      "size": 131
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/wnlogo.gif",
+      "file": "assets/d861ebe77a4b8f52-wnlogo.gif",
+      "mime": "image/gif",
+      "sha256": "d861ebe77a4b8f5242c706803c598ff211c8dd5babce7040f3d7c243061f8b90",
+      "capturedAt": "2026-10-08T05:25:14.414Z",
+      "size": 111
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/aw2/yclogo.gif",
+      "file": "assets/8289f6479539572d-yclogo.gif",
+      "mime": "image/gif",
+      "sha256": "8289f6479539572d3a78a14fe8feadb4b050ccd8ab1ad3356d2e148b3ef8f587",
+      "capturedAt": "2026-10-08T05:25:14.394Z",
+      "size": 114
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/awbwlogo11-highres_withnewarmies_andnewAB.png",
+      "file": "assets/e46a5cef23c5c204-awbwlogo11-highres_withnewarmies_andnewAB.png",
+      "mime": "image/png",
+      "sha256": "e46a5cef23c5c204048725f864e2dc96c748ac6961e54c5e96cf8a1ec2155ca9",
+      "capturedAt": "2026-10-08T05:25:14.207Z",
+      "size": 39047
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/blankred.gif",
+      "file": "assets/3c51930c125cfa6d-blankred.gif",
+      "mime": "image/gif",
+      "sha256": "3c51930c125cfa6d08c914338258a38a8b3519e62cdbe8f5129490bfa2356cc1",
+      "capturedAt": "2026-10-08T05:27:23.743Z",
+      "size": 825
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/bootaetclock.gif",
+      "file": "assets/b9f17c7184767221-bootaetclock.gif",
+      "mime": "image/gif",
+      "sha256": "b9f17c71847672210b75b0e38164fe2f5306cb0eab88621601094e671199b6f8",
+      "capturedAt": "2026-10-08T05:25:14.236Z",
+      "size": 154
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/calculator.gif",
+      "file": "assets/868cc697a848213f-calculator.gif",
+      "mime": "image/gif",
+      "sha256": "868cc697a848213f1015c41490d77338eaebb1f28ed833c1c3378c7dd9c367c4",
+      "capturedAt": "2026-10-08T05:25:14.309Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/capt.gif",
+      "file": "assets/452c94460e2db22c-capt.gif",
+      "mime": "image/gif",
+      "sha256": "452c94460e2db22cb538e4a8107f8a4c0635e9e97f979fc5e252e4b92403abee",
+      "capturedAt": "2026-10-08T05:25:14.382Z",
+      "size": 94
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/clock_boot_warning_disabled.gif",
+      "file": "assets/0906486d22df837a-clock_boot_warning_disabled.gif",
+      "mime": "image/gif",
+      "sha256": "0906486d22df837a3272504975efa5d57d4562f0111c0415ed323319a73e8678",
+      "capturedAt": "2026-10-08T05:25:14.437Z",
+      "size": 150
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/clock_resume_pause.gif",
+      "file": "assets/2aa08ab45fe196c0-clock_resume_pause.gif",
+      "mime": "image/gif",
+      "sha256": "2aa08ab45fe196c0f5f9e69fe04bb29eff9977aaeac39a91392b87bc3362fbb7",
+      "capturedAt": "2026-10-08T05:25:14.305Z",
+      "size": 127
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/close.png",
+      "file": "assets/92a6f5120302683a-close.png",
+      "mime": "image/png",
+      "sha256": "92a6f5120302683a5f85d6b52287a5e966ed29a90f31423f0fd00b9180b7739d",
+      "capturedAt": "2026-10-08T05:27:23.686Z",
+      "size": 225
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/aw2-alt6/kanbei.png?v=3",
+      "file": "assets/1d83f6b35f8bfd9e-kanbei.png",
+      "mime": "image/png",
+      "sha256": "1d83f6b35f8bfd9e6c9037a4a5ae477eea6b8babbd8d82bf4c64ce28c5f626ea",
+      "capturedAt": "2026-10-08T05:28:03.248Z",
+      "size": 1486
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/aw2-alt6/smallkanbei.png?v=3",
+      "file": "assets/212b18867a611c4a-smallkanbei.png",
+      "mime": "image/png",
+      "sha256": "212b18867a611c4acc3285a2a327a1441cda769f3d1b68adeb7d7ee0922d17c7",
+      "capturedAt": "2026-10-08T05:27:39.372Z",
+      "size": 2080
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/adder.png?v=11",
+      "file": "assets/70e5deaef33125c4-adder.png",
+      "mime": "image/png",
+      "sha256": "70e5deaef33125c4d3bdd61f9fdb110e689b7045b38ba2cd30c82cd383cd7b75",
+      "capturedAt": "2026-10-08T05:28:03.260Z",
+      "size": 1698
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/adder.png?v=11?v=1",
+      "file": "assets/70e5deaef33125c4-adder.png",
+      "mime": "image/png",
+      "sha256": "70e5deaef33125c4d3bdd61f9fdb110e689b7045b38ba2cd30c82cd383cd7b75",
+      "capturedAt": "2026-10-08T05:25:14.456Z",
+      "size": 1698
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/andy.png?v=1",
+      "file": "assets/9ab358fe7b82a595-andy.png",
+      "mime": "image/png",
+      "sha256": "9ab358fe7b82a5957179f5bf2aff6596c7bb243612ce8df5f8a3cee8b64c91a4",
+      "capturedAt": "2026-10-08T05:28:03.187Z",
+      "size": 1626
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/colin.png?v=15",
+      "file": "assets/65b9648b93da5b58-colin.png",
+      "mime": "image/png",
+      "sha256": "65b9648b93da5b58fb8e6abb60651643ab41555102d51e829bc9331c2c075186",
+      "capturedAt": "2026-10-08T05:28:03.213Z",
+      "size": 1599
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/drake.png?v=5",
+      "file": "assets/a4951a27105d089c-drake.png",
+      "mime": "image/png",
+      "sha256": "a4951a27105d089c87a08e3d0bd94e1d8802f0ab0abce3300e96067a5772166e",
+      "capturedAt": "2026-10-08T05:28:03.231Z",
+      "size": 1581
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/eagle.png?v=10",
+      "file": "assets/c25f459c98e63aa5-eagle.png",
+      "mime": "image/png",
+      "sha256": "c25f459c98e63aa5faa025d74d700f3abcc996016c178801adf433e035c299d0",
+      "capturedAt": "2026-10-08T05:28:03.236Z",
+      "size": 1719
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/flak.png?v=25",
+      "file": "assets/cc6978a5fd9819ed-flak.png",
+      "mime": "image/png",
+      "sha256": "cc6978a5fd9819ed25cdf4103b8227ffe07b9ff2f62a8f69ebc6845f837c9d4c",
+      "capturedAt": "2026-10-08T05:28:03.264Z",
+      "size": 1624
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/grimm.png?v=20",
+      "file": "assets/bab85f31ce7a78c2-grimm.png",
+      "mime": "image/png",
+      "sha256": "bab85f31ce7a78c2680bd131d5098bf116769ad047c66d065596e6b49fe1d7ba",
+      "capturedAt": "2026-10-08T05:28:03.242Z",
+      "size": 1704
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/grit.png?v=2",
+      "file": "assets/0e50a3fd61367193-grit.png",
+      "mime": "image/png",
+      "sha256": "0e50a3fd61367193143ff241b7fce58031bfe0d4dc7e48c75f06e3f76e1e1dbe",
+      "capturedAt": "2026-10-08T05:28:03.219Z",
+      "size": 1689
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/hachi.png?v=17",
+      "file": "assets/7758877b720f4732-hachi.png",
+      "mime": "image/png",
+      "sha256": "7758877b720f4732d56295bbead6726162adc6a5b0fdd632e2dc87746b673131",
+      "capturedAt": "2026-10-08T05:28:03.195Z",
+      "size": 1680
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/hawke.png?v=12",
+      "file": "assets/58d809a73c2d91c8-hawke.png",
+      "mime": "image/png",
+      "sha256": "58d809a73c2d91c8e0baeddce08151281dc29f7df2c78fb0025e6a662055f36f",
+      "capturedAt": "2026-10-08T05:28:03.265Z",
+      "size": 1558
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/jake.png?v=22",
+      "file": "assets/c83ca986d779b024-jake.png",
+      "mime": "image/png",
+      "sha256": "c83ca986d779b0240419f56f22c51073e8f6153f6b8720330b3d063dc33bfecd",
+      "capturedAt": "2026-10-08T05:28:03.197Z",
+      "size": 1600
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/javier.png?v=27",
+      "file": "assets/611526f51a6075db-javier.png",
+      "mime": "image/png",
+      "sha256": "611526f51a6075dbe4b79018e2fa09fb55ba2ed7cfce5b07ebd348e6c6551544",
+      "capturedAt": "2026-10-08T05:28:03.237Z",
+      "size": 1697
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/jess.png?v=14",
+      "file": "assets/f22a2a3fc01d00da-jess.png",
+      "mime": "image/png",
+      "sha256": "f22a2a3fc01d00da723efb1e761041979bfbbbaab7ab4aecf3181b635ff84f3f",
+      "capturedAt": "2026-10-08T05:28:03.242Z",
+      "size": 1664
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/jugger.png?v=26",
+      "file": "assets/1697764f66615b96-jugger.png",
+      "mime": "image/png",
+      "sha256": "1697764f66615b962d12a771b59067f80d9d7a134ecfcf59e7c2a001a1cab998",
+      "capturedAt": "2026-10-08T05:28:03.269Z",
+      "size": 1526
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/kindle.png?v=23",
+      "file": "assets/514468d8f10283aa-kindle.png",
+      "mime": "image/png",
+      "sha256": "514468d8f10283aa7cd0cd9b5ce817a1e30ae8528977c392b77a596528ad2261",
+      "capturedAt": "2026-10-08T05:28:03.273Z",
+      "size": 1686
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/koal.png?v=21",
+      "file": "assets/1ce88bd492f264a9-koal.png",
+      "mime": "image/png",
+      "sha256": "1ce88bd492f264a900463ac39ee38b6c43ccf98e89f119f0777087cb3c84b9d1",
+      "capturedAt": "2026-10-08T05:28:03.274Z",
+      "size": 1621
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/lash.png?v=16",
+      "file": "assets/167e00e895b1281c-lash.png",
+      "mime": "image/png",
+      "sha256": "167e00e895b1281cde0f4662ced60b27bac5c6ed55bc0c5402685ec31f82aebf",
+      "capturedAt": "2026-10-08T05:28:03.278Z",
+      "size": 1699
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/lash.png?v=16?v=1",
+      "file": "assets/167e00e895b1281c-lash.png",
+      "mime": "image/png",
+      "sha256": "167e00e895b1281cde0f4662ced60b27bac5c6ed55bc0c5402685ec31f82aebf",
+      "capturedAt": "2026-10-08T05:25:14.431Z",
+      "size": 1699
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/max.png?v=7",
+      "file": "assets/643cf1e04e0567c4-max.png",
+      "mime": "image/png",
+      "sha256": "643cf1e04e0567c4874b2e6e466e7cecf23054f7807c683ae236ad3c3c5ca57a",
+      "capturedAt": "2026-10-08T05:28:03.200Z",
+      "size": 1626
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/nell.png?v=24",
+      "file": "assets/96cb3f62fd31d5ee-nell.png",
+      "mime": "image/png",
+      "sha256": "96cb3f62fd31d5ee9f852c945c32b6ced92fbed1f31bd84dcfb739cce4bcf40f",
+      "capturedAt": "2026-10-08T05:28:03.203Z",
+      "size": 1601
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/olaf.png?v=9",
+      "file": "assets/eb5f698386608799-olaf.png",
+      "mime": "image/png",
+      "sha256": "eb5f698386608799ec37203e1478ba07fa9c681fecfa05981ad0c2de3b1c35e5",
+      "capturedAt": "2026-10-08T05:28:03.224Z",
+      "size": 1559
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/rachel.png?v=28",
+      "file": "assets/4bce13eac8793bd4-rachel.png",
+      "mime": "image/png",
+      "sha256": "4bce13eac8793bd4bb80c21167f4163a8780e84e265d73928df3eb4f97a8f1ae",
+      "capturedAt": "2026-10-08T05:28:03.206Z",
+      "size": 1763
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/sami.png?v=8",
+      "file": "assets/c7c7393b469769e4-sami.png",
+      "mime": "image/png",
+      "sha256": "c7c7393b469769e495ccc29af0bf55f1a1be08df109ad9e6b69356aebe85e961",
+      "capturedAt": "2026-10-08T05:28:03.209Z",
+      "size": 1611
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/sasha.png?v=19",
+      "file": "assets/1b5b6fbe9397e3d1-sasha.png",
+      "mime": "image/png",
+      "sha256": "1b5b6fbe9397e3d1082af7c69d38c36a0aedfd78ec536a72bec9bc951def200c",
+      "capturedAt": "2026-10-08T05:28:03.229Z",
+      "size": 1594
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/sensei.png?v=13",
+      "file": "assets/4031ca65ab31ce2d-sensei.png",
+      "mime": "image/png",
+      "sha256": "4031ca65ab31ce2d27c2899ede05a6b8ef1e60fc888d080db9e0010f7c131e26",
+      "capturedAt": "2026-10-08T05:28:03.254Z",
+      "size": 1733
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smalladder.png?v=11",
+      "file": "assets/ff119deab069fc9b-smalladder.png",
+      "mime": "image/png",
+      "sha256": "ff119deab069fc9b906d729964cd4d89ee24789d7b6430eec0797bdc9e1e286c",
+      "capturedAt": "2026-10-08T05:27:39.368Z",
+      "size": 2164
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallandy.png?v=1",
+      "file": "assets/2525a6c7716d7d6c-smallandy.png",
+      "mime": "image/png",
+      "sha256": "2525a6c7716d7d6cd50fbe46f368216cb5249760115f2a1124352a15ac67f9a1",
+      "capturedAt": "2026-10-08T05:27:39.369Z",
+      "size": 1981
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallcolin.png?v=15",
+      "file": "assets/881ac9f4fa90fc80-smallcolin.png",
+      "mime": "image/png",
+      "sha256": "881ac9f4fa90fc80cec69b0d9ae305046a273d9fd091f90530b06e47303fbc89",
+      "capturedAt": "2026-10-08T05:27:39.393Z",
+      "size": 1936
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smalldrake.png?v=5",
+      "file": "assets/ff364aa81137d231-smalldrake.png",
+      "mime": "image/png",
+      "sha256": "ff364aa81137d231b0a7a7577a9fceea34dd4cf1fc107490c9ee8615f70a9721",
+      "capturedAt": "2026-10-08T05:27:39.375Z",
+      "size": 2080
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smalleagle.png?v=10",
+      "file": "assets/e6cec50b66c9e1f9-smalleagle.png",
+      "mime": "image/png",
+      "sha256": "e6cec50b66c9e1f93ca33994a9e8f859d46fd73a3cbae53a9819219fb3329c91",
+      "capturedAt": "2026-10-08T05:27:39.382Z",
+      "size": 2213
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallflak.png?v=25",
+      "file": "assets/7023741cf6b23fbb-smallflak.png",
+      "mime": "image/png",
+      "sha256": "7023741cf6b23fbbc4f8d0ced9d58f305b7a0ff04c242e41e00f928bd2463ce1",
+      "capturedAt": "2026-10-08T05:27:39.408Z",
+      "size": 1897
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallgrimm.png?v=20",
+      "file": "assets/291f9c25e8130e82-smallgrimm.png",
+      "mime": "image/png",
+      "sha256": "291f9c25e8130e828f0b1242dc60fc604763b576f09dbd41be3b530c759a4aa3",
+      "capturedAt": "2026-10-08T05:27:39.401Z",
+      "size": 2106
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallgrit.png?v=2",
+      "file": "assets/a8781e2507297aab-smallgrit.png",
+      "mime": "image/png",
+      "sha256": "a8781e2507297aabf05804e1153ff2eec8dbb653bf6c755b9d4107ba1342481b",
+      "capturedAt": "2026-10-08T05:27:39.370Z",
+      "size": 1990
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallhachi.png?v=17",
+      "file": "assets/d5b54a53f724a962-smallhachi.png",
+      "mime": "image/png",
+      "sha256": "d5b54a53f724a962a47ef926048f3cf2f5fc81d9d4ff08a4ce9aab724e059c10",
+      "capturedAt": "2026-10-08T05:27:39.394Z",
+      "size": 2108
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallhawke.png?v=12",
+      "file": "assets/46f2bff4be3d0f11-smallhawke.png",
+      "mime": "image/png",
+      "sha256": "46f2bff4be3d0f117aec7bb8cf889e43ff62f91d4e0cb2232d4972e012d11f20",
+      "capturedAt": "2026-10-08T05:27:39.387Z",
+      "size": 1947
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smalljake.png?v=22",
+      "file": "assets/65fc8519355ca96f-smalljake.png",
+      "mime": "image/png",
+      "sha256": "65fc8519355ca96f06c6d08eb3c77849d86f2b7f82c42a5423a73cdd24e7ebd0",
+      "capturedAt": "2026-10-08T05:27:39.403Z",
+      "size": 1947
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smalljavier.png?v=27",
+      "file": "assets/d5b416fbee08298d-smalljavier.png",
+      "mime": "image/png",
+      "sha256": "d5b416fbee08298d4b7de907bac5558c67a2c4965d2a3da6d1d342e4ff274e74",
+      "capturedAt": "2026-10-08T05:27:39.413Z",
+      "size": 2083
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smalljess.png?v=14",
+      "file": "assets/4f9b28768509bd58-smalljess.png",
+      "mime": "image/png",
+      "sha256": "4f9b28768509bd5871e8b1d81826c06b397003ccfae425900bc9207b5eb453c6",
+      "capturedAt": "2026-10-08T05:27:39.387Z",
+      "size": 2094
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smalljugger.png?v=26",
+      "file": "assets/1e9a1e3a2f7660bf-smalljugger.png",
+      "mime": "image/png",
+      "sha256": "1e9a1e3a2f7660bfec934e37f00e6757f2665f85675aa4adc9146314e52a39a2",
+      "capturedAt": "2026-10-08T05:27:39.409Z",
+      "size": 2075
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallkindle.png?v=23",
+      "file": "assets/2a570e8649ace79b-smallkindle.png",
+      "mime": "image/png",
+      "sha256": "2a570e8649ace79b5b300ca091b892218a994239d2fa00f5a147a5743f0b6d7e",
+      "capturedAt": "2026-10-08T05:27:39.406Z",
+      "size": 2077
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallkoal.png?v=21",
+      "file": "assets/d2c422ca3dbc4a43-smallkoal.png",
+      "mime": "image/png",
+      "sha256": "d2c422ca3dbc4a434dfc2d8d486045f7f4ddcf85c37cf9780b0a8d6634b23ad3",
+      "capturedAt": "2026-10-08T05:27:39.402Z",
+      "size": 2021
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smalllash.png?v=16",
+      "file": "assets/c8a328eefa007759-smalllash.png",
+      "mime": "image/png",
+      "sha256": "c8a328eefa0077592371c1f223e2197a995052b67130fdc3cf328863be4c663e",
+      "capturedAt": "2026-10-08T05:27:39.394Z",
+      "size": 2050
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallmax.png?v=7",
+      "file": "assets/477cd71465b859f8-smallmax.png",
+      "mime": "image/png",
+      "sha256": "477cd71465b859f8bc61a5405d663cbb2a5e47385476fc4595a060c37ed67c09",
+      "capturedAt": "2026-10-08T05:27:39.375Z",
+      "size": 1991
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallnell.png?v=24",
+      "file": "assets/1e5d2059d9e8754d-smallnell.png",
+      "mime": "image/png",
+      "sha256": "1e5d2059d9e8754dfb9980bbde26b13027d70dee04d03cd22b5f85d2dcd1523a",
+      "capturedAt": "2026-10-08T05:27:39.408Z",
+      "size": 1862
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallolaf.png?v=9",
+      "file": "assets/f147be70db579b32-smallolaf.png",
+      "mime": "image/png",
+      "sha256": "f147be70db579b321144a065f96d8fcb5ede8a877d0be22ae032f6cda0562d42",
+      "capturedAt": "2026-10-08T05:27:39.378Z",
+      "size": 1837
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallrachel.png?v=28",
+      "file": "assets/741c5d013a98a04f-smallrachel.png",
+      "mime": "image/png",
+      "sha256": "741c5d013a98a04f59ec595d88e0a0fe77b24c00b62e389bed7eabf27c57cac9",
+      "capturedAt": "2026-10-08T05:27:39.415Z",
+      "size": 2184
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallsami.png?v=8",
+      "file": "assets/aa973b249fbc8852-smallsami.png",
+      "mime": "image/png",
+      "sha256": "aa973b249fbc8852687efb396e074a5c3ac48aec3bd50e8b21d8f2cceaeda30c",
+      "capturedAt": "2026-10-08T05:27:39.376Z",
+      "size": 2028
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallsasha.png?v=19",
+      "file": "assets/7c6b603bc0e16848-smallsasha.png",
+      "mime": "image/png",
+      "sha256": "7c6b603bc0e1684885f199032f279e3de360743562ebc61401849a1d0c4020c3",
+      "capturedAt": "2026-10-08T05:27:39.400Z",
+      "size": 1913
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallsensei.png?v=13",
+      "file": "assets/49429af2c2077a71-smallsensei.png",
+      "mime": "image/png",
+      "sha256": "49429af2c2077a71ff06d2a7aa89be52866c7cd99154dc8ca98108d58d31c5a2",
+      "capturedAt": "2026-10-08T05:27:39.387Z",
+      "size": 2085
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallsonja.png?v=18",
+      "file": "assets/d6a3f797d3feb6bb-smallsonja.png",
+      "mime": "image/png",
+      "sha256": "d6a3f797d3feb6bbdf14429bbbc3bce3026114803881ce171b2144cccf680b94",
+      "capturedAt": "2026-10-08T05:27:39.396Z",
+      "size": 2181
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallsturm.png?v=29",
+      "file": "assets/5320d350d666c024-smallsturm.png",
+      "mime": "image/png",
+      "sha256": "5320d350d666c02484ecb885c8ac96ff9fa99e270c328b96aba086d3fd26b359",
+      "capturedAt": "2026-10-08T05:27:39.418Z",
+      "size": 1893
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/smallvonbolt.png?v=30",
+      "file": "assets/9162b6007621d8c0-smallvonbolt.png",
+      "mime": "image/png",
+      "sha256": "9162b6007621d8c0f969f17a77178768e9d477c2c59ec16d9cb7981dd9cd7559",
+      "capturedAt": "2026-10-08T05:27:39.418Z",
+      "size": 1984
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/sonja.png?v=18",
+      "file": "assets/175b0fbfd422b0b3-sonja.png",
+      "mime": "image/png",
+      "sha256": "175b0fbfd422b0b3131c9864c62941b5ac45a84e7d351323683669f826565d52",
+      "capturedAt": "2026-10-08T05:28:03.255Z",
+      "size": 1674
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/sturm.png?v=29",
+      "file": "assets/99d2a33e2d7ab98c-sturm.png",
+      "mime": "image/png",
+      "sha256": "99d2a33e2d7ab98cf34313f03732fc0367d91ebe2868a7a3c80ecba8d92b3c29",
+      "capturedAt": "2026-10-08T05:28:03.283Z",
+      "size": 1348
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co-portraits/ds2/vonbolt.png?v=30",
+      "file": "assets/d70ba5f95d2d985a-vonbolt.png",
+      "mime": "image/png",
+      "sha256": "d70ba5f95d2d985a7d94d9b46044c065d4f35d9397d004faa760cf4993a7b638",
+      "capturedAt": "2026-10-08T05:28:03.286Z",
+      "size": 1689
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_1.gif",
+      "file": "assets/38484a4553681bf2-co_1.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.190Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_11.gif",
+      "file": "assets/dc4dcc075835957a-co_11.gif",
+      "mime": "image/gif",
+      "sha256": "dc4dcc075835957a5832c1e163ca4c98368e3fde6eb5668d78355e519f8543c9",
+      "capturedAt": "2026-10-08T05:28:03.260Z",
+      "size": 121
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_12.gif",
+      "file": "assets/1d260e6e57ffcf02-co_12.gif",
+      "mime": "image/gif",
+      "sha256": "1d260e6e57ffcf020460a550d7d1ab26352bb475da3139dedb94e393cad4971a",
+      "capturedAt": "2026-10-08T05:28:03.269Z",
+      "size": 133
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_13.gif",
+      "file": "assets/2e4ea0fc3890b4e1-co_13.gif",
+      "mime": "image/gif",
+      "sha256": "2e4ea0fc3890b4e1d5317cc3689842f4e59422874a8f8ba24a0337d304313856",
+      "capturedAt": "2026-10-08T05:28:03.254Z",
+      "size": 126
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_14.gif",
+      "file": "assets/38484a4553681bf2-co_14.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.242Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_15.gif",
+      "file": "assets/2e4ea0fc3890b4e1-co_15.gif",
+      "mime": "image/gif",
+      "sha256": "2e4ea0fc3890b4e1d5317cc3689842f4e59422874a8f8ba24a0337d304313856",
+      "capturedAt": "2026-10-08T05:28:03.215Z",
+      "size": 126
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_16.gif",
+      "file": "assets/6156e4ebb945dd7f-co_16.gif",
+      "mime": "image/gif",
+      "sha256": "6156e4ebb945dd7f1507160967230e4656607d39c08c269d48ee111fbd6a5f73",
+      "capturedAt": "2026-10-08T05:28:03.279Z",
+      "size": 125
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_17.gif",
+      "file": "assets/25995df117b1fe49-co_17.gif",
+      "mime": "image/gif",
+      "sha256": "25995df117b1fe495af72ca6bc05fbaed269fe3fe84934a8214270391fdb1d8d",
+      "capturedAt": "2026-10-08T05:28:03.196Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_18.gif",
+      "file": "assets/25995df117b1fe49-co_18.gif",
+      "mime": "image/gif",
+      "sha256": "25995df117b1fe495af72ca6bc05fbaed269fe3fe84934a8214270391fdb1d8d",
+      "capturedAt": "2026-10-08T05:28:03.259Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_19.gif",
+      "file": "assets/2e4ea0fc3890b4e1-co_19.gif",
+      "mime": "image/gif",
+      "sha256": "2e4ea0fc3890b4e1d5317cc3689842f4e59422874a8f8ba24a0337d304313856",
+      "capturedAt": "2026-10-08T05:28:03.230Z",
+      "size": 126
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_2.gif",
+      "file": "assets/38484a4553681bf2-co_2.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.220Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_20.gif",
+      "file": "assets/38484a4553681bf2-co_20.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.248Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_21.gif",
+      "file": "assets/25995df117b1fe49-co_21.gif",
+      "mime": "image/gif",
+      "sha256": "25995df117b1fe495af72ca6bc05fbaed269fe3fe84934a8214270391fdb1d8d",
+      "capturedAt": "2026-10-08T05:28:03.278Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_22.gif",
+      "file": "assets/38484a4553681bf2-co_22.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.197Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_23.gif",
+      "file": "assets/38484a4553681bf2-co_23.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.273Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_24.gif",
+      "file": "assets/38484a4553681bf2-co_24.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.204Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_25.gif",
+      "file": "assets/38484a4553681bf2-co_25.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.265Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_26.gif",
+      "file": "assets/bc29b512f5866f2e-co_26.gif",
+      "mime": "image/gif",
+      "sha256": "bc29b512f5866f2e279081839795987afbcc7863f22218c844636b0a93780db0",
+      "capturedAt": "2026-10-08T05:28:03.269Z",
+      "size": 131
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_27.gif",
+      "file": "assets/38484a4553681bf2-co_27.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.237Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_28.gif",
+      "file": "assets/38484a4553681bf2-co_28.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.209Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_29.gif",
+      "file": "assets/3a8afea5c21a3b48-co_29.gif",
+      "mime": "image/gif",
+      "sha256": "3a8afea5c21a3b48d4064ce2df57dd31e4b5564d870cb18297f0d78306ec3f7f",
+      "capturedAt": "2026-10-08T05:28:03.283Z",
+      "size": 128
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_3.gif",
+      "file": "assets/6156e4ebb945dd7f-co_3.gif",
+      "mime": "image/gif",
+      "sha256": "6156e4ebb945dd7f1507160967230e4656607d39c08c269d48ee111fbd6a5f73",
+      "capturedAt": "2026-10-08T05:28:03.248Z",
+      "size": 125
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_30.gif",
+      "file": "assets/3963a70e07f730b9-co_30.gif",
+      "mime": "image/gif",
+      "sha256": "3963a70e07f730b9338bef615b73a2b2f6ebb8127ba80ff33629f55d553c63ff",
+      "capturedAt": "2026-10-08T05:28:03.291Z",
+      "size": 136
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_5.gif",
+      "file": "assets/6156e4ebb945dd7f-co_5.gif",
+      "mime": "image/gif",
+      "sha256": "6156e4ebb945dd7f1507160967230e4656607d39c08c269d48ee111fbd6a5f73",
+      "capturedAt": "2026-10-08T05:28:03.232Z",
+      "size": 125
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_7.gif",
+      "file": "assets/38484a4553681bf2-co_7.gif",
+      "mime": "image/gif",
+      "sha256": "38484a4553681bf2c0797fd78ce1799c93d0121217c0a49e4cef944384d94be6",
+      "capturedAt": "2026-10-08T05:28:03.202Z",
+      "size": 124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_8.gif",
+      "file": "assets/acb2632ac93c786c-co_8.gif",
+      "mime": "image/gif",
+      "sha256": "acb2632ac93c786c82a9b2bbecfe5bc18f4bdfb969c64b6b86e8281dab72a01c",
+      "capturedAt": "2026-10-08T05:28:03.210Z",
+      "size": 134
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/co_9.gif",
+      "file": "assets/bc29b512f5866f2e-co_9.gif",
+      "mime": "image/gif",
+      "sha256": "bc29b512f5866f2e279081839795987afbcc7863f22218c844636b0a93780db0",
+      "capturedAt": "2026-10-08T05:28:03.225Z",
+      "size": 131
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/coin.gif",
+      "file": "assets/8692fd4f6b942d8e-coin.gif",
+      "mime": "image/gif",
+      "sha256": "8692fd4f6b942d8e4bf0bdac18ca489f6023d9323653df54c5efcf7f05f74ee1",
+      "capturedAt": "2026-10-08T05:25:14.429Z",
+      "size": 73
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/dayslimit.gif",
+      "file": "assets/5203c7dad209d42e-dayslimit.gif",
+      "mime": "image/gif",
+      "sha256": "5203c7dad209d42e848e8f248f239cf7de36b3ee17fee2796f4cbfc0e7488011",
+      "capturedAt": "2026-10-08T05:26:36.414Z",
+      "size": 153
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/decline.gif",
+      "file": "assets/9143a0a888d39b5c-decline.gif",
+      "mime": "image/gif",
+      "sha256": "9143a0a888d39b5c5b38754fdf9eeedfc9c7c4851951f742e5b5ae242e4f78ab",
+      "capturedAt": "2026-10-08T05:25:14.303Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/delete.gif",
+      "file": "assets/e87e68e478d74569-delete.gif",
+      "mime": "image/gif",
+      "sha256": "e87e68e478d74569f6829d84340fcbf46eadc48e21f35f507c122f65f6f134f4",
+      "capturedAt": "2026-10-08T05:27:23.731Z",
+      "size": 111
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/design_map.gif",
+      "file": "assets/a6eacf333ceda074-design_map.gif",
+      "mime": "image/gif",
+      "sha256": "a6eacf333ceda07408568252b96ba9840a2a1a22ac914b6e75828c63f773bdec",
+      "capturedAt": "2026-10-08T05:27:39.361Z",
+      "size": 185
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/discord-icon-upscale.png",
+      "file": "assets/b4722e458ccdaac0-discord-icon-upscale.png",
+      "mime": "image/png",
+      "sha256": "b4722e458ccdaac08967cf6d3ff52b899fd5224a1df9248d43a08d4de5963da7",
+      "capturedAt": "2026-10-08T05:25:14.218Z",
+      "size": 1158
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/divehide.gif",
+      "file": "assets/6b6f0ff0e66bf198-divehide.gif",
+      "mime": "image/gif",
+      "sha256": "6b6f0ff0e66bf198d376de99894a6222fb882e2e188d845edab3924cb50b0686",
+      "capturedAt": "2026-10-08T05:25:14.315Z",
+      "size": 101
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/down_caret.gif",
+      "file": "assets/4e41a36e644a5bf8-down_caret.gif",
+      "mime": "image/gif",
+      "sha256": "4e41a36e644a5bf8b62919be19ceb0626d00409bb35aee568f19bc2c767c85a4",
+      "capturedAt": "2026-10-08T05:25:14.242Z",
+      "size": 1172
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/down_caret_lite.gif",
+      "file": "assets/3f98bdda6b532ca1-down_caret_lite.gif",
+      "mime": "image/gif",
+      "sha256": "3f98bdda6b532ca10669ecd56317061246333dd1fd7333559fa534f94f9e7bef",
+      "capturedAt": "2026-10-08T05:25:14.430Z",
+      "size": 62
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/endturn.gif",
+      "file": "assets/67f84b3589109e1f-endturn.gif",
+      "mime": "image/gif",
+      "sha256": "67f84b3589109e1fb3b7196aed5649dacfeac8775f601fc24c75b064176578f7",
+      "capturedAt": "2026-10-08T05:25:14.320Z",
+      "size": 132
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/favemaps.gif",
+      "file": "assets/5643fb654daed8fa-favemaps.gif",
+      "mime": "image/gif",
+      "sha256": "5643fb654daed8fa85b67a2fde51bf2a68813cdd49d762de44524fb7eba72bbd",
+      "capturedAt": "2026-10-08T05:25:40.315Z",
+      "size": 182
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/fillmap.gif",
+      "file": "assets/d30089634397eeb3-fillmap.gif",
+      "mime": "image/gif",
+      "sha256": "d30089634397eeb3532f0899e04d62c00be88a99d4b1ea86addecae5f9c28262",
+      "capturedAt": "2026-10-08T05:27:23.724Z",
+      "size": 194
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/fire.gif",
+      "file": "assets/127effcbc8372c40-fire.gif",
+      "mime": "image/gif",
+      "sha256": "127effcbc8372c40d3adb25aa8101537caaa4fe3c3a20d8b9db26de7ce7cabd3",
+      "capturedAt": "2026-10-08T05:25:14.463Z",
+      "size": 118
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/follow_count.gif",
+      "file": "assets/8a8ccc910c05f6f1-follow_count.gif",
+      "mime": "image/gif",
+      "sha256": "8a8ccc910c05f6f19b17efe83184b23f579e518c8e6c78ab2a855ecaaad87e36",
+      "capturedAt": "2026-10-08T05:25:14.315Z",
+      "size": 265
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/following.gif",
+      "file": "assets/fabadd0e01d2adf1-following.gif",
+      "mime": "image/gif",
+      "sha256": "fabadd0e01d2adf1c6dc149eecd51bd51ef29b6dbd08f6245042605baf470223",
+      "capturedAt": "2026-10-08T05:25:14.303Z",
+      "size": 117
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/followlist.gif",
+      "file": "assets/0fa0df7ff603bd99-followlist.gif",
+      "mime": "image/gif",
+      "sha256": "0fa0df7ff603bd9989c025de7769a02b28a5604e6cd15c4b274d202062ee3637",
+      "capturedAt": "2026-10-08T05:25:14.251Z",
+      "size": 203
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/forum.png",
+      "file": "assets/eb6a1435a9d31cb5-forum.png",
+      "mime": "image/png",
+      "sha256": "eb6a1435a9d31cb5052827a5c10c02a97cc7e8dbdcb90c3e5294432fb323ee1d",
+      "capturedAt": "2026-10-08T05:25:14.219Z",
+      "size": 12839
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/friendlist.gif",
+      "file": "assets/6fc24d408e3e5b66-friendlist.gif",
+      "mime": "image/gif",
+      "sha256": "6fc24d408e3e5b6636348700e4e11b8fe91e533a3575052942587865656b4b37",
+      "capturedAt": "2026-10-08T05:27:39.360Z",
+      "size": 115
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/fuel.gif",
+      "file": "assets/bbbb405c5b3944f1-fuel.gif",
+      "mime": "image/gif",
+      "sha256": "bbbb405c5b3944f1d60c45fa2f0ef08892c3179effcd590a306cf91c08b2d00d",
+      "capturedAt": "2026-10-08T05:25:14.376Z",
+      "size": 64
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/gameinfo.gif",
+      "file": "assets/cc11ff32b34f0684-gameinfo.gif",
+      "mime": "image/gif",
+      "sha256": "cc11ff32b34f06841337b852ff3c0b74c2e2d13f87942542c81125a9a882f66b",
+      "capturedAt": "2026-10-08T05:25:14.243Z",
+      "size": 132
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/gamelog.gif",
+      "file": "assets/d8fef63091d1ac5a-gamelog.gif",
+      "mime": "image/gif",
+      "sha256": "d8fef63091d1ac5a416b65a982b93f3106eb65920b7932c6f545afd16bca5042",
+      "capturedAt": "2026-10-08T05:25:14.308Z",
+      "size": 117
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/gamemenu.gif",
+      "file": "assets/fff2f11b6bbc9a7e-gamemenu.gif",
+      "mime": "image/gif",
+      "sha256": "fff2f11b6bbc9a7efa08af2fff7160b5c18162b6e3dc80efc047188670511077",
+      "capturedAt": "2026-10-08T05:25:14.237Z",
+      "size": 2151
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/gs_dayslimit.gif",
+      "file": "assets/da3eed95c38b3c64-gs_dayslimit.gif",
+      "mime": "image/gif",
+      "sha256": "da3eed95c38b3c64e2fb0e31dcec62843e7bec32b8ef488db2e6ad0b2813aaa4",
+      "capturedAt": "2026-10-08T05:26:36.334Z",
+      "size": 1312
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/gs_savemap.gif",
+      "file": "assets/04b24af0780c0b2e-gs_savemap.gif",
+      "mime": "image/gif",
+      "sha256": "04b24af0780c0b2e940a5b91093de5e3154b553e0cc4295970d17c4898095efe",
+      "capturedAt": "2026-10-08T05:27:23.748Z",
+      "size": 163
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepage_buttons_2.gif",
+      "file": "assets/f163fd7f71557981-homepage_buttons_2.gif",
+      "mime": "image/gif",
+      "sha256": "f163fd7f7155798123b1b87011cbdfed60a9ecb433a51b98b6cb6021ad6fd768",
+      "capturedAt": "2026-10-08T05:25:15.665Z",
+      "size": 9871
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepage_buttons_3.gif",
+      "file": "assets/5d236b84f1d00821-homepage_buttons_3.gif",
+      "mime": "image/gif",
+      "sha256": "5d236b84f1d008218577785035a83da47d0812c189059f820a68ec5476912494",
+      "capturedAt": "2026-10-08T05:25:15.675Z",
+      "size": 15134
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepage_buttons_4.gif",
+      "file": "assets/ed308f5c09a6d949-homepage_buttons_4.gif",
+      "mime": "image/gif",
+      "sha256": "ed308f5c09a6d949bb3036858cd4f12ddc7cc14143cd122f7072ab678daa677d",
+      "capturedAt": "2026-10-08T05:25:15.430Z",
+      "size": 12961
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepage_buttons_5.gif",
+      "file": "assets/818f2395350f4808-homepage_buttons_5.gif",
+      "mime": "image/gif",
+      "sha256": "818f2395350f4808a772e1c87429c6df3b36b06d3b2037b2bee7039509b82f30",
+      "capturedAt": "2026-10-08T05:25:15.433Z",
+      "size": 13773
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepage_buttons_6.gif",
+      "file": "assets/6416118c6e8a3bf3-homepage_buttons_6.gif",
+      "mime": "image/gif",
+      "sha256": "6416118c6e8a3bf3973dac13094d7afe3b95c1ea0befd5576635a282b489d034",
+      "capturedAt": "2026-10-08T05:25:15.670Z",
+      "size": 9774
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepage_module_status.png",
+      "file": "assets/7898f1a347c7696e-homepage_module_status.png",
+      "mime": "image/png",
+      "sha256": "7898f1a347c7696e767f7912c3cffc9d754d65d0c17cf9f51f76b0e9f911a045",
+      "capturedAt": "2026-10-08T05:25:15.909Z",
+      "size": 444
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepage_newspaper_welcome.png",
+      "file": "assets/37c97ae60aafa13f-homepage_newspaper_welcome.png",
+      "mime": "image/png",
+      "sha256": "37c97ae60aafa13f3f92f710c216634512d9a6773490157bd261a15bf589db70",
+      "capturedAt": "2026-10-08T05:25:15.903Z",
+      "size": 6551
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepage_newspaper_welcome_back.png",
+      "file": "assets/1e55530ffb5760ad-homepage_newspaper_welcome_back.png",
+      "mime": "image/png",
+      "sha256": "1e55530ffb5760adaa0a9651816ba1ba7c17827e8f19d8365263e36f40b83bd2",
+      "capturedAt": "2026-10-08T05:25:15.919Z",
+      "size": 7132
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepage_video_status.png",
+      "file": "assets/1feb73d0fdd4ae04-homepage_video_status.png",
+      "mime": "image/png",
+      "sha256": "1feb73d0fdd4ae04e73ef70fdaa7cff2e816aafe121b64cde9c22ec529db8fda",
+      "capturedAt": "2026-10-08T05:25:15.910Z",
+      "size": 435
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepagefeatures/module_terrain_1.png",
+      "file": "assets/c55f1b0a41d2aab1-module_terrain_1.png",
+      "mime": "image/png",
+      "sha256": "c55f1b0a41d2aab1469bcaf90e81053cbc5295036e812f5fceca50d72a50c8d4",
+      "capturedAt": "2026-10-08T05:25:16.149Z",
+      "size": 6588
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepagefeatures/module_terrain_2.png",
+      "file": "assets/f3637c184d9652ca-module_terrain_2.png",
+      "mime": "image/png",
+      "sha256": "f3637c184d9652cae1b872b7f7cda8ef2268539dc469a4373c57539e14373d68",
+      "capturedAt": "2026-10-08T05:25:16.155Z",
+      "size": 8201
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepagefeatures/module_terrain_3.png",
+      "file": "assets/41c7db5334e793fb-module_terrain_3.png",
+      "mime": "image/png",
+      "sha256": "41c7db5334e793fb56df1e291f806ca82508fa06bf3e32a18d5abe8f57938d79",
+      "capturedAt": "2026-10-08T05:25:16.154Z",
+      "size": 4531
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepagefeatures/module_terrain_4.png",
+      "file": "assets/97326226aa7dbf2a-module_terrain_4.png",
+      "mime": "image/png",
+      "sha256": "97326226aa7dbf2aef45dbbef1c6dad8c133b061b460f43e8f1c6867b3bcd65b",
+      "capturedAt": "2026-10-08T05:25:16.169Z",
+      "size": 7124
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepagefeatures/module_terrain_5.png",
+      "file": "assets/f2f495f239f311fd-module_terrain_5.png",
+      "mime": "image/png",
+      "sha256": "f2f495f239f311fddef41b098d039e5c7f776609fb7dba5258d6bd3bd3da0981",
+      "capturedAt": "2026-10-08T05:25:16.409Z",
+      "size": 7330
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/homepagefeatures/module_terrain_6.png",
+      "file": "assets/f26c24d4be61e3af-module_terrain_6.png",
+      "mime": "image/png",
+      "sha256": "f26c24d4be61e3af13c60759a86dd4496f39c0e171f4405e887404018283a0a9",
+      "capturedAt": "2026-10-08T05:25:16.402Z",
+      "size": 5569
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/hp.gif",
+      "file": "assets/0825cfee3fc93365-hp.gif",
+      "mime": "image/gif",
+      "sha256": "0825cfee3fc933651d52f63fd5fa6ae9cdf5e6d2cd19965db535eed0e1273c76",
+      "capturedAt": "2026-10-08T05:25:14.376Z",
+      "size": 60
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/inbox.gif",
+      "file": "assets/c586cc49c51d4956-inbox.gif",
+      "mime": "image/gif",
+      "sha256": "c586cc49c51d49564bbbec52d925d3b68724f3892fe3c6aa124e2f7072f05739",
+      "capturedAt": "2026-10-08T05:27:39.360Z",
+      "size": 133
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/keyboard.png",
+      "file": "assets/ce02995925e53986-keyboard.png",
+      "mime": "image/png",
+      "sha256": "ce02995925e5398681773dbb5caf9ecc84e13106913b7109318a191e68185348",
+      "capturedAt": "2026-10-08T05:25:14.258Z",
+      "size": 3184
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/leagueprofile.gif",
+      "file": "assets/83a2f480eb4189a4-leagueprofile.gif",
+      "mime": "image/gif",
+      "sha256": "83a2f480eb4189a40d7a9c24da2740f30365624a2af9c59a543a1821cc9926b4",
+      "capturedAt": "2026-10-08T05:27:39.363Z",
+      "size": 157
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/lite-check-blue.png",
+      "file": "assets/47b79209a4beae7c-lite-check-blue.png",
+      "mime": "image/png",
+      "sha256": "47b79209a4beae7c81053aa2651fbfd532850d195b3c5e7e788ad3ab4829fec3",
+      "capturedAt": "2026-10-08T05:25:15.419Z",
+      "size": 7093
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/macroland250.png",
+      "file": "assets/4c9cbb199737d748-macroland250.png",
+      "mime": "image/png",
+      "sha256": "4c9cbb199737d748963c76b8bcee40bed66404656d43bbef71d701bf581fc4b8",
+      "capturedAt": "2026-10-08T05:25:14.467Z",
+      "size": 45402
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/magnifying_glass.png",
+      "file": "assets/166e965ad35a67d4-magnifying_glass.png",
+      "mime": "image/png",
+      "sha256": "166e965ad35a67d40589dcd03aa55093ffcff3fc69e96f7002a351b9737a6751",
+      "capturedAt": "2026-10-08T05:25:14.208Z",
+      "size": 13040
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/makeprivate.gif",
+      "file": "assets/7b4ba12a1a8d9457-makeprivate.gif",
+      "mime": "image/gif",
+      "sha256": "7b4ba12a1a8d94577a107a291db82c1983c1ac3364e828c92fa0e4e519b978d9",
+      "capturedAt": "2026-10-08T05:27:23.724Z",
+      "size": 106
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/messages.gif",
+      "file": "assets/4c6fe2cb3c84fbc2-messages.gif",
+      "mime": "image/gif",
+      "sha256": "4c6fe2cb3c84fbc22cf9fc1c87acdd5946702e9a343d2adb95532844cae0152b",
+      "capturedAt": "2026-10-08T05:25:14.308Z",
+      "size": 122
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/meteor.png",
+      "file": "assets/e69a56a5896af1b0-meteor.png",
+      "mime": "image/png",
+      "sha256": "e69a56a5896af1b03a30b6a5dfb79d26e9d05c7bcf68237f39e1c1447e30eaa2",
+      "capturedAt": "2026-10-08T05:25:14.326Z",
+      "size": 4274
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/move.gif",
+      "file": "assets/5f0f3bacb61ad6d5-move.gif",
+      "mime": "image/gif",
+      "sha256": "5f0f3bacb61ad6d56ad534d148312f08c777bf73d85c31c785f2f3de1818c86f",
+      "capturedAt": "2026-10-08T05:25:40.313Z",
+      "size": 80
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/moveplanner.gif",
+      "file": "assets/5d6b127e77786e93-moveplanner.gif",
+      "mime": "image/gif",
+      "sha256": "5d6b127e77786e935bd6e9ad7f75d7a71b01186525e2e6ddf6a2786cdaba1211",
+      "capturedAt": "2026-10-08T05:25:14.312Z",
+      "size": 246
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/newicon.png",
+      "file": "assets/8c9427e1cdf0be91-newicon.png",
+      "mime": "image/png",
+      "sha256": "8c9427e1cdf0be91ec118f2da5b9a7d40a9253cef2c8936698eaab5db33557d5",
+      "capturedAt": "2026-10-08T05:25:14.208Z",
+      "size": 669
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/patreon-icon-upscale.png",
+      "file": "assets/aadda0889376db9d-patreon-icon-upscale.png",
+      "mime": "image/png",
+      "sha256": "aadda0889376db9d742a244b02a2f8fe8c90d102bde4b5548f687c759b4d4a05",
+      "capturedAt": "2026-10-08T05:25:14.219Z",
+      "size": 69513
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/preloader.gif",
+      "file": "assets/66c8ac8b0ae5fc7d-preloader.gif",
+      "mime": "image/gif",
+      "sha256": "66c8ac8b0ae5fc7dc24d187eefcb031f0c2deb082452ff5dba67c4eca57a4f9a",
+      "capturedAt": "2026-10-08T05:25:14.382Z",
+      "size": 7684
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/reddit-icon-upscale.png",
+      "file": "assets/1394334725aa9027-reddit-icon-upscale.png",
+      "mime": "image/png",
+      "sha256": "1394334725aa90270d29d5340ed41f6c0911f4e9fbaec28712744a8b7a4ac3d7",
+      "capturedAt": "2026-10-08T05:25:14.218Z",
+      "size": 1229
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/replay.gif",
+      "file": "assets/d22dba934b2c1ff6-replay.gif",
+      "mime": "image/gif",
+      "sha256": "d22dba934b2c1ff62f7ac582d9010a7682c22fdd9ed7a40b5cfc5d216e2806ab",
+      "capturedAt": "2026-10-08T05:25:14.315Z",
+      "size": 111
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/resign_game.gif",
+      "file": "assets/315b449521e2bec1-resign_game.gif",
+      "mime": "image/gif",
+      "sha256": "315b449521e2bec1fc3262427ae4b42b0ededa710080f0fac0aa0966b04ac617",
+      "capturedAt": "2026-10-08T05:25:14.242Z",
+      "size": 1267
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/resize_map_bottom_-1.gif",
+      "file": "assets/9a70deb95677eb86-resize_map_bottom_-1.gif",
+      "mime": "image/gif",
+      "sha256": "9a70deb95677eb86a0f5e2cd62eba0dbaba0a53481439e07fdb50b9fa2181061",
+      "capturedAt": "2026-10-08T05:27:23.732Z",
+      "size": 77
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/resize_map_bottom_1.gif",
+      "file": "assets/4aae45513fc4e82c-resize_map_bottom_1.gif",
+      "mime": "image/gif",
+      "sha256": "4aae45513fc4e82cfad1be0260ecf446321ff6aa284f838fa9da5ba112e194c4",
+      "capturedAt": "2026-10-08T05:27:23.736Z",
+      "size": 79
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/resize_map_left_-1.gif",
+      "file": "assets/3a95cc70e8a3b04b-resize_map_left_-1.gif",
+      "mime": "image/gif",
+      "sha256": "3a95cc70e8a3b04bfb43ec65ffdf9d1aa2b40abf54129dfcdd9dc326dd5e282c",
+      "capturedAt": "2026-10-08T05:27:23.737Z",
+      "size": 79
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/resize_map_left_1.gif",
+      "file": "assets/79cac9fce85602d0-resize_map_left_1.gif",
+      "mime": "image/gif",
+      "sha256": "79cac9fce85602d0845460969ed6a6bb923af89f34fc10d6142e4064b2e2fd9e",
+      "capturedAt": "2026-10-08T05:27:23.737Z",
+      "size": 79
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/resize_map_right_-1.gif",
+      "file": "assets/a52fb0afbaca70f0-resize_map_right_-1.gif",
+      "mime": "image/gif",
+      "sha256": "a52fb0afbaca70f0c22390537a835fdea3bd3bff5dcdcf5008cc438a5fc8993b",
+      "capturedAt": "2026-10-08T05:27:23.737Z",
+      "size": 79
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/resize_map_right_1.gif",
+      "file": "assets/68ebcc27654507da-resize_map_right_1.gif",
+      "mime": "image/gif",
+      "sha256": "68ebcc27654507da356fb6b72d75dc160b27140f1e477082d281a59f087cb422",
+      "capturedAt": "2026-10-08T05:27:23.742Z",
+      "size": 79
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/resize_map_top_-1.gif",
+      "file": "assets/1fd4ad5c5898b5a6-resize_map_top_-1.gif",
+      "mime": "image/gif",
+      "sha256": "1fd4ad5c5898b5a6c7f13895f3d8b5273b3617fb29f172ec798dcd344740eb19",
+      "capturedAt": "2026-10-08T05:27:23.731Z",
+      "size": 79
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/resize_map_top_1.gif",
+      "file": "assets/5cabb6cafff408c1-resize_map_top_1.gif",
+      "mime": "image/gif",
+      "sha256": "5cabb6cafff408c17b0aa9ff1e746cb59bde48ff651637485d6a5107ca44b629",
+      "capturedAt": "2026-10-08T05:27:23.731Z",
+      "size": 77
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/right_caret.gif",
+      "file": "assets/e2d41983d709e66d-right_caret.gif",
+      "mime": "image/gif",
+      "sha256": "e2d41983d709e66dc39c4fa92636b1512a7036e179d8ec9847bf93de6bf274b6",
+      "capturedAt": "2026-10-08T05:25:14.251Z",
+      "size": 1193
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/savemap.gif",
+      "file": "assets/bd9bf6f443209dc2-savemap.gif",
+      "mime": "image/gif",
+      "sha256": "bd9bf6f443209dc262c19ca24a08ef7473999fb8962885d49acc0dc8c815546d",
+      "capturedAt": "2026-10-08T05:27:23.726Z",
+      "size": 163
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/setdraw.gif",
+      "file": "assets/8007282892f1a8fe-setdraw.gif",
+      "mime": "image/gif",
+      "sha256": "8007282892f1a8fed3c4ff4ccf0a5dfbdcfc23f698f60ef938d8ec02d57c6cd5",
+      "capturedAt": "2026-10-08T05:25:14.242Z",
+      "size": 112
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/supply_right.gif",
+      "file": "assets/2d42054c3b26c50b-supply_right.gif",
+      "mime": "image/gif",
+      "sha256": "2d42054c3b26c50b88d303e38d9d5b5142c5086f3a8efd2fa2814ed43c8a8bf9",
+      "capturedAt": "2026-10-08T05:25:14.324Z",
+      "size": 269
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/switch_position.gif",
+      "file": "assets/c7a45b4aa8d24480-switch_position.gif",
+      "mime": "image/gif",
+      "sha256": "c7a45b4aa8d24480c3c112732180633eee2bcc8f457fcb279fbf7574ec6a397d",
+      "capturedAt": "2026-10-08T05:27:23.725Z",
+      "size": 127
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/target_icon2.gif",
+      "file": "assets/bfe39dca46bccb70-target_icon2.gif",
+      "mime": "image/gif",
+      "sha256": "bfe39dca46bccb70b0048b38e183c68bc80281d345ef13ed124ab2f4e4210de2",
+      "capturedAt": "2026-10-08T05:25:14.320Z",
+      "size": 7179
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/terrain_spritesheet.png?v=1759007992",
+      "file": "assets/66f96a9f4afd6e1d-terrain_spritesheet.png",
+      "mime": "image/png",
+      "sha256": "66f96a9f4afd6e1d48fc8efa5bc3be6c5867685db534c13c263b14a2048469a5",
+      "capturedAt": "2026-10-08T05:25:14.469Z",
+      "size": 304795
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/terrainstar.gif",
+      "file": "assets/9f66d06d29819876-terrainstar.gif",
+      "mime": "image/gif",
+      "sha256": "9f66d06d2981987623b75fe006092b5ba11518d8da666e339a6f682f5551a6cd",
+      "capturedAt": "2026-10-08T05:25:14.382Z",
+      "size": 93
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/trap_right.gif",
+      "file": "assets/a6dcd4e980bf009d-trap_right.gif",
+      "mime": "image/gif",
+      "sha256": "a6dcd4e980bf009dd66e08323930012f50fcd6400b4940b57e5f3eac110e126c",
+      "capturedAt": "2026-10-08T05:25:14.323Z",
+      "size": 243
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/trophycase.gif",
+      "file": "assets/f6bff01702f05266-trophycase.gif",
+      "mime": "image/gif",
+      "sha256": "f6bff01702f05266381248c1d285d92a9c112abe64bcf8b515532e5fce36fe0f",
+      "capturedAt": "2026-10-08T05:27:39.366Z",
+      "size": 357
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/twitch-icon.png",
+      "file": "assets/bfbf47a46f04c3d9-twitch-icon.png",
+      "mime": "image/png",
+      "sha256": "bfbf47a46f04c3d906b0a105d0884e2c8033bc6ff0f55ee14ea2629da8a29c09",
+      "capturedAt": "2026-10-08T05:25:14.208Z",
+      "size": 1904
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/unit_select.gif",
+      "file": "assets/569cd796350a0ac2-unit_select.gif",
+      "mime": "image/gif",
+      "sha256": "569cd796350a0ac257b5cd4906a73e89a9462a7518cd006be9dbc53446e1266e",
+      "capturedAt": "2026-10-08T05:25:14.326Z",
+      "size": 7016
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/usersettings.gif",
+      "file": "assets/e2fdc7011eab52f4-usersettings.gif",
+      "mime": "image/gif",
+      "sha256": "e2fdc7011eab52f413edebdc778269aadc0f02ebc6d4c17db32d94eab92fbfeb",
+      "capturedAt": "2026-10-08T05:27:39.357Z",
+      "size": 219
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/userstats.gif",
+      "file": "assets/071d06e7da66ba45-userstats.gif",
+      "mime": "image/gif",
+      "sha256": "071d06e7da66ba455198a07ee226c32b649f0549b223df958ae53357550dcfd5",
+      "capturedAt": "2026-10-08T05:25:14.251Z",
+      "size": 100
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/uwinfantry.gif",
+      "file": "assets/5bdfd60dba20a105-uwinfantry.gif",
+      "mime": "image/gif",
+      "sha256": "5bdfd60dba20a1051b0ab8e4fc2a501b4e16a3a7afefa7831241c31a38e04fd3",
+      "capturedAt": "2026-10-08T05:25:14.230Z",
+      "size": 1373
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/victor.gif",
+      "file": "assets/3df2893ee71bec20-victor.gif",
+      "mime": "image/gif",
+      "sha256": "3df2893ee71bec208c065d84a1f3a0d7a0142dba7e317562041e07c645379ab2",
+      "capturedAt": "2026-10-08T05:25:14.424Z",
+      "size": 161
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/viewers_icon.gif",
+      "file": "assets/9f2fe52da2d0a127-viewers_icon.gif",
+      "mime": "image/gif",
+      "sha256": "9f2fe52da2d0a1275f38515a5ad3ce7083d8c3e88546b911e0851ae2411d8148",
+      "capturedAt": "2026-10-08T05:25:14.319Z",
+      "size": 149
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/viewsettings.gif",
+      "file": "assets/373b3bee17cca04c-viewsettings.gif",
+      "mime": "image/gif",
+      "sha256": "373b3bee17cca04ca180eac87597c231ea0bccbf3d60fa270c811cb203b33b5a",
+      "capturedAt": "2026-10-08T05:25:14.251Z",
+      "size": 1466
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/x.gif",
+      "file": "assets/a8a94ca9ac2f367e-x.gif",
+      "mime": "image/gif",
+      "sha256": "a8a94ca9ac2f367ee31ec5fc2e5ea5aef4c7c7c8745630661f0bcba3d37468ce",
+      "capturedAt": "2026-10-08T05:25:14.383Z",
+      "size": 260
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/yourturn_arrow.gif",
+      "file": "assets/cca516fc16e9ac2e-yourturn_arrow.gif",
+      "mime": "image/gif",
+      "sha256": "cca516fc16e9ac2efeaf1083f2521e99ee39af7a57ab25532b590be51c00fafa",
+      "capturedAt": "2026-10-08T05:25:14.431Z",
+      "size": 108
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/zoomin.gif",
+      "file": "assets/51eef2a4df136442-zoomin.gif",
+      "mime": "image/gif",
+      "sha256": "51eef2a4df1364425ac2653443ceced3e9dfe9e5cfd32d7b60f2459c4aa845a6",
+      "capturedAt": "2026-10-08T05:25:14.236Z",
+      "size": 225
+    },
+    {
+      "source": "https://awbw.amarriner.com/terrain/zoomout.gif",
+      "file": "assets/8d616a55974edbfd-zoomout.gif",
+      "mime": "image/gif",
+      "sha256": "8d616a55974edbfd42b9dd35eb34cc479721079c4644d0da973c22a54e08d6dd",
+      "capturedAt": "2026-10-08T05:25:14.236Z",
+      "size": 214
+    }
+  ]
+}

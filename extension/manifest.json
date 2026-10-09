@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Field Command — AWBW Handheld",
+  "version": "0.5.0",
+  "minimum_chrome_version": "111",
+  "description": "A GBA-style interface for your existing AWBW account and multiplayer games.",
+  "host_permissions": ["https://awbw.amarriner.com/*"],
+  "action": {
+    "default_title": "Field Command",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://awbw.amarriner.com/game.php*", "https://awbw.amarriner.com/yourgames.php*"],
+      "js": ["bootstrap.js"],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    },
+    {
+      "matches": ["https://awbw.amarriner.com/game.php*", "https://awbw.amarriner.com/yourgames.php*"],
+      "js": ["bridge.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["play.html", "play.js", "play.css", "tactics.js", "snapshot.js", "favicon.svg", "bridge.html", "styles.css", "assets/*"],
+    "matches": ["https://awbw.amarriner.com/*"]
+  }],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; frame-ancestors https://awbw.amarriner.com"
+  }
+}
