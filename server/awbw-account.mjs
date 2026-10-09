@@ -1,9 +1,12 @@
 import {randomBytes, createCipheriv, createDecipheriv} from 'node:crypto';
 import {CookieJar} from 'tough-cookie';
 import {parseHTML} from 'linkedom';
+import {parseGamePage} from './awbw-game.mjs';
+import {probeAuthenticatedSocket} from './awbw-socket.mjs';
+import {recordHostedRead} from './command-store.mjs';
 
 const UPSTREAM='https://awbw.amarriner.com', COOKIE='__Host-fc_session', LIFETIME=8*60*60*1000;
-const ALLOWED=new Set(['/','/logincheck.php','/yourgames.php']);
+const ALLOWED=new Set(['/','/logincheck.php','/yourgames.php','/game.php']);
 export class AccountError extends Error {constructor(status, message){super(message);this.status=status;}}
 function keyBytes(secret){const key=Buffer.from(secret||'','base64');if(key.length!==32)throw new AccountError(503,'Sign-in is being prepared. Please try again shortly.');return key;}
 export function sealSession(session, secret){const iv=randomBytes(12),cipher=createCipheriv('aes-256-gcm',keyBytes(secret),iv);cipher.setAAD(Buffer.from('field-command-session-v1'));const body=Buffer.concat([cipher.update(JSON.stringify(session),'utf8'),cipher.final()]);const token=Buffer.concat([iv,cipher.getAuthTag(),body]).toString('base64url');if(token.length>3700)throw new AccountError(502,'AWBW returned a session this app cannot retain.');return token;}
@@ -43,12 +46,12 @@ export function gameList(html){
  }
  return [...games.values()];
 }
-export async function handleAccount(request,{secret=process.env.FIELD_COMMAND_SESSION_KEY,fetcher=fetch,now=Date.now()}={}){
+export async function handleAccount(request,{secret=process.env.FIELD_COMMAND_SESSION_KEY,fetcher=fetch,socketProbe=probeAuthenticatedSocket,healthRecorder=recordHostedRead,now=Date.now()}={}){
  let session;
  try{
   keyBytes(secret);session=openSession(cookieValue(request),secret,now);
   const action=new URL(request.url).searchParams.get('action')||'session',method=request.method;
-  if(!['session','login','games','logout'].includes(action))return reply({message:'Unknown account action.'},404);
+  if(!['session','login','games','game','logout'].includes(action))return reply({message:'Unknown account action.'},404);
   const expected=['login','logout'].includes(action)?'POST':'GET';if(method!==expected)return reply({message:`Use ${expected} for this action.`},405);
   if(method==='POST'&&request.headers.get('origin')!==new URL(request.url).origin)throw new AccountError(403,'Reload this page and try again.');
   if(action==='session')return reply(session?{ready:true,authenticated:true,username:session.username,csrf:session.csrf}:{ready:true,authenticated:false});
@@ -73,6 +76,17 @@ export async function handleAccount(request,{secret=process.env.FIELD_COMMAND_SE
   }
   const jar=CookieJar.fromJSON(session.jar),html=await upstream('/yourgames.php',jar,fetcher);
   if(!isAccountPage(html))return reply({message:'Your AWBW session expired. Sign in again.'},401,clearCookie());
+  if(action==='game'){
+   const gameId=new URL(request.url).searchParams.get('gameId');
+   if(!/^\d{1,12}$/.test(gameId||''))throw new AccountError(400,'Choose a valid AWBW game.');
+   const game=gameList(html).find(g=>g.id===gameId);if(!game)throw new AccountError(403,'This game is not in your AWBW game list.');
+   const page=await upstream('/game.php?games_id='+gameId,jar,fetcher);
+   let data;try{data=parseGamePage(page,{gameId,username:session.username,title:game.title});}catch(error){await healthRecorder({parsed:false,failure:/visibility/i.test(error.message)?'visibility':/terrain/i.test(error.message)?'terrain':/player view/i.test(error.message)?'viewer':/state:/i.test(error.message)?'declarations':'format'});throw new AccountError(502,'AWBW’s game view changed or is incomplete. Please refresh or try again shortly.');}
+   const branch=page.match(/\bwsServerBranch\s*=\s*"([\w-]+)"/)?.[1],cookie=await jar.getCookieString(`https://awbw.amarriner.com/${branch}/game/${gameId}`);
+   data.transport=await socketProbe({gameId,branch,viewerId:data.game.viewerPlayerId,cookie});
+   await healthRecorder({parsed:true,socketAuthenticated:data.transport.authenticated,activeTurn:data.game.viewerPlayerId===data.game.currentPlayerId,ordersSubmitted:0});
+   session.jar=await jar.serialize();return reply(data,200,sessionCookie(session,secret));
+  }
   const turnHTML=await upstream('/yourgames.php?yourTurn=1',jar,fetcher);if(!isAccountPage(turnHTML))return reply({message:'Your AWBW session expired. Sign in again.'},401,clearCookie());
   const turns=new Set(gameList(turnHTML).map(g=>g.id)),games=gameList(html).map(g=>({...g,yourTurn:turns.has(g.id)}));
   session.jar=await jar.serialize();return reply({username:session.username,games},200,sessionCookie(session,secret));

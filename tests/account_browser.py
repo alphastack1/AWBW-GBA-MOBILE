@@ -30,7 +30,7 @@ with sync_playwright() as p:
  page.locator('#signin').click();page.locator('.game-card').first.wait_for();assert page.locator('#account-name').inner_text()=='commander'
  assert page.locator('#password').input_value()=='';assert page.evaluate('localStorage.length')==0
  assert page.locator('.game-card').count()==1;page.get_by_role('tab',name='ALL GAMES 2').click();assert page.locator('.game-card').count()==2
- assert page.locator('#games img').count()==0;assert page.locator('.game-card').nth(1).get_attribute('href')=='https://awbw.amarriner.com/game.php?games_id=456'
+ assert page.locator('#games img').count()==0;assert page.locator('.game-card').nth(1).get_attribute('href')=='/play.html?game=456'
  page.screenshot(path=str(ROOT/'artifacts/account-games-mobile.png'),full_page=True)
  page.locator('#signout').click();page.locator('#signin-view').wait_for(state='visible');assert page.locator('#games-view').is_hidden()
  assert page.locator('#password').get_attribute('type')=='password';assert requests==['session','login','games','logout']

@@ -87,3 +87,114 @@
 .forecast>p{background:#ccd8b1;color:#526e64;border-top:1px solid #9aaa89}
 .account-shortcut{font-size:8px;padding:8px 6px;border:1px solid #67888d;color:#ecd993;white-space:nowrap}
 @media(max-width:600px){.game-header{gap:7px}.game-mode{font-size:6px;letter-spacing:.5px;padding:6px 4px}.game-logo{font-size:10px;letter-spacing:1px}.game-logo span{font-size:8px;letter-spacing:1px}.account-shortcut{font-size:7px;padding:7px 4px}.pill{padding:8px;font-size:8px}.map-scroll{aspect-ratio:3/2;min-height:0;max-height:43dvh}.game-app:has(#forecast:not([hidden])) .map-scroll{aspect-ratio:auto;min-height:140px;height:20dvh}.gba-cash{min-width:82px;gap:8px}.gba-cash strong,.gba-cash span{font-size:11px}.gba-terrain strong{font-size:10px}}
+
+/* Cartridge screen: the battlefield stays on screen beneath compact game HUDs. */
+@font-face{font-family:GamePixel;src:url('fonts/VT323-Regular.ttf') format('truetype');font-display:swap}
+:root{font-family:GamePixel,monospace;font-size:20px;background:#253c35;color:#35492e}
+.game-app{position:fixed;inset:0;max-width:none;min-height:0;height:100dvh;margin:0;border:0;border-radius:0;overflow:hidden;background:#486943;box-shadow:none}
+.game-app .game-header{position:absolute;left:8px;right:8px;top:max(8px,env(safe-area-inset-top));z-index:30;border:0;background:none;padding:0;gap:8px;justify-content:flex-start;pointer-events:none}
+.game-app .game-header>*{pointer-events:auto}
+.game-app .game-logo{display:none}
+.game-app .account-shortcut,.game-app .pill{font-size:18px;letter-spacing:0;color:#364a33;background:#fffbd4;border:2px solid #829059;box-shadow:inset 1px 1px #fff,2px 2px #35503a;padding:6px 12px;min-height:44px}
+.game-app .pill{margin-left:auto}
+.game-app .game-mode{font-size:14px;letter-spacing:.4px;padding:3px 6px;color:#faf4c4;background:#324c39e8;border:1px solid #a3b884;max-width:150px}
+.game-app .commander-bar{position:absolute;left:8px;top:62px;z-index:12;border:2px solid #84955e;background:#fff9d6;color:#4a512f;text-shadow:none;padding:4px;gap:6px;width:max-content;max-width:calc(100% - 116px);box-shadow:inset 1px 1px #fff,2px 2px #344b37;pointer-events:none}
+.game-app .commander-bar.green{background:#e4eebe;border-color:#698b64;color:#3b5937}
+.game-app .commander-bar img{width:36px;height:36px;border:1px solid #867947;background:#f4dfa1}
+.game-app .commander-bar>div>span{font-size:13px;letter-spacing:0;margin:0}
+.game-app .commander-bar>div>strong{font-size:17px;letter-spacing:0;max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.game-app .turn-info{display:none}
+.game-app .battle-space{position:absolute;inset:0;padding:0;background:#486943;flex:none}
+.game-app .map-viewport{position:absolute;inset:0}
+.game-app .map-scroll{height:100%;max-height:none;min-height:0;aspect-ratio:auto;border:0;box-shadow:none;display:flex;background:#486943;scrollbar-width:none}
+.game-app .map-scroll::-webkit-scrollbar{display:none}
+.game-app .map{flex:none;margin:auto;box-shadow:0 0 0 2px #32522e}
+.map-cell.cursor:before{border:0;box-shadow:none;background:linear-gradient(#fffce7,#fffce7) left top/10px 3px no-repeat,linear-gradient(#fffce7,#fffce7) left top/3px 10px no-repeat,linear-gradient(#fffce7,#fffce7) right top/10px 3px no-repeat,linear-gradient(#fffce7,#fffce7) right top/3px 10px no-repeat,linear-gradient(#fffce7,#fffce7) left bottom/10px 3px no-repeat,linear-gradient(#fffce7,#fffce7) left bottom/3px 10px no-repeat,linear-gradient(#fffce7,#fffce7) right bottom/10px 3px no-repeat,linear-gradient(#fffce7,#fffce7) right bottom/3px 10px no-repeat;filter:drop-shadow(1px 1px #405e32);animation:cursor-corners .8s steps(2,end) infinite}
+@keyframes cursor-corners{50%{opacity:.65}}
+.game-app .map-tools{left:auto;right:8px;top:110px;background:#fffbd4;border:2px solid #81915b;color:#3d5538;box-shadow:2px 2px #345039}
+.game-app .map-tools button{font-family:GamePixel,monospace;width:34px;height:36px;font-size:24px}
+.game-app .map-tools span{font-size:16px;padding:0 3px}
+.game-app .gba-cash{top:62px;right:8px;min-width:99px;font-size:20px;line-height:1.2;padding:5px 7px;height:42px;gap:8px}
+.game-app .gba-cash strong,.game-app .gba-cash span{font-size:21px}
+.game-app .gba-terrain{bottom:142px;right:8px;min-width:76px;max-width:110px;padding:5px 8px}
+.game-app .gba-terrain strong{font-size:18px;line-height:1.1;overflow-wrap:anywhere}
+.game-app .gba-terrain span{font-size:16px;letter-spacing:1px;line-height:1.4}
+.game-app .range-tools{position:absolute;bottom:245px;left:8px;z-index:15;gap:5px;margin:0;max-width:calc(100% - 16px);pointer-events:none}
+.game-app .range-tools button{font-size:15px;letter-spacing:0;color:#314d38;background:#f6f6cf;border:2px solid #819367;box-shadow:2px 2px #39573b;min-height:44px;padding:5px 9px;pointer-events:auto}
+.game-app .range-tools button[aria-pressed=true]{background:#ffe584;border-color:#b09c53}
+.game-app .range-tools span{color:#fff8cd;font-size:15px;background:#314e38b8;letter-spacing:0}
+.game-app .map-caption{position:absolute;bottom:112px;left:8px;right:8px;padding:2px 4px;margin:0;font-size:13px;letter-spacing:0;color:#fff6c3;z-index:13;pointer-events:none;text-shadow:1px 1px #244229}
+.game-app #sync-status{max-width:60%;text-align:right}
+.game-app .orders{position:absolute;left:8px;right:8px;bottom:142px;z-index:16;background:none;color:#3c5038;border:0;padding:0;min-height:0;pointer-events:none}
+.game-app .selection-info{position:relative;width:calc(100% - 118px);max-width:310px;min-height:91px;gap:7px;padding:7px;background:#fffbd4;border:2px solid #839365;box-shadow:inset 1px 1px #fff,2px 2px #37563b;pointer-events:auto}
+.game-app .terrain-preview{width:38px;height:38px;border:1px solid #8b9a5f}
+.game-app .selection-info>div:nth-child(2){min-width:0;flex:1}
+.game-app .selection-info span{font-size:16px;letter-spacing:0;line-height:1}
+.game-app .selection-info strong{font-size:20px;line-height:1;margin-top:3px}
+.game-app .selection-info p{font-size:15px;line-height:1.1;color:#65835b;margin:3px 0 0}
+.game-app .terrain-cover{font-family:monospace;font-size:9px!important;letter-spacing:1px!important;margin-left:3px}
+.game-app .info-button{position:absolute;right:0;top:-46px;font-size:16px;min-height:40px;padding:3px 12px;background:#fffad3;color:#38533c;border:2px solid #839367;box-shadow:2px 2px #3f583b;margin:0}
+.game-app .back-button{position:fixed;right:84px;bottom:max(22px,env(safe-area-inset-bottom));z-index:35;width:52px;height:52px;border:3px solid #e3a2a5;background:#a95161;color:#fff7d1;box-shadow:0 4px #543641;font-size:30px;pointer-events:auto}
+.game-app .commands{position:absolute;right:0;bottom:111px;display:flex;flex-direction:column;gap:0;margin:0;width:144px;max-height:50dvh;overflow:auto;background:#ffface;border:3px solid #94a16d;box-shadow:inset 1px 1px #fff,3px 3px #3c5938;padding:3px;pointer-events:auto}
+.game-app .commands:empty{display:none}
+.game-app .commands button{border:0;box-shadow:none;text-align:left;min-height:44px;font-size:22px;letter-spacing:0;padding:4px 12px;background:#fffbd7;color:#3b4e33}
+.game-app .commands button.primary{background:#f5e59d;padding-left:28px;color:#3b4c2e;border:0;box-shadow:none}
+.game-app .commands button:hover:not(:disabled){background:#f5e59d}
+.game-app .message{position:absolute;left:0;right:0;bottom:350px;width:fit-content;max-width:min(95%,440px);background:#263e2fe8;color:#fff5c1;border:1px solid #b2c080;padding:5px 8px;line-height:1.1;font-size:17px;margin:0;pointer-events:none}
+.game-app .game-footer{position:absolute;left:0;right:0;bottom:0;height:106px;padding:0;background:linear-gradient(#314c3dd0,#293f3d);border-top:2px solid #aec29380;z-index:20;display:block}
+.game-app .dpad{position:absolute;left:12px;bottom:10px;grid-template-columns:repeat(3,30px);grid-template-rows:repeat(3,27px)}
+.game-app .dpad button,.game-app .dpad i{font-size:16px;background:#213b32;color:#bfcf9c;box-shadow:0 2px #132c26}
+.game-app .a-button{position:absolute;right:18px;bottom:max(22px,env(safe-area-inset-bottom));height:58px;width:58px;font-size:34px;border:3px solid #f0b7a5;background:#b7625f;color:#fff8ca;box-shadow:0 4px #603e3a}
+.game-app .footer-note{position:absolute;left:116px;right:151px;top:22px;min-width:0;text-align:left}
+.game-app .footer-note span{font-size:19px;color:#faf3bb;letter-spacing:0;line-height:1}
+.game-app .footer-note small{display:none}
+.game-app .forecast{background:#dce7b9;border:3px solid #8da578;box-shadow:3px 3px #3c5a3b;margin:0;max-width:480px}
+.game-app .forecast-heading{font-size:21px;background:#517f87;color:#ffffcb;letter-spacing:.5px;padding:6px 10px}
+.game-app .forecast-fighters{padding:14px 10px;grid-template-columns:1fr 28px 1fr}
+.game-app .combatant{grid-template-columns:42px 1fr;gap:5px}
+.game-app .combatant img{width:40px;height:42px}
+.game-app .combatant .eyebrow{font-size:17px;margin-bottom:5px;letter-spacing:0}
+.game-app .combatant strong{font-size:21px}
+.game-app .combatant small{font-size:18px}
+.game-app .combatant .co-head{width:28px;height:28px}
+.game-app .damage-value{font-size:37px;color:#a96333;line-height:1;margin-top:10px}
+.game-app .forecast .hp-track{height:7px;gap:1px}
+.game-app .versus{font-size:18px}
+.game-app .forecast>p{font-size:16px;line-height:1.1;padding:6px 10px}
+.game-app .orders:has(#forecast:not([hidden])){bottom:142px;max-width:480px}
+.game-app .orders:has(#forecast:not([hidden])) .selection-info{display:none}
+.game-app .orders:has(#forecast:not([hidden])) .back-button{display:block}
+.game-app .orders:has(#forecast:not([hidden])) .commands{position:static;flex-direction:row;width:100%;border:0;background:none;box-shadow:none;overflow:visible;margin-top:6px;padding:0;gap:5px}
+.game-app .orders:has(#forecast:not([hidden])) .commands button{background:#fffad2;border:2px solid #8ea271;box-shadow:2px 2px #39563c;font-size:20px}
+.game-app .orders:has(#forecast:not([hidden])) .message{position:static;font-size:16px;margin-top:6px;max-width:100%}
+.game-app:has(#forecast:not([hidden])) .range-tools{bottom:auto;top:159px}
+.game-app .turn-banner{top:38%;font-size:30px;background:#4e798ce8;color:#fff1bd;border-block:4px solid #e9d584;padding:16px 10px;box-shadow:0 4px #324f3b}
+dialog{font-family:GamePixel,monospace;background:#fffbd9;color:#395039;border:4px solid #93a175;box-shadow:0 0 0 2px #385338,4px 4px #273e2b;padding:16px;width:min(440px,calc(100vw - 28px));max-height:calc(100dvh - 40px);overflow:auto}
+dialog::backdrop{background:#192e2d99;backdrop-filter:none}
+.dialog-heading{margin:0 0 9px}
+.dialog-heading h2{font-size:27px;letter-spacing:0;margin:0}
+.dialog-heading button{min-width:44px;min-height:44px;font-size:32px;color:#587a57}
+dialog p{font-size:18px;line-height:1.2;color:#668264}
+.menu-summary{font-size:20px;line-height:1.1;padding:9px;background:#e0e7bd;color:#5a7752}
+.menu-tabs button{font-family:GamePixel,monospace;font-size:19px;min-height:44px;background:#d6e2b5;border:2px solid #94a475;color:#60764d;padding:7px 2px}
+.menu-tabs [aria-selected=true]{background:#5e8d83;color:#fff9c7;border-color:#93b396}
+.menu-panel>button,.menu-panel>a,.menu-panel>.file-button{font:22px GamePixel,monospace;line-height:1.1;min-height:46px;padding:10px;background:#e8edc7;color:#405c3b;border:2px solid #96a979;box-shadow:2px 2px #607b54;margin:8px 0}
+.menu-panel>button:first-child{background:#f0dfa0;border-color:#baa06b;color:#665734}
+.roster-unit{font-family:GamePixel,monospace;background:#e5ecc3;border:2px solid #9cac81;color:#3c5c39;min-height:58px;padding:7px;margin:7px 0}
+.roster-unit strong{font-size:23px}.roster-unit small{font-size:17px;line-height:1.1;color:#6b885d}.roster-unit>span{font-size:28px}
+#battle-log{font-size:21px;line-height:1.2}#battle-log li{padding:10px 0}
+.unit-data{font-size:23px;margin-top:12px}.unit-data dt,.unit-data dd{padding:8px 4px}
+#unit-details-body>small{font-size:18px;line-height:1.1}.unit-health{font-size:25px}
+@media(max-width:350px){.game-app .game-mode{font-size:12px;max-width:116px}.game-app .commander-bar>div>strong{font-size:16px;max-width:117px}.game-app .selection-info{width:calc(100% - 87px);padding:5px;gap:5px}.game-app .selection-info strong{font-size:18px}.game-app .selection-info p{font-size:14px}.game-app .gba-terrain{max-width:77px;font-size:16px}.game-app .game-header{gap:5px}.game-app .account-shortcut,.game-app .pill{font-size:16px;padding:5px 8px}.game-app .footer-note{left:111px;right:145px}.game-app .footer-note span{font-size:16px}}
+@media(max-height:500px) and (min-width:600px){.game-app .orders{left:8px;right:auto;bottom:12px;width:310px}.game-app .selection-info{width:235px;min-height:75px}.game-app .game-footer{left:auto;width:225px;height:101px;background:#314c3dd4;border:2px solid #a5bd8699;bottom:8px;right:8px}.game-app .dpad{left:7px;bottom:7px}.game-app .footer-note{display:none}.game-app .back-button{right:94px;bottom:32px;width:45px;height:45px}.game-app .a-button{right:10px;bottom:21px;width:51px;height:51px}.game-app .range-tools{bottom:98px}.game-app .gba-terrain{bottom:117px}.game-app .map-caption{bottom:0}.game-app .message{bottom:180px;max-width:310px}.game-app .commands{right:-166px;bottom:0}.game-app .orders:has(#forecast:not([hidden])){bottom:10px;left:8px;max-width:400px;width:400px}.game-app .forecast-fighters{padding:5px 10px}.game-app .forecast>p{font-size:14px}.game-app:has(#forecast:not([hidden])) .range-tools{display:none}}
+@media(prefers-reduced-motion:reduce){.map-cell.cursor:before{animation:none}}
+.reduce-motion .map-cell.cursor:before{animation:none}
+
+.hosted-loading #map,.hosted-loading .commander-bar,.hosted-loading .gba-cash,.hosted-loading .gba-terrain,.hosted-loading .selection-info,.hosted-loading .commands,.hosted-loading .range-tools,.hosted-loading .map-caption{visibility:hidden}
+.hosted-loading .message{position:fixed;left:50%;top:40%;bottom:auto;transform:translateX(-50%);font-size:23px;padding:20px;width:280px;max-width:90vw;line-height:1.2;text-align:center}
+
+.game-app .message{opacity:0;transition:opacity .15s}.game-app .message.notice-visible{opacity:1}
+.hosted-loading .message{opacity:1}
+
+.game-app .commands{bottom:166px}
+body.hosted-game .developer-tool{display:none}

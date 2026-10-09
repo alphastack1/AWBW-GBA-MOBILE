@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve, extname } from 'node:path';
 import {randomBytes} from 'node:crypto';
 import {handleAccount} from './server/awbw-account.mjs';
+import {handleArt} from './server/awbw-art.mjs';
 const root = resolve(new URL('.', import.meta.url).pathname);
 const port = Number(process.env.PORT || 5173);
 // A local-only development key. Production functions require their Netlify secret.
@@ -10,6 +11,9 @@ const sessionKey=process.env.FIELD_COMMAND_SESSION_KEY||randomBytes(32).toString
 http.createServer(async (req, res) => {
   try {
     const url=new URL(req.url,`http://${req.headers.host||'localhost'}`);
+    if(url.pathname==='/api/awbw/art'){
+      const response=await handleArt(new Request(url,{method:req.method}));res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()));return;
+    }
     if(url.pathname==='/api/awbw/account'){
       let body='';for await(const chunk of req){body+=chunk;if(body.length>4000){res.writeHead(413).end();return;}}
       const request=new Request(url,{method:req.method,headers:req.headers,body:['GET','HEAD'].includes(req.method)?undefined:body});
@@ -18,6 +22,6 @@ http.createServer(async (req, res) => {
     const path = resolve(root, '.' + decodeURIComponent(new URL(req.url, 'http://localhost').pathname === '/' ? '/index.html' : new URL(req.url, 'http://localhost').pathname));
     if (!path.startsWith(root + '/')) { res.writeHead(403).end(); return; }
     const body = await readFile(path);
-    res.writeHead(200, { 'Content-Type': ({ '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.gif': 'image/gif', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.avif': 'image/avif', '.json': 'application/json', '.zip': 'application/zip' })[extname(path)] || 'application/octet-stream' }).end(body);
+    res.writeHead(200, { 'Content-Type': ({ '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.ttf':'font/ttf', '.svg': 'image/svg+xml', '.png': 'image/png', '.gif': 'image/gif', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.avif': 'image/avif', '.json': 'application/json', '.zip': 'application/zip' })[extname(path)] || 'application/octet-stream' }).end(body);
   } catch { res.writeHead(404).end('Not found'); }
 }).listen(port, '0.0.0.0', () => console.log(`Field Command: http://localhost:${port}`));

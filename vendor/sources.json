@@ -1,0 +1,22 @@
+[
+  {
+    "source": "https://awbw.amarriner.com/js/lib/map_renderer.js",
+    "file": "vendor/awbw-map-renderer.js",
+    "sha256": "bad96472f3b7870510f28f656c5b89a5ae50d6c0846876fbc6f7e99aab86ece3"
+  },
+  {
+    "source": "https://awbw.amarriner.com/terrain/tilesets.js",
+    "file": "vendor/awbw-tilesets.js",
+    "sha256": "d1f54a5c8b3dcecb04a9c116e8bc76ba2b5dee53e7d7aa3e197bec32891a557c"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/vt323/VT323-Regular.ttf",
+    "file": "fonts/VT323-Regular.ttf",
+    "sha256": "cf4de751ada78ceac033dbe16a687742939995b77bc2a052ae17a4957958594d"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/vt323/OFL.txt",
+    "file": "fonts/OFL.txt",
+    "sha256": "27d9af34210253e7ca1251fbace86c6f65b40031d6ce1a75493a1b2093631298"
+  }
+]

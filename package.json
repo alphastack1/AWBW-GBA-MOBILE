@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node server.mjs",
+    "dev": "node --watch server.mjs",
     "start": "node server.mjs",
     "build": "node build.mjs",
-    "test": "node --test tests/tactics.test.mjs tests/inspection.test.mjs tests/live-orders.test.mjs tests/awbw-diagnostics.test.mjs tests/awbw-account.test.mjs && python3 tests/browser_smoke.py && python3 tests/asset_flow.py && python3 tests/bundled_assets.py && python3 tests/handheld_bridge.py && python3 tests/awbw_canvas_socket.py && python3 tests/live_browser.py && python3 tests/embedded_browser.py && python3 tests/lobby_browser.py && python3 tests/handheld_ux.py && python3 tests/account_browser.py",
+    "test": "node --test tests/tactics.test.mjs tests/inspection.test.mjs tests/live-orders.test.mjs tests/awbw-diagnostics.test.mjs tests/awbw-account.test.mjs tests/awbw-game.test.mjs tests/hosted-transport.test.mjs && python3 tests/browser_smoke.py && python3 tests/asset_flow.py && python3 tests/bundled_assets.py && python3 tests/handheld_bridge.py && python3 tests/awbw_canvas_socket.py && python3 tests/live_browser.py && python3 tests/embedded_browser.py && python3 tests/lobby_browser.py && python3 tests/handheld_ux.py && python3 tests/account_browser.py && python3 tests/hosted_game_browser.py",
     "import-assets": "python3 scripts/import_assets.py",
     "package": "npm run build && python3 scripts/package_site.py",
     "review-inspection": "node scripts/review_inspection.mjs",
@@ -17,7 +17,9 @@
     "test:deployment": "python3 tests/deployment_smoke.py"
   },
   "dependencies": {
+    "@netlify/blobs": "11.1.4",
     "linkedom": "0.18.12",
-    "tough-cookie": "5.1.2"
+    "tough-cookie": "5.1.2",
+    "ws": "8.22.0"
   }
 }

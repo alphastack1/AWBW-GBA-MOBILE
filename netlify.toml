@@ -12,6 +12,12 @@
   force = true
 
 [[redirects]]
+  from = "/api/awbw/art"
+  to = "/.netlify/functions/awbw-art"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/api/awbw/status"
   to = "/.netlify/functions/awbw-status"
   status = 200

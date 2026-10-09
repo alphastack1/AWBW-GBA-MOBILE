@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {handleAccount,sealSession,openSession,gameList,isAccountPage} from '../server/awbw-account.mjs';
+import {gamePage} from './fixtures/awbw-game.mjs';
 const secret=Buffer.alloc(32,7).toString('base64'),origin='https://awbw-gba.netlify.app';
 const signedPage=name=>`<html><a href="logout.php">Log out</a><a href="profile.php?username=${name}">${name}</a><a href="game.php?games_id=123">River &amp; Road</a><a href="game.php?games_id=123">View</a><a href="https://other.example/game.php?games_id=456">Foreign</a></html>`;
 function fakeAWBW(){const calls=[];return {calls,fetcher:async(url,options)=>{calls.push({url:String(url),options});if(url.pathname==='/logincheck.php'){const p=new URLSearchParams(options.body);if(p.get('password')!=='fixture-password')return new Response('0');const headers=new Headers();headers.append('Set-Cookie',`AWBWUser=${p.get('username')}; Path=/; HttpOnly; Secure`);return new Response('1',{headers});}const name=/AWBWUser=([^;]+)/.exec(options.headers.Cookie||'')?.[1];return new Response(name?signedPage(name):'<form class="login-form"><input type="password"></form>');}};}
@@ -48,4 +49,12 @@ test('game lists exclude foreign/invalid links, deduplicate and decode text with
 });
 test('an upstream redirect cannot send AWBW credentials or cookies to another host',async()=>{
  let calls=0;const r=await handleAccount(req('login',{method:'POST',body:{username:'player',password:'fixture-password'}}),{secret,fetcher:async()=>{calls++;return new Response('',{status:302,headers:{Location:'https://other.example/private'}});}});assert.equal(r.status,502);assert.equal(calls,1);
+});
+test('hosted game reads require the session account and membership; never submit game orders',async()=>{
+ const u=fakeAWBW(),fetcher=u.fetcher;u.fetcher=(url,options)=>url.pathname==='/game.php'?Promise.resolve(new Response(gamePage('player-one'))):fetcher(url,options);
+ const a=await login('player-one',u),request=id=>new Request(origin+'/api/awbw/account?action=game&gameId='+id,{headers:{Cookie:a.cookie}});
+ const game=await handleAccount(request('123'),{secret,fetcher:u.fetcher});assert.equal(game.status,200);assert.equal((await game.json()).game.funds,800);
+ const denied=await handleAccount(request('456'),{secret,fetcher:u.fetcher});assert.equal(denied.status,403);
+ assert.equal((await handleAccount(req('game'),{secret,fetcher:u.fetcher})).status,401);
+ assert.equal(u.calls.filter(c=>c.options.method==='POST').length,1); // Login only.
 });

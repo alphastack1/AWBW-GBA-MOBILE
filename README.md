@@ -4,7 +4,7 @@ A GBA-style browser interface for your existing Advance Wars By Web account and 
 
 ## Intended mobile experience
 
-The current goal is **open the Netlify link → sign in to AWBW → play your existing games**, on iPhone and Android, with no extension, userscript, downloads or asset collection for either player. The site now opens a hosted AWBW sign-in form. Its backend forwards the native login request and keeps a separate encrypted, expiring session for each player. Game lists come from that session. Positive real-account sign-in is awaiting a player check; hosted gameplay is still in development. The handheld battlefield is currently local practice.
+The current goal is **open the Netlify link → sign in to AWBW → play your existing games**, on iPhone and Android, with no extension, userscript, downloads or asset collection for either player. The site now opens a hosted AWBW sign-in form. Its backend forwards the native login request and keeps a separate encrypted, expiring session for each player. Game lists come from that session. The owner has verified successful real-account sign-in and their game list. Game cards now open a hosted battlefield in this app; accepted live orders are still being connected and verified. Practice includes movement and combat.
 
 The handheld interface now includes movement-route previews and animation, movement/threat overlays, a damage/counterattack forecast before Fire, terrain cover, unit intel, a unit roster, battle record, context-sensitive B/A controls and motion preferences. Forecasts and combat use simplified practice rules. They are not AWBW's damage calculator.
 
@@ -37,7 +37,7 @@ Native real-game recordings confirm the outgoing shapes and corresponding event 
 
 ## Development
 
-Requirements: Node 22+, Python 3, Python Playwright and Chromium. From this folder:
+Requirements: Node 22.12+, Python 3, Python Playwright and Chromium. From this folder:
 
 ```sh
 npm ci

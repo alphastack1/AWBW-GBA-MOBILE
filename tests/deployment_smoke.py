@@ -7,7 +7,8 @@ This checks deployed bytes and UI, not Chromium's direct HTTPS transport.
 """
 from pathlib import Path
 import hashlib,json,sys,urllib.request
-from urllib.parse import urlparse
+from urllib.parse import urlparse,urljoin
+from html.parser import HTMLParser
 from playwright.sync_api import sync_playwright
 import shutil
 
@@ -24,6 +25,24 @@ def verified_get(url):
    headers={k.lower():v for k,v in r.headers.items() if k.lower() not in ['content-length','transfer-encoding','content-encoding','connection']}
    cache[url]=(r.status,headers,r.read(10000000))
  return cache[url]
+
+class DeployedHTML(HTMLParser):
+ """Netlify's pretty-URL processing changes link spelling, not its target."""
+ def __init__(self,body):
+  super().__init__(convert_charrefs=True);self.nodes=[];self.feed(body.decode())
+ def handle_starttag(self,tag,attrs):
+  normalized=[]
+  for key,value in attrs:
+   if key=='href' and value:
+    url=urlparse(urljoin(site+'/',value))
+    if url.netloc==urlparse(site).netloc:
+     value=url._replace(path=url.path.removesuffix('.html')).geturl()
+   normalized.append((key,value))
+  self.nodes.append(('start',tag,sorted(normalized)))
+ def handle_endtag(self,tag):self.nodes.append(('end',tag))
+ def handle_data(self,data):self.nodes.append(('text',data))
+ def handle_comment(self,data):self.nodes.append(('comment',data))
+ def handle_decl(self,data):self.nodes.append(('decl',data))
 
 with sync_playwright() as p:
  browser=p.chromium.launch(headless=True,executable_path=shutil.which('chromium'),args=['--no-sandbox'])
@@ -61,7 +80,11 @@ with sync_playwright() as p:
  assert page.get_by_role('link',name='Download the mobile ZIP with installation guide',exact=True).count()==1
  for name in ['index.html','account.html','account.js','account.css','play.js','play.css','handheld-ux.js','awbw-bridge.user.js','field-command-mobile.zip']:
   status,headers,body=verified_get(site+'/'+name);assert status==200,(name,status)
-  assert hashlib.sha256(body).digest()==hashlib.sha256((ROOT/name).read_bytes()).digest(),f'Deployed {name} differs from this checkout.'
+  local=(ROOT/name).read_bytes()
+  if name.endswith('.html'):
+   assert DeployedHTML(body).nodes==DeployedHTML(local).nodes,f'Deployed {name} differs beyond Netlify link rewriting.'
+  else:
+   assert hashlib.sha256(body).digest()==hashlib.sha256(local).digest(),f'Deployed {name} differs from this checkout.'
  assert not errors,errors
  context.close();browser.close()
 print('PASS: TLS-verified deployed Netlify responses rendered with their CSP in Chromium; anonymous account API readiness, mobile sign-in form/layout/artwork, practice movement/persistence, setup page and exact client/script/ZIP bytes. Positive real-account sign-in and direct Chromium HTTPS trust are not verified. No live AWBW orders submitted.')

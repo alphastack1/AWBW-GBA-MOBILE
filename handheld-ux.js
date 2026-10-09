@@ -96,9 +96,9 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
     $('#map').setAttribute('aria-busy', String(!!movingId));
     if (movingId) {for (const cell of document.querySelectorAll('#map .map-cell')) {const u = view.state.units.find(u => u.x === +cell.dataset.x && u.y === +cell.dataset.y); if (u?.id === movingId) for (const image of cell.querySelectorAll('.unit,.health')) image.style.visibility = 'hidden';}}
     if (!view.snapshot) {const tile = view.state.terrain[view.cursor.y * view.state.width + view.cursor.x]; $('#terrain-cover').textContent = '★'.repeat(terrainDefense[tile.type] || 0) || '—'; $('#terrain-cover').title = `${terrainDefense[tile.type] || 0} defense stars`;}
-    else $('#terrain-cover').textContent = '';
+    else if(!new URLSearchParams(location.search).has('game')) $('#terrain-cover').textContent = '';
     $('#lcd-funds').textContent=view.snapshot?(view.snapshot.game?.funds?.toLocaleString()||'—'):view.state.funds[view.state.army].toLocaleString();
-    $('#lcd-terrain').textContent=view.snapshot?'AWBW':view.state.terrain[view.cursor.y*view.state.width+view.cursor.x].type;
+    $('#lcd-terrain').textContent=view.snapshot?$('#terrain-name').textContent:view.state.terrain[view.cursor.y*view.state.width+view.cursor.x].type;
     $('#lcd-defense').textContent=$('#terrain-cover').textContent;
   }
   function animate(unit, path, action) {

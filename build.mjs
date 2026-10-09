@@ -19,33 +19,38 @@ const metaEnd=bridgeSource.indexOf('// ==/UserScript==')+'// ==/UserScript=='.le
 const orderHelpers=(await readFile('live-orders.js','utf8')).replace(/export function /g,'function ')+'\n'+(await readFile('awbw-orders.js','utf8')).replace(/export function /g,'function ');
 const ordersBundle='\nconst FC_ORDERS=(()=>{'+orderHelpers+';return {createOrderGate,createOfficialAdapter};})();\n';
 const inspectorBundle='\nconst FC_INSPECTION=(()=>{'+inspectorHelpers+';return {schema,responseSample,requestSample};})();\n';
-const handheldCss=await readFile('play.css','utf8');
+const handheldCss=(await readFile('play.css','utf8')).replaceAll('fonts/VT323-Regular.ttf',`data:font/ttf;base64,${(await readFile('fonts/VT323-Regular.ttf')).toString('base64')}`);
 const packedCatalog=JSON.parse(await readFile('assets/catalog.json','utf8'));
 for(const entry of packedCatalog.assets)entry.file=`data:${entry.mime};base64,${(await readFile(entry.file)).toString('base64')}`;
 const tactics=(await readFile('tactics.js','utf8')).replace(/export (function|const) /g,'$1 ');
 const validator=(await readFile('snapshot.js','utf8')).replace(/export function /g,'function ');
 const player=(await readFile('play.js','utf8')).replace(/^import .+;\n/gm,'');
 const ux=(await readFile('handheld-ux.js','utf8')).replace(/^import .+;\n/gm,'').replace(/export function /g,'function ');
-const playerBundle=`const {createPractice,unitAt,reachable,targets,order,buy,endTurn,stats,movementRange,movementPath,attackRange,combatForecast,terrainDefense}=(()=>{${tactics};return {createPractice,unitAt,reachable,targets,order,buy,endTurn,stats,movementRange,movementPath,attackRange,combatForecast,terrainDefense};})();\n${validator}\n${ux}\n${player}`;
-const embeddedHtml=(await readFile('play.html','utf8')).replaceAll('href="account.html"','href="https://awbw.amarriner.com/yourgames.php" target="_top"').replace('<link rel="stylesheet" href="play.css">',`<style>${handheldCss}</style>`).replace('<link rel="icon" href="favicon.svg">','').replace('class="game-logo" href="/"','class="game-logo" href="https://awbw.amarriner.com/yourgames.php" target="_top"').replace('<script type="module" src="play.js"></script>',`<script>window.FC_EMBEDDED=true;window.FC_CATALOG=${JSON.stringify(packedCatalog).replace(/</g,'\\u003c')};</script><script type="module">${playerBundle.replace(/<\/script/gi,'<\\/script')}</script>`);
+const hostedHelpers=(await readFile('hosted-game.js','utf8')).replace(/export function /g,'function ');
+const playerBundle=`${hostedHelpers}\nconst {createPractice,unitAt,reachable,targets,order,buy,endTurn,stats,movementRange,movementPath,attackRange,combatForecast,terrainDefense}=(()=>{${tactics};return {createPractice,unitAt,reachable,targets,order,buy,endTurn,stats,movementRange,movementPath,attackRange,combatForecast,terrainDefense};})();\n${validator}\n${ux}\n${player}`;
+const embeddedHtml=(await readFile('play.html','utf8')).replace('<script defer src="vendor/awbw-tilesets.js"></script><script defer src="vendor/awbw-map-renderer.js"></script>','').replaceAll('href="account.html"','href="https://awbw.amarriner.com/yourgames.php" target="_top"').replace('<link rel="stylesheet" href="play.css">',`<style>${handheldCss}</style>`).replace('<link rel="icon" href="favicon.svg">','').replace('class="game-logo" href="/"','class="game-logo" href="https://awbw.amarriner.com/yourgames.php" target="_top"').replace('<script type="module" src="play.js"></script>',`<script>window.FC_EMBEDDED=true;window.FC_CATALOG=${JSON.stringify(packedCatalog).replace(/</g,'\\u003c')};</script><script type="module">${playerBundle.replace(/<\/script/gi,'<\\/script')}</script>`);
 const lobby=(await readFile('handheld-lobby.js','utf8')).replace(/export function /g,'function ');
 const handheldBundle='\nconst FC_HANDHELD_HTML='+JSON.stringify(embeddedHtml)+';\nconst FC_LOBBY=(()=>{'+lobby+';return{mount:()=>mountLobby('+JSON.stringify(handheldCss)+')};})();\n';
 await writeFile('awbw-bridge.user.js',bridgeSource.slice(0,metaEnd)+'\n(()=>{'+inspectorBundle+ordersBundle+handheldBundle+bridgeSource.slice(metaEnd)+'\n})();');
 
 await rm('dist',{recursive:true,force:true});
 await mkdir('dist',{recursive:true});
-for(const file of ['index.html','account.html','account.js','account.css','styles.css','app.js','favicon.svg','field-command.user.js','asset-collector.user.js','asset-library.html','asset-library.js','asset-library.css','operations.html','play.html','play.css','play.js','handheld-ux.js','tactics.js','snapshot.js','bridge.html','awbw-bridge.user.js','inspection.js','live-orders.js','awbw-orders.js','_headers'])await copyFile(file,`dist/${file}`);
+for(const file of ['index.html','account.html','account.js','account.css','styles.css','app.js','favicon.svg','field-command.user.js','asset-collector.user.js','asset-library.html','asset-library.js','asset-library.css','operations.html','play.html','play.css','play.js','hosted-game.js','handheld-ux.js','tactics.js','snapshot.js','bridge.html','awbw-bridge.user.js','inspection.js','live-orders.js','awbw-orders.js','_headers'])await copyFile(file,`dist/${file}`);
 for(const file of ['field-command-mobile.zip','field-command-chrome.zip'])await copyFile(file,`dist/${file}`);
 console.log('Built installation site and self-contained userscript in dist/');
 
 await cp('assets','dist/assets',{recursive:true});
+await cp('fonts','dist/fonts',{recursive:true});
+await cp('vendor','dist/vendor',{recursive:true});
 
 // Optional desktop packaging uses an extension page, so its scripts obey MV3 CSP.
 await rm('extension-dist',{recursive:true,force:true});
 await cp('extension','extension-dist',{recursive:true});
-for(const file of ['play.css','play.js','handheld-ux.js','tactics.js','snapshot.js','favicon.svg','bridge.html','styles.css'])await copyFile(file,`extension-dist/${file}`);
+for(const file of ['play.css','play.js','hosted-game.js','handheld-ux.js','tactics.js','snapshot.js','favicon.svg','bridge.html','styles.css'])await copyFile(file,`extension-dist/${file}`);
 // The optional extension has no hosted account API; its lobby uses the AWBW tab.
 await writeFile('extension-dist/play.html',(await readFile('play.html','utf8')).replaceAll('href="account.html"','href="https://awbw.amarriner.com/yourgames.php" target="_top"'));
 await cp('assets','extension-dist/assets',{recursive:true});
+await cp('fonts','extension-dist/fonts',{recursive:true});
+await cp('vendor','extension-dist/vendor',{recursive:true});
 const extensionBundle=bridgeSource.slice(0,metaEnd)+'\n(()=>{'+inspectorBundle+ordersBundle+'\nconst FC_HANDHELD_HTML="";\nconst FC_LOBBY=(()=>{'+lobby+';return{mount:()=>mountLobby('+JSON.stringify(handheldCss)+')};})();\n'+bridgeSource.slice(metaEnd)+'\n})();';
 await writeFile('extension-dist/bridge.js',extensionBundle);
