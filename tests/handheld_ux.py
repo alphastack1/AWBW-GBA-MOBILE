@@ -9,7 +9,7 @@ with sync_playwright() as p:
  browser=p.chromium.launch(headless=True,executable_path=shutil.which('chromium'),args=['--no-sandbox'])
  page=browser.new_page(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
  errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
- page.goto(BROWSER_BASE_URL+'/');page.locator('.map-cell').first.wait_for()
+ page.goto(BROWSER_BASE_URL+'/play.html');page.locator('.map-cell').first.wait_for()
  page.locator('[data-x="3"][data-y="5"]').click()
  page.get_by_role('button',name='Unit details',exact=True).click()
  assert page.locator('#unit-details').is_visible()

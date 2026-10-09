@@ -10,7 +10,7 @@ with sync_playwright() as p, tempfile.TemporaryDirectory() as temp:
     browser=p.chromium.launch(headless=True,executable_path=shutil.which('chromium'),args=['--no-sandbox'])
     page=browser.new_page(viewport={'width':390,'height':844})
     errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
-    page.goto(BROWSER_BASE_URL + '/')
+    page.goto(BROWSER_BASE_URL + '/play.html')
     page.locator('#map .map-cell').first.wait_for()
     assert page.locator('.map-cell').count()==252
     page.locator('[data-x="3"][data-y="5"]').click()

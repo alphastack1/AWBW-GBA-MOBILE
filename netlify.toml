@@ -6,6 +6,12 @@
   NODE_VERSION = "22"
 
 [[redirects]]
+  from = "/api/awbw/account"
+  to = "/.netlify/functions/awbw-account"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/api/awbw/status"
   to = "/.netlify/functions/awbw-status"
   status = 200

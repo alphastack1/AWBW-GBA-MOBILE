@@ -22,7 +22,7 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
   }
   function card(unit, nextHP, label, damage) {
     const c = node('div', undefined, 'combatant');
-    c.append(node('span', label, 'eyebrow'), sprite(unit), node('strong', unit.type.toUpperCase()), health(unit, nextHP), node('small', `${unit.hp} → ${nextHP} HP`), node('b', `${damage * 10}%`, 'damage-value'));
+    const co=node('img',undefined,'co-head');co.src=asset(unit.army==='os'?'smallandy.png':'smalljess.png')||'';c.append(co,node('span', label, 'eyebrow'), sprite(unit), node('strong', unit.type.toUpperCase()), health(unit, nextHP), node('small', `${unit.hp} → ${nextHP} HP`), node('b', `${damage * 10}%`, 'damage-value'));
     return c;
   }
   function renderForecast() {
@@ -97,6 +97,9 @@ export function createHandheldUX({asset, inspect, repaint, message}) {
     if (movingId) {for (const cell of document.querySelectorAll('#map .map-cell')) {const u = view.state.units.find(u => u.x === +cell.dataset.x && u.y === +cell.dataset.y); if (u?.id === movingId) for (const image of cell.querySelectorAll('.unit,.health')) image.style.visibility = 'hidden';}}
     if (!view.snapshot) {const tile = view.state.terrain[view.cursor.y * view.state.width + view.cursor.x]; $('#terrain-cover').textContent = '★'.repeat(terrainDefense[tile.type] || 0) || '—'; $('#terrain-cover').title = `${terrainDefense[tile.type] || 0} defense stars`;}
     else $('#terrain-cover').textContent = '';
+    $('#lcd-funds').textContent=view.snapshot?(view.snapshot.game?.funds?.toLocaleString()||'—'):view.state.funds[view.state.army].toLocaleString();
+    $('#lcd-terrain').textContent=view.snapshot?'AWBW':view.state.terrain[view.cursor.y*view.state.width+view.cursor.x].type;
+    $('#lcd-defense').textContent=$('#terrain-cover').textContent;
   }
   function animate(unit, path, action) {
     if (!motion || reduced.matches || path.length < 2) {if (action === 'attack') impact(); return;}

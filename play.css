@@ -66,3 +66,24 @@
 @media(prefers-reduced-motion:reduce){.map-cell.cursor:before,.map-cell.target:after{animation:none}}
 .reduce-motion .map-cell.cursor:before,.reduce-motion .map-cell.target:after{animation:none}
 @media(max-width:600px){.game-app:has(#forecast:not([hidden])) .map-scroll{max-height:20dvh;min-height:140px}.game-app:has(#forecast:not([hidden])) .game-footer{padding-top:8px;padding-bottom:max(8px,env(safe-area-inset-bottom))}}
+
+/* Map and battle HUD proportions follow the original 240×160 GBA screens. */
+.map-viewport{position:relative}
+.map-tools{left:10px;right:auto;top:10px;border:2px solid #89a291;background:#304957e8}
+.gba-cash,.gba-terrain{position:absolute;right:7px;background:#fffcd5;color:#293e35;border:2px solid #798c49;box-shadow:inset 1px 1px #fff,inset -2px -2px #c0c99a,1px 1px #3b5240;z-index:11;pointer-events:none}
+.gba-cash{top:7px;display:flex;align-items:center;min-width:96px;padding:4px 7px;gap:12px}
+.gba-cash span{color:#b46627;font-weight:bold;font-size:14px}.gba-cash strong{font-size:14px;margin-left:auto}
+.gba-terrain{bottom:7px;min-width:65px;padding:6px 8px;line-height:1.5}
+.gba-terrain strong{display:block;font-size:11px;text-transform:capitalize}.gba-terrain span{display:block;color:#be8238;font-size:11px;letter-spacing:2px}
+.commands button{position:relative;background:#fffad2;color:#344747;border-color:#9ba785;box-shadow:inset 1px 1px #fff,2px 2px #57716b;letter-spacing:0}
+.commands button.primary{background:#f2dd85;color:#374331;border-color:#baa663;box-shadow:inset 1px 1px #fff6bc,2px 2px #6f7753;padding-left:26px}
+.commands button.primary:before{content:'';position:absolute;left:9px;width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:7px solid #8c6635;top:50%;transform:translateY(-50%)}
+.commands button:hover:not(:disabled){background:#fff0a0}.commands button:active:not(:disabled){transform:translate(1px,1px);box-shadow:inset 1px 1px #fff}
+.forecast{border-color:#8eaa97;background:#dce5c2;color:#2e494b;box-shadow:2px 2px #567675}
+.forecast-heading{background:#3e6b87;color:#fff3bf;border-bottom:2px solid #9baaa0}
+.combatant{position:relative;padding-top:3px}.combatant .eyebrow{color:#58716b}.combatant small{color:#5e7870}.combatant .co-head{position:absolute;right:0;top:0;width:23px;height:23px;object-fit:contain;image-rendering:pixelated;border:1px solid #789a87;background:#f4f0cc;grid-row:auto;grid-column:auto}
+.damage-value{color:#b46034;text-shadow:1px 1px #fff7d4}.versus{color:#718575}
+.hp-track i{background:#68875b22;border:1px solid #6e845777}.hp-track .hp-full{background:#8dad47;border-color:#bfd47a}.hp-track .hp-loss{background:#bd7550;border-color:#eab081}
+.forecast>p{background:#ccd8b1;color:#526e64;border-top:1px solid #9aaa89}
+.account-shortcut{font-size:8px;padding:8px 6px;border:1px solid #67888d;color:#ecd993;white-space:nowrap}
+@media(max-width:600px){.game-header{gap:7px}.game-mode{font-size:6px;letter-spacing:.5px;padding:6px 4px}.game-logo{font-size:10px;letter-spacing:1px}.game-logo span{font-size:8px;letter-spacing:1px}.account-shortcut{font-size:7px;padding:7px 4px}.pill{padding:8px;font-size:8px}.map-scroll{aspect-ratio:3/2;min-height:0;max-height:43dvh}.game-app:has(#forecast:not([hidden])) .map-scroll{aspect-ratio:auto;min-height:140px;height:20dvh}.gba-cash{min-width:82px;gap:8px}.gba-cash strong,.gba-cash span{font-size:11px}.gba-terrain strong{font-size:10px}}

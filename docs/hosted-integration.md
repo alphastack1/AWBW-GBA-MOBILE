@@ -11,10 +11,18 @@ The accepted product flow is the same for the owner and their friend: open `http
 - The diagnostic function checks a fixed anonymous WebSocket upgrade and closes the connection immediately. It never sends game frames. A successful anonymous connection is separate from authenticated order eligibility.
 - Local handheld UI and bridge fixtures exercise direct actions, single submission, stale state, server rejection and uncertain outcomes. They do not establish live-server success.
 
+## Hosted account service
+
+The site's entry page is now the sign-in form. `POST /api/awbw/account?action=login` follows the reviewed native `/logincheck.php` form-encoded username/password request and requires both its `1` response and a signed-in Your Games page. HTTP 200 by itself cannot establish a session. Positive real-account access still needs a player sign-in; fixture success is not that check.
+
+`GET` actions `session` and `games` return the current player and their game list. `POST logout` requires the app's CSRF token and clears its session. It does not log out the player's separate AWBW browser tab. Passwords are not saved or logged. Upstream cookies are encrypted with AES-GCM in an eight-hour Secure/HttpOnly/SameSite application cookie; each player has a separate cookie jar. Netlify's `FIELD_COMMAND_SESSION_KEY` is a private Functions secret. The administrative Netlify token is never supplied to the app.
+
+The mobile form, rejected credentials, separate player sessions, tamper/expiry rejection, escaped game titles, filters and logout are covered by local checks. Game links currently open AWBW's original controls. Hosted gameplay has not been implemented or verified yet.
+
 ## Backend work required
 
-1. Verify the real login request and success/failure contract. The hosted form should submit to a same-origin Netlify function; the function forwards to the fixed AWBW origin and retains returned session cookies. Never retain passwords after login or echo credential bodies into logs.
-2. Isolate every player's upstream session. Use an encrypted, expiring, Secure/HttpOnly application session, a deployment-side session key, logout and same-origin request protection. An administrative Netlify token belongs in the agent's cloud environment, not in the app.
+1. Exercise the deployed form with a player's real AWBW account. The login contract and session isolation are implemented and fixture-tested; verify accepted credentials and the actual account page/cookie behavior before claiming real sign-in works.
+2. Verify the real Your Games/Your Turn lists and session expiry/logout with that account and a second player's account.
 3. Read authenticated game/account data through that session and preserve AWBW's player/fog visibility. Render only data that this authenticated viewer is entitled to see.
 4. Verify an authenticated socket handshake and typed outcomes. Netlify Functions cannot act as a persistent WebSocket server. Test short-lived outbound socket connections for a single order with HTTP catch-up reads; if AWBW's authentication/connection model requires a persistent gateway, add that hosted service. Do not assume either approach works before exercising the real protocol.
 5. Keep exact current-player, ownership, path, funds and state checks, a single pending command, no automatic gameplay retries, and explicit rejected versus uncertain results. Never expose an arbitrary upstream URL proxy.

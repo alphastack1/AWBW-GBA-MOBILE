@@ -1,10 +1,20 @@
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { resolve, extname } from 'node:path';
+import {randomBytes} from 'node:crypto';
+import {handleAccount} from './server/awbw-account.mjs';
 const root = resolve(new URL('.', import.meta.url).pathname);
 const port = Number(process.env.PORT || 5173);
+// A local-only development key. Production functions require their Netlify secret.
+const sessionKey=process.env.FIELD_COMMAND_SESSION_KEY||randomBytes(32).toString('base64');
 http.createServer(async (req, res) => {
   try {
+    const url=new URL(req.url,`http://${req.headers.host||'localhost'}`);
+    if(url.pathname==='/api/awbw/account'){
+      let body='';for await(const chunk of req){body+=chunk;if(body.length>4000){res.writeHead(413).end();return;}}
+      const request=new Request(url,{method:req.method,headers:req.headers,body:['GET','HEAD'].includes(req.method)?undefined:body});
+      const response=await handleAccount(request,{secret:sessionKey});res.writeHead(response.status,Object.fromEntries(response.headers));res.end(await response.text());return;
+    }
     const path = resolve(root, '.' + decodeURIComponent(new URL(req.url, 'http://localhost').pathname === '/' ? '/index.html' : new URL(req.url, 'http://localhost').pathname));
     if (!path.startsWith(root + '/')) { res.writeHead(403).end(); return; }
     const body = await readFile(path);

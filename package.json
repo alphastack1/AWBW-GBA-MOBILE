@@ -7,7 +7,7 @@
     "dev": "node server.mjs",
     "start": "node server.mjs",
     "build": "node build.mjs",
-    "test": "node --test tests/tactics.test.mjs tests/inspection.test.mjs tests/live-orders.test.mjs tests/awbw-diagnostics.test.mjs && python3 tests/browser_smoke.py && python3 tests/asset_flow.py && python3 tests/bundled_assets.py && python3 tests/handheld_bridge.py && python3 tests/awbw_canvas_socket.py && python3 tests/live_browser.py && python3 tests/embedded_browser.py && python3 tests/lobby_browser.py && python3 tests/handheld_ux.py",
+    "test": "node --test tests/tactics.test.mjs tests/inspection.test.mjs tests/live-orders.test.mjs tests/awbw-diagnostics.test.mjs tests/awbw-account.test.mjs && python3 tests/browser_smoke.py && python3 tests/asset_flow.py && python3 tests/bundled_assets.py && python3 tests/handheld_bridge.py && python3 tests/awbw_canvas_socket.py && python3 tests/live_browser.py && python3 tests/embedded_browser.py && python3 tests/lobby_browser.py && python3 tests/handheld_ux.py && python3 tests/account_browser.py",
     "import-assets": "python3 scripts/import_assets.py",
     "package": "npm run build && python3 scripts/package_site.py",
     "review-inspection": "node scripts/review_inspection.mjs",
@@ -15,5 +15,9 @@
     "test:extension": "npm run build && python3 tests/extension_browser.py",
     "package-mobile": "npm run build && python3 scripts/package_mobile.py",
     "test:deployment": "python3 tests/deployment_smoke.py"
+  },
+  "dependencies": {
+    "linkedom": "0.18.12",
+    "tough-cookie": "5.1.2"
   }
 }
